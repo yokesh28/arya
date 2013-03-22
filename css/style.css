@@ -1013,7 +1013,7 @@ footer {
   position: relative;
   padding: 0 0 23px 0 ;
   border-top: none;
-  background: none;
+ background-color: #071422;
 }
 footer .span12 {
   border-top: 1px solid #f0f0f0;
@@ -1080,6 +1080,15 @@ footer .span3 {
 .list-soc li .icon-2 {
   background: url(../img/icon-2.png) 0 0 no-repeat;
 }
+
+
+
+
+
+
+
+
+
 /*---===================== FOOTER END ================------*/
 .select-menu {
   display: none !important;

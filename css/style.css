@@ -308,7 +308,7 @@ header {
   display: block;
   overflow: hidden;
   width: 291px;
-  height: 248px;
+  height: 247px;
   margin: 58px auto 105px;
   float: none;
   padding: 0;
@@ -1349,7 +1349,7 @@ footer .span3 {
 @media (max-width: 480px) {
   .navbar_ .brand {
     width: 145px;
-    height: 97px;
+    height: 178px;
   }
   #splash header {
     padding: 10px 0 0 0;

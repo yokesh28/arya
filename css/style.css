@@ -707,7 +707,7 @@ dl dt {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  width: 215px;
+  width: 150px;
   margin: 0 0 0 0;
   background: #0b131c;
   border-bottom: 1px solid #18232f;
@@ -1174,7 +1174,7 @@ footer .span3 {
 }
 @media (min-width: 768px) and (max-width: 979px) {
   #search {
-    width: 135px;
+    width: 118px;
   }
   .div-search span {
     display: none;

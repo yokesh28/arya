@@ -14,6 +14,7 @@ body {
 }
 p {
   margin-bottom: 22px;
+  text-align: justify;
 }
 /* headings, text */
 h1,

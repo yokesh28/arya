@@ -116,7 +116,7 @@
 				<article class="span8 offset">
 					<h2 class="h2indent">get in touch</h2>
 					<form name="contactform" id="contact-form"
-					onSubmit="return validateForm();">
+					>
 					
 						<div class="success">
 							Contact form submitted! <strong>We will be in touch soon.</strong>
@@ -132,16 +132,8 @@
 										class="empty">*This field is required.</span>
 									</label>
 								</div>
+								
 								<div class="coll-2">
-									<div class="txt-form">E-mail:</div>
-
-									<label class="email"> <input type="email" name="email"> <br>
-										<span class="error">*This is not a valid email address.</span>
-										<span class="empty">*This field is required.</span>
-
-									</label>
-								</div>
-								<div class="coll-3">
 									<div class="txt-form">Phone:</div>
 
 									<label class="phone"> <input type="tel" name="phone"> <br>
@@ -150,6 +142,20 @@
 
 									</label>
 								</div>
+								
+								<div class="coll-3">
+									<div class="txt-form">E-mail:</div>
+
+									<label class="email"> <input type="email" name="email"> <br>
+										<span class="error">*This is not a valid email address.</span>
+										<span class="empty">*This field is required.</span>
+
+									</label>
+								</div>
+								
+								
+								
+								
 							</div>
 
 							<div class="div-message">
@@ -163,7 +169,7 @@
 							</div>
 							<div class="buttons-wrapper">
 
-								<a class="btn btn-1" data-type="submit"   name="submit"  value="Submit"><span>Submit</span></a><span id="response"></span>
+								<a class="btn btn-1" data-type="submit"  onClick="return validateForm();"  name="submit"  value="Submit"><span>Submit</span></a><span id="response"></span>
 
 							</div>
 						</fieldset>
@@ -182,10 +188,12 @@ function validateForm()
 {
 
 var contactname=document.forms["contactform"]["name"].value;
-var contactnumber = document.forms["contactform"]["phone"].value;
+
+
 var contactemail=document.forms["contactform"]["email"].value;
 var atpos=contactemail.indexOf("@");
 var dotpos=contactemail.lastIndexOf(".");
+var contactnumber = document.forms["contactform"]["phone"].value;
 if (contactname==null || contactname=="")
   {
   alert(" Name must be filled out");

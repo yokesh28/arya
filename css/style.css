@@ -1290,6 +1290,9 @@ footer li{
 	list-style: none;
 	
 }
+.color img{
+	cursor: pointer;
+}
 /*---===================== FOOTER END ================------*/
 .select-menu {
 	display: none !important;

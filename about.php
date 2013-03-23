@@ -48,7 +48,10 @@
 
 
 	<!--==============================header=================================-->
-	<?php include("header.php")?>
+	<?php include("header.php");
+	echo headerContant('aboutus');
+	
+	?>
 
 	<div id="content">
 		<div class="container">
@@ -177,12 +180,6 @@
 				</div>
 			</div>
 			<br> <br>
-
-
-
-
-
-
 
 
 

@@ -1,3 +1,10 @@
+
+
+<?php function headerContant($page)
+{
+	
+?>
+
 <header>
 		<div class="container">
 			<div class="navbar navbar_ clearfix">
@@ -10,14 +17,14 @@
 						<div class="nav-collapse nav-collapse_ collapse row-fluid ">
 							<div class="clearfix">
 								<ul class="nav sf-menu clearfix sf-js-enabled ">
-									<li><a href="index.php">Home</a></li>
-									<li class="sub-menu">
+									<li <?php echo ($page== 'home' ? 'class=active' : '');?>><a href="index.php">Home</a></li>
+									<li <?php echo ($page== 'aboutus' ? 'class=active' : '');?>>
 									<a href="about.php">About Us</a>
 									</li>
-									<li><a href="#">Product</a></li>
-									<li><a href="service.php">Services</a></li>
-									<li><a href="#">Carriers</a></li>
-									<li class="active"><a href="contact.php">Contact Us</a></li>
+									<li <?php echo ($page== 'product' ? 'class=active' : '');?>><a href="#">Product</a></li>
+									<li <?php echo ($page== 'service' ? 'class=active' : '');?>><a href="service.php">Services</a></li>
+									<li <?php echo ($page== 'carrier' ? 'class=active' : '');?>><a href="carrier.php">Carriers</a></li>
+									<li <?php echo ($page== 'contact' ? 'class=active' : '');?>><a href="contact.php">Contact Us</a></li>
 								</ul>
 								<select class="select-menu" style="display: inline-block;"><option
 										value="#">Navigate to...</option>
@@ -43,3 +50,5 @@
 			</div>
 		</div>
 	</header>
+	
+	<?php }?>

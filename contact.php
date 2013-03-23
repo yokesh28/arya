@@ -38,7 +38,9 @@
 
 <body>
 	<!--==============================header=================================-->
-	<?php include("header.php")?>
+	<?php include("header.php");
+	echo headerContant('contact');
+	?>
 
 	<div id="content-1">
 		<div class="container">

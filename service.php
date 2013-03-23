@@ -37,7 +37,8 @@
 
 <body>
 	<!--==============================header=================================-->
-	<?php include("header.php")?>
+	<?php include("header.php");
+	echo headerContant('service');?>
 	
 	
 		<div class="container">

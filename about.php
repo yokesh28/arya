@@ -3,10 +3,12 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <link rel="stylesheet" href="css/docs.css" type="text/css"
 	media="screen">
-<title>Home</title>
+<title>About Us</title>
 <meta charset="utf-8">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 <link rel="icon"
 	href="http://livedemo00.template-help.com/wt_43786/img/favicon.ico"
 	type="image/x-icon">
@@ -57,12 +59,12 @@
 						<div class="nav-collapse nav-collapse_ collapse row-fluid ">
 							<div class="clearfix">
 								<ul class="nav sf-menu clearfix sf-js-enabled ">
-									<li class=""><a href="index.html">Home</a></li>
-									<li class="active"><a href="about.html">About Us</a></li>
-									<li><a href="product.html">Product</a></li>
-									<li><a href="service.html">Services</a></li>
-									<li><a href="carrier.html">Carriers</a></li>
-									<li><a href="contact.htmls">Contact Us</a></li>
+									<li class=""><a href="index.php">Home</a></li>
+									<li class="active"><a href="about.php">About Us</a></li>
+									<li><a href="#">Product</a></li>
+									<li><a href="service.php">Services</a></li>
+									<li><a href="#">Carriers</a></li>
+									<li><a href="contact.php">Contact Us</a></li>
 								</ul>
 								<select class="select-menu" style="display: inline-block;"><option
 										value="#">Navigate to...</option>

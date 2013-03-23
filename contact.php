@@ -3,8 +3,9 @@
 	<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Contacts</title>
+<title>Contact Us</title>
 <meta charset="utf-8">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 <meta name="description" content="Your description">

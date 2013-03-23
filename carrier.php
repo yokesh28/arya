@@ -88,12 +88,30 @@
 	
 	
 	
-	<div class="coming">
-						<h1 style="font-size: 34.5px; padding-right: 100px;
-margin-left: 94px;">
-							COMING SOON !</h1>
-						
-					</div>
+	<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span"></div>
+    <div class="span"></div>
+    <div class="span"></div>
+    <div class="span"></div>
+    <div class="span"></div>
+    <div class="span"></div>
+    <div class="span"></div>
+    <div class="span10 offset4">
+    
+   <h1> Coming Soon</h1>
+     
+    </div>
+    <div class="span"></div>
+    <div class="span"></div>
+    <div class="span"></div>
+    <div class="span"></div>
+    <div class="span"></div>
+    <div class="span"></div>
+    <div class="span"></div>
+    
+  </div>
+</div>
 	
 	
 	

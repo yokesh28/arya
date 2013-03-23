@@ -6,12 +6,12 @@
 							<div class="span7">
 								<div class="footer_menu span12">
 									<ul>
-										<li class="span2"><a href="#">HOME PAGE</a></li>
-										<li class="span2"><a href="#">ABOUT US</a></li>
+										<li class="span2"><a href="index.php">HOME PAGE</a></li>
+										<li class="span2"><a href="about.php">ABOUT US</a></li>
 										<li class="span2"><a href="#">PRODUCT</a></li>
-										<li class="span2"><a href="#">SERVICES</a></li>
+										<li class="span2"><a href="service.php">SERVICES</a></li>
 										<li class="span2"><a href="#">CARRIERS</a></li>
-										<li class="span2"><a href="#">CONTACT US</a></li>
+										<li class="span2"><a href="contact.php">CONTACT US</a></li>
 									</ul>
 								</div>
 								<div class="copy_rights span12">

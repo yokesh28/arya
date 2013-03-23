@@ -95,17 +95,18 @@
 					</figure>
 
 				</article>
-				<article class="span3">
+				<article class="span4">
 					<h2 class="h2indent">address</h2>
 					<div class="div-adress">
 						<address class="adress">
-							<strong class="title1"> Address 1:<br> 8901 Marmora Road,<br>
-								Glasgow, D04 89GR.
-							</strong> <em> <span>Telephone:</span> +1 800 559 6580<br> <span>Freephone:</span>
-								+1 800 603 6035<br> <span>FAX:</span> +1 800 889 9898
-							</em> <strong> Address 2:<br> 9863 - 9867 Mill Road, <br>
-								Cambridge, MG09 99HT.
-							</strong>
+
+							<strong class="title1"> <h4>Offset Private Limited</h4><br> No.228 A Sakthi Nagar,Sathy Road,
+								<br>GanaPathy Post,Coimbatore.India.
+							</strong> <em> <span>ph:</span> <p>+91 42223233359<br>
+							+91 4222530072</p>br> <span>Email:</span>
+								printatglobal@gmail.com<br> 
+							</em> 
+
 
 						</address>
 					</div>

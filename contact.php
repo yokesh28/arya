@@ -115,7 +115,9 @@
 				</article>
 				<article class="span8 offset">
 					<h2 class="h2indent">get in touch</h2>
-					<form id="contact-form">
+					<form name="contactform" id="contact-form"
+					>
+					
 						<div class="success">
 							Contact form submitted! <strong>We will be in touch soon.</strong>
 						</div>
@@ -123,36 +125,52 @@
 							<div>
 								<div class="coll-1">
 									<div class="txt-form">Name:</div>
-									<label class="name"> <input type="text"> <br> <span
-										class="error">*This is not a valid name.</span> <span
+
+									<label class="name"> <input type="text"  name="name"> <br>
+										<span class="error">*This is not a valid name.</span> <span
+
 										class="empty">*This field is required.</span>
 									</label>
 								</div>
+								
 								<div class="coll-2">
-									<div class="txt-form">E-mail:</div>
-									<label class="email"> <input type="email"> <br> <span
-										class="error">*This is not a valid email address.</span> <span
-										class="empty">*This field is required.</span>
-									</label>
-								</div>
-								<div class="coll-3">
 									<div class="txt-form">Phone:</div>
-									<label class="phone"> <input type="tel"> <br> <span
-										class="error">*This is not a valid phone number.</span> <span
-										class="empty">*This field is required.</span>
+
+									<label class="phone"> <input type="tel" name="phone"> <br>
+										<span class="error">*This is not a valid phone number.</span>
+										<span class="empty">*This field is required.</span>
+
 									</label>
 								</div>
+								
+								<div class="coll-3">
+									<div class="txt-form">E-mail:</div>
+
+									<label class="email"> <input type="email" name="email"> <br>
+										<span class="error">*This is not a valid email address.</span>
+										<span class="empty">*This field is required.</span>
+
+									</label>
+								</div>
+								
+								
+								
+								
 							</div>
 
 							<div class="div-message">
 								<div class="txt-form">Message:</div>
-								<label class="message"> <textarea></textarea> <br> <span
-									class="error">*The message is too short.</span> <span
+
+								<label class="message"> <textarea name="message"></textarea> <br>
+									<span class="error">*The message is too short.</span> <span
+
 									class="empty">*This field is required.</span>
 								</label>
 							</div>
 							<div class="buttons-wrapper">
-								<a class="btn btn-1" data-type="submit"><span>Submit</span> </a>
+
+								<a class="btn btn-1" data-type="submit"  onClick="return validateForm();"  name="submit"  value="Submit"><span>Submit</span></a><span id="response"></span>
+
 							</div>
 						</fieldset>
 					</form>
@@ -165,6 +183,73 @@
 	<?php require('footer.php')?>
 
 
+		<script type="text/javascript">
+function validateForm()
+{
+
+var contactname=document.forms["contactform"]["name"].value;
+
+
+var contactemail=document.forms["contactform"]["email"].value;
+var atpos=contactemail.indexOf("@");
+var dotpos=contactemail.lastIndexOf(".");
+var contactnumber = document.forms["contactform"]["phone"].value;
+if (contactname==null || contactname=="")
+  {
+  alert(" Name must be filled out");
+  return false;
+  }
+else if (contactnumber==null || contactnumber=="")
+ {
+	 alert("MobileNo must be filled out");
+	 return false;
+ }       
+
+else if(isNaN(contactnumber)|| contactnumber.indexOf(" ")!=-1)
+{
+         			alert("Enter numeric value");
+		return false;
+           }
+else if (contactnumber.length > 10 || contactnumber.length < 10 )
+		{
+           			alert("enter 10 characters"); 
+			return false;
+     			 }
+else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=contactemail.length)
+{
+	  alert("Not a valid e-mail address");
+	  return false;
+	  }
+  
+$.ajax({
+	type : "post",
+	url : "mail.php",
+	cache : false,
+	data : $('#contact-form').serialize(),
+	success : function(json) {
+			$('#response').html(json);
+		
+
+	
+	},
+	
+});
+
+return false;
+
+
+
+
+
+
+
+
+
+
+
+
+}
+</script>
 
 
 	<script type="text/javascript" src="js/bootstrap.js"></script>

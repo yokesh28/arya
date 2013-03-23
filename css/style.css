@@ -71,6 +71,8 @@ h5 a:hover {
 	color: #4c749d;
 }
 
+h6{color:black;text-align:center;}
+
 .font12 {
 	font-size: 12px;
 	line-height: 22px;
@@ -83,6 +85,8 @@ h5 a:hover {
 #content ul,#content-1 ul {
 	list-style: none;
 }
+
+
 
 .dis-block {
 	display: block;

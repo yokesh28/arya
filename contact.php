@@ -100,10 +100,11 @@
 					<div class="div-adress">
 						<address class="adress">
 
-							<strong class="title1"> <h4>Offset Private Limited</h4><br> No.228 A Sakthi Nagar,Sathy Road,
-								<br>GanaPathy Post,Coimbatore.India.
-							</strong> <em> <span>ph:</span> <p>+91 42223233359<br>
-							+91 4222530072</p>br> <span>Email:</span>
+							<strong class="title1"> <h4>Offset Private Limited</h4><br> No.228 A Sakthi Nagar,<br>
+							
+							Sathy Road,	GanaPathy Post,<br>
+							Coimbatore.India.<br>
+							</strong> <em> ph: +91 42223233359,2530072<br>Email:
 								printatglobal@gmail.com<br> 
 							</em> 
 

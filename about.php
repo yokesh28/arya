@@ -289,32 +289,7 @@
 		</div>
 
 
-		<footer>
-			<div class="container">
-				<div class="row">
-					<article class="span12">
-						<div class="row-fluid">
-							<div class="span7">
-							<div class="footer_menu span12">
-							<ul>
-							<li ><a href="#" >HOME PAGE</a></li>
-							<li ><a href="#" >ABOUT US</a></li>
-							<li ><a href="#" >PRODUCT</a></li>
-							<li ><a href="#" >SERVICES</a></li>
-							<li ><a href="#">CARRIERS</a></li>
-							<li ><a href="#" >CONTACT US</a></li>
-							</ul>
-							</div>
-								
-							</div>
-						</div>
-
-
-
-					</article>
-				</div>
-			</div>
-		</footer>
+	<?php require('footer.php')?>
 
 
 

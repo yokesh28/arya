@@ -52,7 +52,7 @@
 				<div class="navbar-inner">
 					<div class="clearfix">
 						<h1 class="brand">
-							<a href="index.html"> <img src="images/logo.png" alt=""></a>
+							<a href="index.php"> <img src="images/logo.png" alt=""></a>
 						</h1>
 						<div class="nav-collapse nav-collapse_ collapse row-fluid ">
 							<div class="clearfix">

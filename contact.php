@@ -1,6 +1,6 @@
 
 
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Contact Us</title>
@@ -18,11 +18,12 @@
 	media="screen">
 <link rel="stylesheet" href="css/style.css" type="text/css"
 	media="screen">
-<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="js/superfish.js"></script>
 <script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
-<script type="text/javascript" src="js/forms.js"></script>
+
 
 
 <!--[if lt IE 8]>
@@ -43,69 +44,36 @@
 				<div class="navbar-inner">
 					<div class="clearfix">
 						<h1 class="brand">
-							<a href="index.html">
-							<img src="images/logo.png" alt=""></a>
+							<a href="index.php"> <img src="images/logo.png" alt="">
+							</a>
 						</h1>
 						<div class="nav-collapse nav-collapse_ collapse row-fluid ">
 							<div class="clearfix">
 								<ul class="nav sf-menu clearfix sf-js-enabled ">
-									<li class="active"><a href="index.php">Home</a></li>
-									<li class="sub-menu"><a
-										href="about.php">About Us</a>
-										</li>
-									<li><a
-										href="#">Product</a></li>
-									<li><a
-										href="service.php">Services</a></li>
-										<li><a
-										href="#">Carriers</a></li>
-									<li><a
-										href="contact.php">Contact Us</a></li>
+									<li><a href="index.php">Home</a></li>
+									<li class="sub-menu">
+									<a href="about.php">About Us</a>
+									</li>
+									<li><a href="#">Product</a></li>
+									<li><a href="service.php">Services</a></li>
+									<li><a href="#">Carriers</a></li>
+									<li class="active"><a href="contact.php">Contact Us</a></li>
 								</ul>
 								<select class="select-menu" style="display: inline-block;"><option
 										value="#">Navigate to...</option>
-									<option
-										value="#"
-										selected="selected">Home</option>
-									<option
-										value="#">Company</option>
-									<option
-										value="#">––Analyst
-										relations</option>
-									<option
-										value="#">––Awards</option>
-									<option
-										value="#">–––Green
-										enterprise</option>
-									<option
-										value="#">–––Legal
-										Information</option>
-									<option
-										value="#">–––Management
-										team</option>
-									<option
-										value="#">–––Press
-										&amp; Media</option>
-									<option
-										value="#">––Company
-										information</option>
-									<option
-										value="#">––Consultants</option>
-									<option
-										value="#">––Events</option>
-									<option
-										value="#">Products
-										&amp; Services</option>
-									<option
-										value="#">Support</option>
-									<option
-										value="#">Contacts</option></select>
+									<option value="#">Home</option>
+									<option value="#">About Us</option>
+									<option value="#">Product</option>
+									<option value="#">Services</option>
+									<option value="#">Carriers</option>
+									<option value="#">Contact Us</option>
+								</select>
 								<div class="div-search">
 									<span>search</span>
-									<form id="search" action="#"
-										method="GET" accept-charset="utf-8">
+									<form id="search" action="#" method="GET"
+										accept-charset="utf-8">
 										<input type="text" value="" name="s"> <a href="#"
-											onclick="document.getElementById(&#39;search&#39;).submit()"></a>
+											onclick="document.getElementById('search').submit()"></a>
 									</form>
 								</div>
 							</div>
@@ -115,7 +83,7 @@
 			</div>
 		</div>
 	</header>
-	
+
 	<div id="content-1">
 		<div class="container">
 			<div class="row">
@@ -127,17 +95,19 @@
 					</figure>
 
 				</article>
-				<article class="span3">
+				<article class="span4">
 					<h2 class="h2indent">address</h2>
 					<div class="div-adress">
 						<address class="adress">
-							<strong class="title1"> Address 1:<br> 8901 Marmora
-								Road,<br> Glasgow, D04 89GR.
-							</strong> <em> <span>Telephone:</span> +1 800 559 6580<br> <span>Freephone:</span>
-								+1 800 603 6035<br> <span>FAX:</span> +1 800 889 9898
-							</em> <strong> Address 2:<br> 9863 - 9867 Mill Road, <br>
-								Cambridge, MG09 99HT.
-							</strong>
+
+							<strong class="title1"> <h4>Offset Private Limited</h4><br> No.228 A Sakthi Nagar,<br>
+							
+							Sathy Road,	GanaPathy Post,<br>
+							Coimbatore.India.<br>
+							</strong> <em> ph: +91 42223233359,2530072<br>Email:
+								printatglobal@gmail.com<br> 
+							</em> 
+
 
 						</address>
 					</div>
@@ -145,45 +115,62 @@
 				</article>
 				<article class="span8 offset">
 					<h2 class="h2indent">get in touch</h2>
-					<form id="contact-form">
+					<form name="contactform" id="contact-form"
+					>
+					
 						<div class="success">
-							Contact form submitted! <strong>We will be in touch
-								soon.</strong>
+							Contact form submitted! <strong>We will be in touch soon.</strong>
 						</div>
 						<fieldset>
 							<div>
 								<div class="coll-1">
 									<div class="txt-form">Name:</div>
-									<label class="name"> <input type="text"> <br>
+
+									<label class="name"> <input type="text"  name="name"> <br>
 										<span class="error">*This is not a valid name.</span> <span
+
 										class="empty">*This field is required.</span>
 									</label>
 								</div>
+								
 								<div class="coll-2">
-									<div class="txt-form">E-mail:</div>
-									<label class="email"> <input type="email"> <br>
-										<span class="error">*This is not a valid email address.</span>
-										<span class="empty">*This field is required.</span>
-									</label>
-								</div>
-								<div class="coll-3">
 									<div class="txt-form">Phone:</div>
-									<label class="phone"> <input type="tel"> <br>
+
+									<label class="phone"> <input type="tel" name="phone"> <br>
 										<span class="error">*This is not a valid phone number.</span>
 										<span class="empty">*This field is required.</span>
+
 									</label>
 								</div>
+								
+								<div class="coll-3">
+									<div class="txt-form">E-mail:</div>
+
+									<label class="email"> <input type="email" name="email"> <br>
+										<span class="error">*This is not a valid email address.</span>
+										<span class="empty">*This field is required.</span>
+
+									</label>
+								</div>
+								
+								
+								
+								
 							</div>
 
 							<div class="div-message">
 								<div class="txt-form">Message:</div>
-								<label class="message"> <textarea></textarea> <br>
+
+								<label class="message"> <textarea name="message"></textarea> <br>
 									<span class="error">*The message is too short.</span> <span
+
 									class="empty">*This field is required.</span>
 								</label>
 							</div>
 							<div class="buttons-wrapper">
-								<a class="btn btn-1" data-type="submit"><span>Submit</span></a>
+
+								<a class="btn btn-1" data-type="submit"  onClick="return validateForm();"  name="submit"  value="Submit"><span>Submit</span></a><span id="response"></span>
+
 							</div>
 						</fieldset>
 					</form>
@@ -196,15 +183,82 @@
 	<?php require('footer.php')?>
 
 
+		<script type="text/javascript">
+function validateForm()
+{
+
+var contactname=document.forms["contactform"]["name"].value;
 
 
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<meta name="viewport"
-	content="width=device-width,initial-scale=1.0,user-scalable=0">
+var contactemail=document.forms["contactform"]["email"].value;
+var atpos=contactemail.indexOf("@");
+var dotpos=contactemail.lastIndexOf(".");
+var contactnumber = document.forms["contactform"]["phone"].value;
+if (contactname==null || contactname=="")
+  {
+  alert(" Name must be filled out");
+  return false;
+  }
+else if (contactnumber==null || contactnumber=="")
+ {
+	 alert("MobileNo must be filled out");
+	 return false;
+ }       
 
-<!--LIVEDEMO_00 -->
+else if(isNaN(contactnumber)|| contactnumber.indexOf(" ")!=-1)
+{
+         			alert("Enter numeric value");
+		return false;
+           }
+else if (contactnumber.length > 10 || contactnumber.length < 10 )
+		{
+           			alert("enter 10 characters"); 
+			return false;
+     			 }
+else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=contactemail.length)
+{
+	  alert("Not a valid e-mail address");
+	  return false;
+	  }
+  
+$.ajax({
+	type : "post",
+	url : "mail.php",
+	cache : false,
+	data : $('#contact-form').serialize(),
+	success : function(json) {
+			$('#response').html(json);
+		
 
-<script type="text/javascript">
+	
+	},
+	
+});
+
+return false;
+
+
+
+
+
+
+
+
+
+
+
+
+}
+</script>
+
+
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,user-scalable=0">
+
+	<!--LIVEDEMO_00 -->
+
+	<script type="text/javascript">
  var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-7078796-5']);
   _gaq.push(['_trackPageview']);
@@ -215,10 +269,10 @@
   })();</script>
 
 
-<div id="shadowMeasureIt"></div>
-<div id="divCoordMeasureIt"></div>
-<div id="divRectangleMeasureIt">
-	<div id="divRectangleBGMeasureIt"></div>
-</div>
+	<div id="shadowMeasureIt"></div>
+	<div id="divCoordMeasureIt"></div>
+	<div id="divRectangleMeasureIt">
+		<div id="divRectangleBGMeasureIt"></div>
+	</div>
 </body>
 </html>

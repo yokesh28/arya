@@ -21,7 +21,7 @@
 									<li <?php echo ($page== 'aboutus' ? 'class=active' : '');?>>
 									<a href="about.php">About Us</a>
 									</li>
-									<li <?php echo ($page== 'product' ? 'class=active' : '');?>><a href="#">Product</a></li>
+									<li <?php echo ($page== 'product' ? 'class=active' : '');?>><a href="product.php">Product</a></li>
 									<li <?php echo ($page== 'service' ? 'class=active' : '');?>><a href="service.php">Services</a></li>
 									<li <?php echo ($page== 'carrier' ? 'class=active' : '');?>><a href="carrier.php">Carriers</a></li>
 									<li <?php echo ($page== 'contact' ? 'class=active' : '');?>><a href="contact.php">Contact Us</a></li>

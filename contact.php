@@ -192,26 +192,8 @@
 
 		</div>
 	</div>
-	<footer>
-		<div class="container">
-			<div class="row">
-				<article class="span12">
-					<div class="block-footer">
-						<span>satellite &copy; 2013 | &nbsp;</span><a href="index-5.html">Privacy
-							Policy</a><br>
-						<ul class="list-soc">
-							<li><a href="#" class="icon"></a></li>
-							<li><a href="#" class="icon-1"></a></li>
-							<li><a href="#" class="icon-2"></a></li>
-						</ul>
-					</div>
-				</article>
-			</div>
-		</div>
-	</footer>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-</body>
-</html>
+	<?php require('footer.php')?>
+
 
 
 

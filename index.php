@@ -7,6 +7,7 @@
 	media="screen">
 <title>Home</title>
 <meta charset="utf-8">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 <link rel="icon"
 	href="http://livedemo00.template-help.com/wt_43786/img/favicon.ico"
 	type="image/x-icon">

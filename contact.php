@@ -1,6 +1,6 @@
 
 
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Contact Us</title>
@@ -18,11 +18,12 @@
 	media="screen">
 <link rel="stylesheet" href="css/style.css" type="text/css"
 	media="screen">
-<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="js/superfish.js"></script>
 <script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
-<script type="text/javascript" src="js/forms.js"></script>
+
 
 
 <!--[if lt IE 8]>
@@ -43,69 +44,36 @@
 				<div class="navbar-inner">
 					<div class="clearfix">
 						<h1 class="brand">
-							<a href="index.html">
-							<img src="images/logo.png" alt=""></a>
+							<a href="index.php"> <img src="images/logo.png" alt="">
+							</a>
 						</h1>
 						<div class="nav-collapse nav-collapse_ collapse row-fluid ">
 							<div class="clearfix">
 								<ul class="nav sf-menu clearfix sf-js-enabled ">
-									<li class="active"><a href="index.php">Home</a></li>
-									<li class="sub-menu"><a
-										href="about.php">About Us</a>
-										</li>
-									<li><a
-										href="#">Product</a></li>
-									<li><a
-										href="service.php">Services</a></li>
-										<li><a
-										href="#">Carriers</a></li>
-									<li><a
-										href="contact.php">Contact Us</a></li>
+									<li><a href="index.php">Home</a></li>
+									<li class="sub-menu">
+									<a href="about.php">About Us</a>
+									</li>
+									<li><a href="#">Product</a></li>
+									<li><a href="service.php">Services</a></li>
+									<li><a href="#">Carriers</a></li>
+									<li class="active"><a href="contact.php">Contact Us</a></li>
 								</ul>
 								<select class="select-menu" style="display: inline-block;"><option
 										value="#">Navigate to...</option>
-									<option
-										value="#"
-										selected="selected">Home</option>
-									<option
-										value="#">Company</option>
-									<option
-										value="#">––Analyst
-										relations</option>
-									<option
-										value="#">––Awards</option>
-									<option
-										value="#">–––Green
-										enterprise</option>
-									<option
-										value="#">–––Legal
-										Information</option>
-									<option
-										value="#">–––Management
-										team</option>
-									<option
-										value="#">–––Press
-										&amp; Media</option>
-									<option
-										value="#">––Company
-										information</option>
-									<option
-										value="#">––Consultants</option>
-									<option
-										value="#">––Events</option>
-									<option
-										value="#">Products
-										&amp; Services</option>
-									<option
-										value="#">Support</option>
-									<option
-										value="#">Contacts</option></select>
+									<option value="#">Home</option>
+									<option value="#">About Us</option>
+									<option value="#">Product</option>
+									<option value="#">Services</option>
+									<option value="#">Carriers</option>
+									<option value="#">Contact Us</option>
+								</select>
 								<div class="div-search">
 									<span>search</span>
-									<form id="search" action="#"
-										method="GET" accept-charset="utf-8">
+									<form id="search" action="#" method="GET"
+										accept-charset="utf-8">
 										<input type="text" value="" name="s"> <a href="#"
-											onclick="document.getElementById(&#39;search&#39;).submit()"></a>
+											onclick="document.getElementById('search').submit()"></a>
 									</form>
 								</div>
 							</div>
@@ -115,7 +83,7 @@
 			</div>
 		</div>
 	</header>
-	
+
 	<div id="content-1">
 		<div class="container">
 			<div class="row">
@@ -131,8 +99,8 @@
 					<h2 class="h2indent">address</h2>
 					<div class="div-adress">
 						<address class="adress">
-							<strong class="title1"> Address 1:<br> 8901 Marmora
-								Road,<br> Glasgow, D04 89GR.
+							<strong class="title1"> Address 1:<br> 8901 Marmora Road,<br>
+								Glasgow, D04 89GR.
 							</strong> <em> <span>Telephone:</span> +1 800 559 6580<br> <span>Freephone:</span>
 								+1 800 603 6035<br> <span>FAX:</span> +1 800 889 9898
 							</em> <strong> Address 2:<br> 9863 - 9867 Mill Road, <br>
@@ -147,43 +115,42 @@
 					<h2 class="h2indent">get in touch</h2>
 					<form id="contact-form">
 						<div class="success">
-							Contact form submitted! <strong>We will be in touch
-								soon.</strong>
+							Contact form submitted! <strong>We will be in touch soon.</strong>
 						</div>
 						<fieldset>
 							<div>
 								<div class="coll-1">
 									<div class="txt-form">Name:</div>
-									<label class="name"> <input type="text"> <br>
-										<span class="error">*This is not a valid name.</span> <span
+									<label class="name"> <input type="text"> <br> <span
+										class="error">*This is not a valid name.</span> <span
 										class="empty">*This field is required.</span>
 									</label>
 								</div>
 								<div class="coll-2">
 									<div class="txt-form">E-mail:</div>
-									<label class="email"> <input type="email"> <br>
-										<span class="error">*This is not a valid email address.</span>
-										<span class="empty">*This field is required.</span>
+									<label class="email"> <input type="email"> <br> <span
+										class="error">*This is not a valid email address.</span> <span
+										class="empty">*This field is required.</span>
 									</label>
 								</div>
 								<div class="coll-3">
 									<div class="txt-form">Phone:</div>
-									<label class="phone"> <input type="tel"> <br>
-										<span class="error">*This is not a valid phone number.</span>
-										<span class="empty">*This field is required.</span>
+									<label class="phone"> <input type="tel"> <br> <span
+										class="error">*This is not a valid phone number.</span> <span
+										class="empty">*This field is required.</span>
 									</label>
 								</div>
 							</div>
 
 							<div class="div-message">
 								<div class="txt-form">Message:</div>
-								<label class="message"> <textarea></textarea> <br>
-									<span class="error">*The message is too short.</span> <span
+								<label class="message"> <textarea></textarea> <br> <span
+									class="error">*The message is too short.</span> <span
 									class="empty">*This field is required.</span>
 								</label>
 							</div>
 							<div class="buttons-wrapper">
-								<a class="btn btn-1" data-type="submit"><span>Submit</span></a>
+								<a class="btn btn-1" data-type="submit"><span>Submit</span> </a>
 							</div>
 						</fieldset>
 					</form>
@@ -198,13 +165,13 @@
 
 
 
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<meta name="viewport"
-	content="width=device-width,initial-scale=1.0,user-scalable=0">
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,user-scalable=0">
 
-<!--LIVEDEMO_00 -->
+	<!--LIVEDEMO_00 -->
 
-<script type="text/javascript">
+	<script type="text/javascript">
  var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-7078796-5']);
   _gaq.push(['_trackPageview']);
@@ -215,10 +182,10 @@
   })();</script>
 
 
-<div id="shadowMeasureIt"></div>
-<div id="divCoordMeasureIt"></div>
-<div id="divRectangleMeasureIt">
-	<div id="divRectangleBGMeasureIt"></div>
-</div>
+	<div id="shadowMeasureIt"></div>
+	<div id="divCoordMeasureIt"></div>
+	<div id="divRectangleMeasureIt">
+		<div id="divRectangleBGMeasureIt"></div>
+	</div>
 </body>
 </html>

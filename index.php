@@ -58,18 +58,18 @@
 						<div class="nav-collapse nav-collapse_ collapse">
 							<div class="clearfix">
 								<ul class="nav sf-menu clearfix sf-js-enabled">
-									<li class="active"><a href="index.html">Home</a></li>
+									<li class="active"><a href="index.php">Home</a></li>
 									<li class="sub-menu"><a
-										href="about.html">About Us</a>
+										href="about.php">About Us</a>
 										</li>
 									<li><a
-										href="product.html">Product</a></li>
+										href="#">Product</a></li>
 									<li><a
-										href="service.html">Services</a></li>
+										href="service.php">Services</a></li>
 										<li><a
-										href="carrier.html">Carriers</a></li>
+										href="carrier.php">Carriers</a></li>
 									<li><a
-										href="contact.html">Contact Us</a></li>
+										href="contact.php">Contact Us</a></li>
 								</ul>
 								<select class="select-menu" style="display: inline-block;"><option
 										value="#">Navigate to...</option>

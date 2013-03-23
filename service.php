@@ -16,11 +16,11 @@
 	media="screen">
 <link rel="stylesheet" href="css/style.css" type="text/css"
 	media="screen">
-<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="js/superfish.js"></script>
 <script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
-<script type="text/javascript" src="js/forms.js"></script>
 
 
 <!--[if lt IE 8]>

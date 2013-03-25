@@ -1614,3 +1614,12 @@ footer li{
 	text-align: justify;
 	padding: 10px;
 }
+.price{
+	margin:10px auto;
+	
+}
+.product .price label{
+	
+	
+	float: left;
+}

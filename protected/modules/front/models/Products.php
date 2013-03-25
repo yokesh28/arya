@@ -6,6 +6,7 @@
  * The followings are the available columns in table 'products':
  * @property integer $id
  * @property string $name
+ * @property integer $price
  * @property string $img_url
  * @property integer $cat_id
  * @property string $des
@@ -43,12 +44,12 @@ class Products extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('cat_id', 'required'),
-			array('cat_id', 'numerical', 'integerOnly'=>true),
+			array('price, cat_id', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>30),
 			array('img_url, des, updated_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, img_url, cat_id, des, updated_time', 'safe', 'on'=>'search'),
+			array('id, name, price, img_url, cat_id, des, updated_time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -72,6 +73,7 @@ class Products extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'name' => 'Name',
+			'price' => 'Price',
 			'img_url' => 'Img Url',
 			'cat_id' => 'Cat',
 			'des' => 'Des',
@@ -92,6 +94,7 @@ class Products extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
+		$criteria->compare('price',$this->price);
 		$criteria->compare('img_url',$this->img_url,true);
 		$criteria->compare('cat_id',$this->cat_id);
 		$criteria->compare('des',$this->des,true);

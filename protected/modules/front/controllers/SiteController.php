@@ -24,6 +24,11 @@ class SiteController extends FrontController {
 		$this->render('list',array('products'=>$products->products));
 	}
 	
+	public function actionProductlist($id){
+		
+		$product=Products::model()->findByPk($id);
+		$this->render('productList',array('product'=>$project));
+	}
 	
 	public function actionPortfolio(){
 

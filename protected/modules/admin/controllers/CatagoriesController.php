@@ -1,6 +1,6 @@
 <?php
 
-class ProductsController extends AdminController
+class CatagoriesController extends AdminController
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -26,14 +26,14 @@ class ProductsController extends AdminController
 	 */
 	public function actionCreate()
 	{
-		$model=new Products;
+		$model=new Catagories;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Products']))
+		if(isset($_POST['Catagories']))
 		{
-			$model->attributes=$_POST['Products'];
+			$model->attributes=$_POST['Catagories'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -55,9 +55,9 @@ class ProductsController extends AdminController
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Products']))
+		if(isset($_POST['Catagories']))
 		{
-			$model->attributes=$_POST['Products'];
+			$model->attributes=$_POST['Catagories'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -92,7 +92,7 @@ class ProductsController extends AdminController
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Products');
+		$dataProvider=new CActiveDataProvider('Catagories');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -109,10 +109,10 @@ class ProductsController extends AdminController
 	    	unset($_GET['pageSize']);  // would interfere with pager and repetitive page size change
 		}
 	
-		$model=new Products('search');
+		$model=new Catagories('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Products']))
-			$model->attributes=$_GET['Products'];
+		if(isset($_GET['Catagories']))
+			$model->attributes=$_GET['Catagories'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -126,7 +126,7 @@ class ProductsController extends AdminController
 	 */
 	public function loadModel($id)
 	{
-		$model=Products::model()->findByPk($id);
+		$model=Catagories::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -138,7 +138,7 @@ class ProductsController extends AdminController
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='products-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='catagories-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

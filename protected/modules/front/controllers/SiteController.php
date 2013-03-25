@@ -12,9 +12,17 @@ class SiteController extends FrontController {
 
 
 	public function actionProduct(){
-		$this->render('product');
+		
+		$catgories=Catagories::model()->findAll();
+		$this->render('product',array('catgories'=>$catgories));
 	}
 	
+	
+	public function actionList($id)
+	{
+		$products=Catagories::model()->findByPk($id);
+		$this->render('list',array('products'=>$products->products));
+	}
 	
 	
 	public function actionPortfolio(){

@@ -35,6 +35,7 @@ return array(
 				'application.modules.config.models.*',
 				'application.modules.config.api.*',
 				'application.modules.admin.*',
+				
 		),
 
 		'modules'=>array(

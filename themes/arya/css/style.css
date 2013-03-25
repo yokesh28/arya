@@ -1606,3 +1606,20 @@ footer li{
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+.product h3{
+	text-align: center;
+	
+}
+.product span{
+	text-align: justify;
+	padding: 10px;
+}
+.price{
+	margin:10px auto;
+	
+}
+.product .price label{
+	
+	
+	float: left;
+}

@@ -12,7 +12,7 @@ class FormatUtils {
 
 	public static function getCurrency($price){
 		return $price;
-		//return money_format('%.2n', $price);
+		return money_format('%.2n', $price);
 	}
 
 	public static function timeAgo($date){

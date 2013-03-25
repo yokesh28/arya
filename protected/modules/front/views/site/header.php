@@ -16,7 +16,7 @@
 									</li>
 									<li <?php echo (Yii::app()->controller->action->id== 'product' ? 'class=active' : '');?>><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/product')?>">Product</a></li>
 									<li <?php echo (Yii::app()->controller->action->id== 'service' ? 'class=active' : '');?>><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/service')?>">Services</a></li>
-									<li <?php echo (Yii::app()->controller->action->id== 'careers' ? 'class=active' : '');?>><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/carrier')?>">Careers</a></li>
+									<li <?php echo (Yii::app()->controller->action->id== 'career' ? 'class=active' : '');?>><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/career')?>">Career</a></li>
 									<li <?php echo (Yii::app()->controller->action->id== 'contact' ? 'class=active' : '');?>><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/contact')?>">Contact Us</a></li>
 								</ul>
 								

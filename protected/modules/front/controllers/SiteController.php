@@ -36,25 +36,20 @@ class SiteController extends FrontController {
 
 		$this->render('about');
 	}
-	public function actionCareers(){
+	public function actionCareer(){
 	
-		$this->breadcrumbs = array(
-				'Home',
-				array('Careers'=>$this->createUrl('/front/site/careers')),
-		);
-	
-		$this->render('about');
+		$this->render('career');
 	}
 	public function actionService(){
 	
-		$this->breadcrumbs = array(
-				'Home',
-				array('Service'=>$this->createUrl('/front/site/service')),
-		);
+		$this->render('service');
+		
 	
-		$this->render('about');
+	
 	}
-
+	
+	
+	
 	public function actionContact($ref='DIRECT'){
 
 		$config = ConfigApi::model();

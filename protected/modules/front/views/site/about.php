@@ -1,8 +1,5 @@
 
-
-	
-
-	<div id="content">
+<div id="content">
 		<div class="container">
 			<div class="row">
 				<article class="span5">

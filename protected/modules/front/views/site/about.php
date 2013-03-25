@@ -53,7 +53,7 @@
 						at ease with the corporate culture, a fact that our illustrious
 						clients clearly proves. We ensure that your experience exceeds
 						your expectations.</p>
-					<a href="#" class="btn btn-1"><span>Read More</span></a>
+					<!--  <a href="#" class="btn btn-1"><span>Read More</span></a>-->
 
 				</article>
 			</div>

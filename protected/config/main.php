@@ -165,10 +165,10 @@ return array(
 				// uncomment the following to use a MySQL database
 
 				'db'=>array(
-						'connectionString' => 'mysql:host=108.175.151.2;dbname=wallfeet_dev',
+						'connectionString' => 'mysql:host=108.175.151.2;dbname=',
 						'emulatePrepare' => true,
-						'username' => 'stellar',
-						'password' => 'romeos@work24',
+						'username' => 'root',
+						'password' => '',
 						'charset' => 'utf8',
 						'enableProfiling'=>'true',
 				),
@@ -211,14 +211,14 @@ return array(
 		'params'=>array(
 				// this is used in contact page
 				'rootDir'=>dirname(dirname(dirname(__FILE__))),
-				'adminEmail'=>'admin@wallfeet.com',
-				'adminName'=>'Wallfeet Administrator',
-				'globalSalt'=>'romeos@work',
+				'adminEmail'=>'',
+				'adminName'=>'',
+				'globalSalt'=>'',
 				's3Url'=>'https://s3.amazonaws.com/dev.wallfeet.com/',
-				's3BucketName'=>'dev.wallfeet.com',
+				's3BucketName'=>'',
 				'smtpHostName'=>'smtp.gmail.com',
-				'smtpUserName'=>'alkarthick@gmail.com',
-				'smtpPassword'=>'Divya143',
+				'smtpUserName'=>'',
+				'smtpPassword'=>'',
 				'defaultPageSize'=>2,
 		),
 );

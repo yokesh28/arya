@@ -6,16 +6,7 @@
 	<div class="columns seven">
 		<h4>Our Company</h4>
 		<p>
-		<span class="dropcap3 color">O</span>nes and Zeros Technologies Pvt. Ltd was started in 2006 with an
-			aim to provide cost-effective business solutions to enterprises. We
-			are open source admirers, supporters and contributors. It is through
-			technology that we aim to propel businesses to greater heights never
-			imagined possible.</p>
-		<p>With our client centric business model, we have been providing
-			precise solutions that our global clientele need. Leveraging
-			high-skilled human resource with innovative minds and more than
-			capable hands, we are driven by our passion to exceed our client’s
-			expectations on time, every time.</p>
+		<span class="dropcap3 color"></p>
 
 	</div>
 	<!-- End Our Company -->

@@ -6,7 +6,6 @@
  * @link http://www.yiiframework.com/
  * @copyright Copyright &copy; 2008-2011 Yii Software LLC
  * @license http://www.yiiframework.com/license/
- * @version $Id: YiiBase.php 3322 2011-06-26 17:38:50Z qiang.xue $
  * @package system
  * @since 1.0
  */
@@ -49,7 +48,6 @@ defined('YII_ZII_PATH') or define('YII_ZII_PATH',YII_PATH.DIRECTORY_SEPARATOR.'z
  * you can customize methods of YiiBase.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: YiiBase.php 3322 2011-06-26 17:38:50Z qiang.xue $
  * @package system
  * @since 1.0
  */
@@ -63,8 +61,8 @@ class YiiBase
 	public static $classMap=array();
 	/**
 	 * @var boolean whether to rely on PHP include path to autoload class files. Defaults to true.
-	 * You may set this to be false if your hosting environment doesn't allow changing PHP include path,
-	 * or if you want to append additional autoloaders to the default Yii autoloader.
+	 * You may set this to be false if your hosting environment doesn't allow changing the PHP
+	 * include path, or if you want to append additional autoloaders to the default Yii autoloader.
 	 * @since 1.1.8
 	 */
 	public static $enableIncludePath=true;
@@ -82,7 +80,7 @@ class YiiBase
 	 */
 	public static function getVersion()
 	{
-		return '1.1.8';
+		return '1.1.13';
 	}
 
 	/**
@@ -121,7 +119,6 @@ class YiiBase
 	 * @param mixed $config application configuration. This parameter will be passed as the parameter
 	 * to the constructor of the application class.
 	 * @return mixed the application instance
-	 * @since 1.0.10
 	 */
 	public static function createApplication($class,$config=null)
 	{
@@ -129,7 +126,7 @@ class YiiBase
 	}
 
 	/**
-	 * Returns the application singleton, null if the singleton has not been created yet.
+	 * Returns the application singleton or null if the singleton has not been created yet.
 	 * @return CApplication the application singleton, null if the singleton has not been created yet.
 	 */
 	public static function app()
@@ -170,13 +167,11 @@ class YiiBase
 	 * If the former, the string is treated as the object type which can
 	 * be either the class name or {@link YiiBase::getPathOfAlias class path alias}.
 	 * If the latter, the 'class' element is treated as the object type,
-	 * and the rest name-value pairs in the array are used to initialize
+	 * and the rest of the name-value pairs in the array are used to initialize
 	 * the corresponding object properties.
 	 *
 	 * Any additional parameters passed to this method will be
 	 * passed to the constructor of the object being created.
-	 *
-	 * NOTE: the array-typed configuration has been supported since version 1.0.1.
 	 *
 	 * @param mixed $config the configuration. It can be either a string or an array.
 	 * @return mixed the created object
@@ -189,7 +184,7 @@ class YiiBase
 			$type=$config;
 			$config=array();
 		}
-		else if(isset($config['class']))
+		elseif(isset($config['class']))
 		{
 			$type=$config['class'];
 			unset($config['class']);
@@ -205,9 +200,9 @@ class YiiBase
 			$args=func_get_args();
 			if($n===2)
 				$object=new $type($args[1]);
-			else if($n===3)
+			elseif($n===3)
 				$object=new $type($args[1],$args[2]);
-			else if($n===4)
+			elseif($n===4)
 				$object=new $type($args[1],$args[2],$args[3]);
 			else
 			{
@@ -253,8 +248,8 @@ class YiiBase
 	 * <code>application\components\GoogleMap</code> is similar to importing <code>application.components.GoogleMap</code>.
 	 * The difference is that the former class is using qualified name, while the latter unqualified.
 	 *
-	 * Note, importing a class in namespace format requires that the namespace is corresponding to
-	 * a valid path alias if we replace the backslash characters with dot characters.
+	 * Note, importing a class in namespace format requires that the namespace corresponds to
+	 * a valid path alias once backslash characters are replaced with dot characters.
 	 * For example, the namespace <code>application\components</code> must correspond to a valid
 	 * path alias <code>application.components</code>.
 	 *
@@ -284,7 +279,7 @@ class YiiBase
 					if(is_file($classFile))
 						require($classFile);
 					else
-						throw new CException(Yii::t('yii','Alias "{alias}" is invalid. Make sure it points to an existing PHP file.',array('{alias}'=>$alias)));
+						throw new CException(Yii::t('yii','Alias "{alias}" is invalid. Make sure it points to an existing PHP file and the file is readable.',array('{alias}'=>$alias)));
 					self::$_imports[$alias]=$alias;
 				}
 				else
@@ -293,7 +288,7 @@ class YiiBase
 			}
 			else
 				throw new CException(Yii::t('yii','Alias "{alias}" is invalid. Make sure it points to an existing directory.',
-						array('{alias}'=>$namespace)));
+					array('{alias}'=>$namespace)));
 		}
 
 		if(($pos=strrpos($alias,'.'))===false)  // a simple class name
@@ -318,7 +313,7 @@ class YiiBase
 					if(is_file($path.'.php'))
 						require($path.'.php');
 					else
-						throw new CException(Yii::t('yii','Alias "{alias}" is invalid. Make sure it points to an existing PHP file.',array('{alias}'=>$alias)));
+						throw new CException(Yii::t('yii','Alias "{alias}" is invalid. Make sure it points to an existing PHP file and the file is readable.',array('{alias}'=>$alias)));
 					self::$_imports[$alias]=$className;
 				}
 				else
@@ -344,7 +339,7 @@ class YiiBase
 		}
 		else
 			throw new CException(Yii::t('yii','Alias "{alias}" is invalid. Make sure it points to an existing directory or file.',
-					array('{alias}'=>$alias)));
+				array('{alias}'=>$alias)));
 	}
 
 	/**
@@ -358,12 +353,12 @@ class YiiBase
 	{
 		if(isset(self::$_aliases[$alias]))
 			return self::$_aliases[$alias];
-		else if(($pos=strpos($alias,'.'))!==false)
+		elseif(($pos=strpos($alias,'.'))!==false)
 		{
 			$rootAlias=substr($alias,0,$pos);
 			if(isset(self::$_aliases[$rootAlias]))
 				return self::$_aliases[$alias]=rtrim(self::$_aliases[$rootAlias].DIRECTORY_SEPARATOR.str_replace('.',DIRECTORY_SEPARATOR,substr($alias,$pos+1)),'*'.DIRECTORY_SEPARATOR);
-			else if(self::$_app instanceof CWebApplication)
+			elseif(self::$_app instanceof CWebApplication)
 			{
 				if(self::$_app->findModule($rootAlias)!==null)
 					return self::getPathOfAlias($alias);
@@ -396,10 +391,10 @@ class YiiBase
 	public static function autoload($className)
 	{
 		// use include so that the error PHP file may appear
-		if(isset(self::$_coreClasses[$className]))
-			include(YII_PATH.self::$_coreClasses[$className]);
-		else if(isset(self::$classMap[$className]))
+		if(isset(self::$classMap[$className]))
 			include(self::$classMap[$className]);
+		elseif(isset(self::$_coreClasses[$className]))
+			include(YII_PATH.self::$_coreClasses[$className]);
 		else
 		{
 			// include class file relying on include_path
@@ -413,6 +408,11 @@ class YiiBase
 						if(is_file($classFile))
 						{
 							include($classFile);
+							if(YII_DEBUG && basename(realpath($classFile))!==$className.'.php')
+								throw new CException(Yii::t('yii','Class name "{class}" does not match class file "{file}".', array(
+									'{class}'=>$className,
+									'{file}'=>$classFile,
+								)));
 							break;
 						}
 					}
@@ -477,7 +477,7 @@ class YiiBase
 	}
 
 	/**
-	 * Marks the begin of a code block for profiling.
+	 * Marks the beginning of a code block for profiling.
 	 * This has to be matched with a call to {@link endProfile()} with the same token.
 	 * The begin- and end- calls must also be properly nested, e.g.,
 	 * <pre>
@@ -541,12 +541,12 @@ class YiiBase
 	 */
 	public static function powered()
 	{
-		return 'Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a>.';
+		return Yii::t('yii','Powered by {yii}.', array('{yii}'=>'<a href="http://www.yiiframework.com/" rel="external">Yii Framework</a>'));
 	}
 
 	/**
 	 * Translates a message to the specified language.
-	 * Starting from version 1.0.2, this method supports choice format (see {@link CChoiceFormat}),
+	 * This method supports choice format (see {@link CChoiceFormat}),
 	 * i.e., the message returned will be chosen from a few candidates according to the given
 	 * number value. This feature is mainly used to solve plural format issue in case
 	 * a message has different plural forms in some languages.
@@ -555,16 +555,16 @@ class YiiBase
 	 * more interpretation about message category.
 	 * @param string $message the original message
 	 * @param array $params parameters to be applied to the message using <code>strtr</code>.
-	 * Starting from version 1.0.2, the first parameter can be a number without key.
+	 * The first parameter can be a number without key.
 	 * And in this case, the method will call {@link CChoiceFormat::format} to choose
 	 * an appropriate message translation.
 	 * Starting from version 1.1.6 you can pass parameter for {@link CChoiceFormat::format}
 	 * or plural forms format without wrapping it with array.
+	 * This parameter is then available as <code>{n}</code> in the message translation string.
 	 * @param string $source which message source application component to use.
 	 * Defaults to null, meaning using 'coreMessages' for messages belonging to
 	 * the 'yii' category and using 'messages' for the rest messages.
 	 * @param string $language the target language. If null (default), the {@link CApplication::getLanguage application language} will be used.
-	 * This parameter has been available since version 1.0.3.
 	 * @return string the translated message
 	 * @see CMessageSource
 	 */
@@ -612,7 +612,6 @@ class YiiBase
 	 * any other existing autoloaders.
 	 * @param callback $callback a valid PHP callback (function name or array($className,$methodName)).
 	 * @param boolean $append whether to append the new autoloader after the default Yii autoloader.
-	 * @since 1.0.10
 	 */
 	public static function registerAutoloader($callback, $append=false)
 	{
@@ -635,215 +634,223 @@ class YiiBase
 	 * PLEASE RUN 'build autoload' COMMAND TO UPDATE THIS ARRAY.
 	 */
 	private static $_coreClasses=array(
-			'CApplication' => '/base/CApplication.php',
-			'CApplicationComponent' => '/base/CApplicationComponent.php',
-			'CBehavior' => '/base/CBehavior.php',
-			'CComponent' => '/base/CComponent.php',
-			'CErrorEvent' => '/base/CErrorEvent.php',
-			'CErrorHandler' => '/base/CErrorHandler.php',
-			'CException' => '/base/CException.php',
-			'CExceptionEvent' => '/base/CExceptionEvent.php',
-			'CHttpException' => '/base/CHttpException.php',
-			'CModel' => '/base/CModel.php',
-			'CModelBehavior' => '/base/CModelBehavior.php',
-			'CModelEvent' => '/base/CModelEvent.php',
-			'CModule' => '/base/CModule.php',
-			'CSecurityManager' => '/base/CSecurityManager.php',
-			'CStatePersister' => '/base/CStatePersister.php',
-			'CApcCache' => '/caching/CApcCache.php',
-			'CCache' => '/caching/CCache.php',
-			'CDbCache' => '/caching/CDbCache.php',
-			'CDummyCache' => '/caching/CDummyCache.php',
-			'CEAcceleratorCache' => '/caching/CEAcceleratorCache.php',
-			'CFileCache' => '/caching/CFileCache.php',
-			'CMemCache' => '/caching/CMemCache.php',
-			'CWinCache' => '/caching/CWinCache.php',
-			'CXCache' => '/caching/CXCache.php',
-			'CZendDataCache' => '/caching/CZendDataCache.php',
-			'CCacheDependency' => '/caching/dependencies/CCacheDependency.php',
-			'CChainedCacheDependency' => '/caching/dependencies/CChainedCacheDependency.php',
-			'CDbCacheDependency' => '/caching/dependencies/CDbCacheDependency.php',
-			'CDirectoryCacheDependency' => '/caching/dependencies/CDirectoryCacheDependency.php',
-			'CExpressionDependency' => '/caching/dependencies/CExpressionDependency.php',
-			'CFileCacheDependency' => '/caching/dependencies/CFileCacheDependency.php',
-			'CGlobalStateCacheDependency' => '/caching/dependencies/CGlobalStateCacheDependency.php',
-			'CAttributeCollection' => '/collections/CAttributeCollection.php',
-			'CConfiguration' => '/collections/CConfiguration.php',
-			'CList' => '/collections/CList.php',
-			'CListIterator' => '/collections/CListIterator.php',
-			'CMap' => '/collections/CMap.php',
-			'CMapIterator' => '/collections/CMapIterator.php',
-			'CQueue' => '/collections/CQueue.php',
-			'CQueueIterator' => '/collections/CQueueIterator.php',
-			'CStack' => '/collections/CStack.php',
-			'CStackIterator' => '/collections/CStackIterator.php',
-			'CTypedList' => '/collections/CTypedList.php',
-			'CTypedMap' => '/collections/CTypedMap.php',
-			'CConsoleApplication' => '/console/CConsoleApplication.php',
-			'CConsoleCommand' => '/console/CConsoleCommand.php',
-			'CConsoleCommandRunner' => '/console/CConsoleCommandRunner.php',
-			'CHelpCommand' => '/console/CHelpCommand.php',
-			'CDbCommand' => '/db/CDbCommand.php',
-			'CDbConnection' => '/db/CDbConnection.php',
-			'CDbDataReader' => '/db/CDbDataReader.php',
-			'CDbException' => '/db/CDbException.php',
-			'CDbMigration' => '/db/CDbMigration.php',
-			'CDbTransaction' => '/db/CDbTransaction.php',
-			'CActiveFinder' => '/db/ar/CActiveFinder.php',
-			'CActiveRecord' => '/db/ar/CActiveRecord.php',
-			'CActiveRecordBehavior' => '/db/ar/CActiveRecordBehavior.php',
-			'CDbColumnSchema' => '/db/schema/CDbColumnSchema.php',
-			'CDbCommandBuilder' => '/db/schema/CDbCommandBuilder.php',
-			'CDbCriteria' => '/db/schema/CDbCriteria.php',
-			'CDbExpression' => '/db/schema/CDbExpression.php',
-			'CDbSchema' => '/db/schema/CDbSchema.php',
-			'CDbTableSchema' => '/db/schema/CDbTableSchema.php',
-			'CMssqlColumnSchema' => '/db/schema/mssql/CMssqlColumnSchema.php',
-			'CMssqlCommandBuilder' => '/db/schema/mssql/CMssqlCommandBuilder.php',
-			'CMssqlPdoAdapter' => '/db/schema/mssql/CMssqlPdoAdapter.php',
-			'CMssqlSchema' => '/db/schema/mssql/CMssqlSchema.php',
-			'CMssqlTableSchema' => '/db/schema/mssql/CMssqlTableSchema.php',
-			'CMysqlColumnSchema' => '/db/schema/mysql/CMysqlColumnSchema.php',
-			'CMysqlSchema' => '/db/schema/mysql/CMysqlSchema.php',
-			'CMysqlTableSchema' => '/db/schema/mysql/CMysqlTableSchema.php',
-			'COciColumnSchema' => '/db/schema/oci/COciColumnSchema.php',
-			'COciCommandBuilder' => '/db/schema/oci/COciCommandBuilder.php',
-			'COciSchema' => '/db/schema/oci/COciSchema.php',
-			'COciTableSchema' => '/db/schema/oci/COciTableSchema.php',
-			'CPgsqlColumnSchema' => '/db/schema/pgsql/CPgsqlColumnSchema.php',
-			'CPgsqlSchema' => '/db/schema/pgsql/CPgsqlSchema.php',
-			'CPgsqlTableSchema' => '/db/schema/pgsql/CPgsqlTableSchema.php',
-			'CSqliteColumnSchema' => '/db/schema/sqlite/CSqliteColumnSchema.php',
-			'CSqliteCommandBuilder' => '/db/schema/sqlite/CSqliteCommandBuilder.php',
-			'CSqliteSchema' => '/db/schema/sqlite/CSqliteSchema.php',
-			'CChoiceFormat' => '/i18n/CChoiceFormat.php',
-			'CDateFormatter' => '/i18n/CDateFormatter.php',
-			'CDbMessageSource' => '/i18n/CDbMessageSource.php',
-			'CGettextMessageSource' => '/i18n/CGettextMessageSource.php',
-			'CLocale' => '/i18n/CLocale.php',
-			'CMessageSource' => '/i18n/CMessageSource.php',
-			'CNumberFormatter' => '/i18n/CNumberFormatter.php',
-			'CPhpMessageSource' => '/i18n/CPhpMessageSource.php',
-			'CGettextFile' => '/i18n/gettext/CGettextFile.php',
-			'CGettextMoFile' => '/i18n/gettext/CGettextMoFile.php',
-			'CGettextPoFile' => '/i18n/gettext/CGettextPoFile.php',
-			'CDbLogRoute' => '/logging/CDbLogRoute.php',
-			'CEmailLogRoute' => '/logging/CEmailLogRoute.php',
-			'CFileLogRoute' => '/logging/CFileLogRoute.php',
-			'CLogFilter' => '/logging/CLogFilter.php',
-			'CLogRoute' => '/logging/CLogRoute.php',
-			'CLogRouter' => '/logging/CLogRouter.php',
-			'CLogger' => '/logging/CLogger.php',
-			'CProfileLogRoute' => '/logging/CProfileLogRoute.php',
-			'CWebLogRoute' => '/logging/CWebLogRoute.php',
-			'CDateTimeParser' => '/utils/CDateTimeParser.php',
-			'CFileHelper' => '/utils/CFileHelper.php',
-			'CFormatter' => '/utils/CFormatter.php',
-			'CMarkdownParser' => '/utils/CMarkdownParser.php',
-			'CPropertyValue' => '/utils/CPropertyValue.php',
-			'CTimestamp' => '/utils/CTimestamp.php',
-			'CVarDumper' => '/utils/CVarDumper.php',
-			'CBooleanValidator' => '/validators/CBooleanValidator.php',
-			'CCaptchaValidator' => '/validators/CCaptchaValidator.php',
-			'CCompareValidator' => '/validators/CCompareValidator.php',
-			'CDateValidator' => '/validators/CDateValidator.php',
-			'CDefaultValueValidator' => '/validators/CDefaultValueValidator.php',
-			'CEmailValidator' => '/validators/CEmailValidator.php',
-			'CExistValidator' => '/validators/CExistValidator.php',
-			'CFileValidator' => '/validators/CFileValidator.php',
-			'CFilterValidator' => '/validators/CFilterValidator.php',
-			'CInlineValidator' => '/validators/CInlineValidator.php',
-			'CNumberValidator' => '/validators/CNumberValidator.php',
-			'CRangeValidator' => '/validators/CRangeValidator.php',
-			'CRegularExpressionValidator' => '/validators/CRegularExpressionValidator.php',
-			'CRequiredValidator' => '/validators/CRequiredValidator.php',
-			'CSafeValidator' => '/validators/CSafeValidator.php',
-			'CStringValidator' => '/validators/CStringValidator.php',
-			'CTypeValidator' => '/validators/CTypeValidator.php',
-			'CUniqueValidator' => '/validators/CUniqueValidator.php',
-			'CUnsafeValidator' => '/validators/CUnsafeValidator.php',
-			'CUrlValidator' => '/validators/CUrlValidator.php',
-			'CValidator' => '/validators/CValidator.php',
-			'CActiveDataProvider' => '/web/CActiveDataProvider.php',
-			'CArrayDataProvider' => '/web/CArrayDataProvider.php',
-			'CAssetManager' => '/web/CAssetManager.php',
-			'CBaseController' => '/web/CBaseController.php',
-			'CCacheHttpSession' => '/web/CCacheHttpSession.php',
-			'CClientScript' => '/web/CClientScript.php',
-			'CController' => '/web/CController.php',
-			'CDataProvider' => '/web/CDataProvider.php',
-			'CDbHttpSession' => '/web/CDbHttpSession.php',
-			'CExtController' => '/web/CExtController.php',
-			'CFormModel' => '/web/CFormModel.php',
-			'CHttpCookie' => '/web/CHttpCookie.php',
-			'CHttpRequest' => '/web/CHttpRequest.php',
-			'CHttpSession' => '/web/CHttpSession.php',
-			'CHttpSessionIterator' => '/web/CHttpSessionIterator.php',
-			'COutputEvent' => '/web/COutputEvent.php',
-			'CPagination' => '/web/CPagination.php',
-			'CSort' => '/web/CSort.php',
-			'CSqlDataProvider' => '/web/CSqlDataProvider.php',
-			'CTheme' => '/web/CTheme.php',
-			'CThemeManager' => '/web/CThemeManager.php',
-			'CUploadedFile' => '/web/CUploadedFile.php',
-			'CUrlManager' => '/web/CUrlManager.php',
-			'CWebApplication' => '/web/CWebApplication.php',
-			'CWebModule' => '/web/CWebModule.php',
-			'CWidgetFactory' => '/web/CWidgetFactory.php',
-			'CAction' => '/web/actions/CAction.php',
-			'CInlineAction' => '/web/actions/CInlineAction.php',
-			'CViewAction' => '/web/actions/CViewAction.php',
-			'CAccessControlFilter' => '/web/auth/CAccessControlFilter.php',
-			'CAuthAssignment' => '/web/auth/CAuthAssignment.php',
-			'CAuthItem' => '/web/auth/CAuthItem.php',
-			'CAuthManager' => '/web/auth/CAuthManager.php',
-			'CBaseUserIdentity' => '/web/auth/CBaseUserIdentity.php',
-			'CDbAuthManager' => '/web/auth/CDbAuthManager.php',
-			'CPhpAuthManager' => '/web/auth/CPhpAuthManager.php',
-			'CUserIdentity' => '/web/auth/CUserIdentity.php',
-			'CWebUser' => '/web/auth/CWebUser.php',
-			'CFilter' => '/web/filters/CFilter.php',
-			'CFilterChain' => '/web/filters/CFilterChain.php',
-			'CInlineFilter' => '/web/filters/CInlineFilter.php',
-			'CForm' => '/web/form/CForm.php',
-			'CFormButtonElement' => '/web/form/CFormButtonElement.php',
-			'CFormElement' => '/web/form/CFormElement.php',
-			'CFormElementCollection' => '/web/form/CFormElementCollection.php',
-			'CFormInputElement' => '/web/form/CFormInputElement.php',
-			'CFormStringElement' => '/web/form/CFormStringElement.php',
-			'CGoogleApi' => '/web/helpers/CGoogleApi.php',
-			'CHtml' => '/web/helpers/CHtml.php',
-			'CJSON' => '/web/helpers/CJSON.php',
-			'CJavaScript' => '/web/helpers/CJavaScript.php',
-			'CPradoViewRenderer' => '/web/renderers/CPradoViewRenderer.php',
-			'CViewRenderer' => '/web/renderers/CViewRenderer.php',
-			'CWebService' => '/web/services/CWebService.php',
-			'CWebServiceAction' => '/web/services/CWebServiceAction.php',
-			'CWsdlGenerator' => '/web/services/CWsdlGenerator.php',
-			'CActiveForm' => '/web/widgets/CActiveForm.php',
-			'CAutoComplete' => '/web/widgets/CAutoComplete.php',
-			'CClipWidget' => '/web/widgets/CClipWidget.php',
-			'CContentDecorator' => '/web/widgets/CContentDecorator.php',
-			'CFilterWidget' => '/web/widgets/CFilterWidget.php',
-			'CFlexWidget' => '/web/widgets/CFlexWidget.php',
-			'CHtmlPurifier' => '/web/widgets/CHtmlPurifier.php',
-			'CInputWidget' => '/web/widgets/CInputWidget.php',
-			'CMarkdown' => '/web/widgets/CMarkdown.php',
-			'CMaskedTextField' => '/web/widgets/CMaskedTextField.php',
-			'CMultiFileUpload' => '/web/widgets/CMultiFileUpload.php',
-			'COutputCache' => '/web/widgets/COutputCache.php',
-			'COutputProcessor' => '/web/widgets/COutputProcessor.php',
-			'CStarRating' => '/web/widgets/CStarRating.php',
-			'CTabView' => '/web/widgets/CTabView.php',
-			'CTextHighlighter' => '/web/widgets/CTextHighlighter.php',
-			'CTreeView' => '/web/widgets/CTreeView.php',
-			'CWidget' => '/web/widgets/CWidget.php',
-			'CCaptcha' => '/web/widgets/captcha/CCaptcha.php',
-			'CCaptchaAction' => '/web/widgets/captcha/CCaptchaAction.php',
-			'CBasePager' => '/web/widgets/pagers/CBasePager.php',
-			'CLinkPager' => '/web/widgets/pagers/CLinkPager.php',
-			'CListPager' => '/web/widgets/pagers/CListPager.php',
-			);
+		'CApplication' => '/base/CApplication.php',
+		'CApplicationComponent' => '/base/CApplicationComponent.php',
+		'CBehavior' => '/base/CBehavior.php',
+		'CComponent' => '/base/CComponent.php',
+		'CErrorEvent' => '/base/CErrorEvent.php',
+		'CErrorHandler' => '/base/CErrorHandler.php',
+		'CException' => '/base/CException.php',
+		'CExceptionEvent' => '/base/CExceptionEvent.php',
+		'CHttpException' => '/base/CHttpException.php',
+		'CModel' => '/base/CModel.php',
+		'CModelBehavior' => '/base/CModelBehavior.php',
+		'CModelEvent' => '/base/CModelEvent.php',
+		'CModule' => '/base/CModule.php',
+		'CSecurityManager' => '/base/CSecurityManager.php',
+		'CStatePersister' => '/base/CStatePersister.php',
+		'CApcCache' => '/caching/CApcCache.php',
+		'CCache' => '/caching/CCache.php',
+		'CDbCache' => '/caching/CDbCache.php',
+		'CDummyCache' => '/caching/CDummyCache.php',
+		'CEAcceleratorCache' => '/caching/CEAcceleratorCache.php',
+		'CFileCache' => '/caching/CFileCache.php',
+		'CMemCache' => '/caching/CMemCache.php',
+		'CWinCache' => '/caching/CWinCache.php',
+		'CXCache' => '/caching/CXCache.php',
+		'CZendDataCache' => '/caching/CZendDataCache.php',
+		'CCacheDependency' => '/caching/dependencies/CCacheDependency.php',
+		'CChainedCacheDependency' => '/caching/dependencies/CChainedCacheDependency.php',
+		'CDbCacheDependency' => '/caching/dependencies/CDbCacheDependency.php',
+		'CDirectoryCacheDependency' => '/caching/dependencies/CDirectoryCacheDependency.php',
+		'CExpressionDependency' => '/caching/dependencies/CExpressionDependency.php',
+		'CFileCacheDependency' => '/caching/dependencies/CFileCacheDependency.php',
+		'CGlobalStateCacheDependency' => '/caching/dependencies/CGlobalStateCacheDependency.php',
+		'CAttributeCollection' => '/collections/CAttributeCollection.php',
+		'CConfiguration' => '/collections/CConfiguration.php',
+		'CList' => '/collections/CList.php',
+		'CListIterator' => '/collections/CListIterator.php',
+		'CMap' => '/collections/CMap.php',
+		'CMapIterator' => '/collections/CMapIterator.php',
+		'CQueue' => '/collections/CQueue.php',
+		'CQueueIterator' => '/collections/CQueueIterator.php',
+		'CStack' => '/collections/CStack.php',
+		'CStackIterator' => '/collections/CStackIterator.php',
+		'CTypedList' => '/collections/CTypedList.php',
+		'CTypedMap' => '/collections/CTypedMap.php',
+		'CConsoleApplication' => '/console/CConsoleApplication.php',
+		'CConsoleCommand' => '/console/CConsoleCommand.php',
+		'CConsoleCommandBehavior' => '/console/CConsoleCommandBehavior.php',
+		'CConsoleCommandEvent' => '/console/CConsoleCommandEvent.php',
+		'CConsoleCommandRunner' => '/console/CConsoleCommandRunner.php',
+		'CHelpCommand' => '/console/CHelpCommand.php',
+		'CDbCommand' => '/db/CDbCommand.php',
+		'CDbConnection' => '/db/CDbConnection.php',
+		'CDbDataReader' => '/db/CDbDataReader.php',
+		'CDbException' => '/db/CDbException.php',
+		'CDbMigration' => '/db/CDbMigration.php',
+		'CDbTransaction' => '/db/CDbTransaction.php',
+		'CActiveFinder' => '/db/ar/CActiveFinder.php',
+		'CActiveRecord' => '/db/ar/CActiveRecord.php',
+		'CActiveRecordBehavior' => '/db/ar/CActiveRecordBehavior.php',
+		'CDbColumnSchema' => '/db/schema/CDbColumnSchema.php',
+		'CDbCommandBuilder' => '/db/schema/CDbCommandBuilder.php',
+		'CDbCriteria' => '/db/schema/CDbCriteria.php',
+		'CDbExpression' => '/db/schema/CDbExpression.php',
+		'CDbSchema' => '/db/schema/CDbSchema.php',
+		'CDbTableSchema' => '/db/schema/CDbTableSchema.php',
+		'CMssqlColumnSchema' => '/db/schema/mssql/CMssqlColumnSchema.php',
+		'CMssqlCommandBuilder' => '/db/schema/mssql/CMssqlCommandBuilder.php',
+		'CMssqlPdoAdapter' => '/db/schema/mssql/CMssqlPdoAdapter.php',
+		'CMssqlSchema' => '/db/schema/mssql/CMssqlSchema.php',
+		'CMssqlSqlsrvPdoAdapter' => '/db/schema/mssql/CMssqlSqlsrvPdoAdapter.php',
+		'CMssqlTableSchema' => '/db/schema/mssql/CMssqlTableSchema.php',
+		'CMysqlColumnSchema' => '/db/schema/mysql/CMysqlColumnSchema.php',
+		'CMysqlCommandBuilder' => '/db/schema/mysql/CMysqlCommandBuilder.php',
+		'CMysqlSchema' => '/db/schema/mysql/CMysqlSchema.php',
+		'CMysqlTableSchema' => '/db/schema/mysql/CMysqlTableSchema.php',
+		'COciColumnSchema' => '/db/schema/oci/COciColumnSchema.php',
+		'COciCommandBuilder' => '/db/schema/oci/COciCommandBuilder.php',
+		'COciSchema' => '/db/schema/oci/COciSchema.php',
+		'COciTableSchema' => '/db/schema/oci/COciTableSchema.php',
+		'CPgsqlColumnSchema' => '/db/schema/pgsql/CPgsqlColumnSchema.php',
+		'CPgsqlSchema' => '/db/schema/pgsql/CPgsqlSchema.php',
+		'CPgsqlTableSchema' => '/db/schema/pgsql/CPgsqlTableSchema.php',
+		'CSqliteColumnSchema' => '/db/schema/sqlite/CSqliteColumnSchema.php',
+		'CSqliteCommandBuilder' => '/db/schema/sqlite/CSqliteCommandBuilder.php',
+		'CSqliteSchema' => '/db/schema/sqlite/CSqliteSchema.php',
+		'CChoiceFormat' => '/i18n/CChoiceFormat.php',
+		'CDateFormatter' => '/i18n/CDateFormatter.php',
+		'CDbMessageSource' => '/i18n/CDbMessageSource.php',
+		'CGettextMessageSource' => '/i18n/CGettextMessageSource.php',
+		'CLocale' => '/i18n/CLocale.php',
+		'CMessageSource' => '/i18n/CMessageSource.php',
+		'CNumberFormatter' => '/i18n/CNumberFormatter.php',
+		'CPhpMessageSource' => '/i18n/CPhpMessageSource.php',
+		'CGettextFile' => '/i18n/gettext/CGettextFile.php',
+		'CGettextMoFile' => '/i18n/gettext/CGettextMoFile.php',
+		'CGettextPoFile' => '/i18n/gettext/CGettextPoFile.php',
+		'CChainedLogFilter' => '/logging/CChainedLogFilter.php',
+		'CDbLogRoute' => '/logging/CDbLogRoute.php',
+		'CEmailLogRoute' => '/logging/CEmailLogRoute.php',
+		'CFileLogRoute' => '/logging/CFileLogRoute.php',
+		'CLogFilter' => '/logging/CLogFilter.php',
+		'CLogRoute' => '/logging/CLogRoute.php',
+		'CLogRouter' => '/logging/CLogRouter.php',
+		'CLogger' => '/logging/CLogger.php',
+		'CProfileLogRoute' => '/logging/CProfileLogRoute.php',
+		'CWebLogRoute' => '/logging/CWebLogRoute.php',
+		'CDateTimeParser' => '/utils/CDateTimeParser.php',
+		'CFileHelper' => '/utils/CFileHelper.php',
+		'CFormatter' => '/utils/CFormatter.php',
+		'CMarkdownParser' => '/utils/CMarkdownParser.php',
+		'CPropertyValue' => '/utils/CPropertyValue.php',
+		'CTimestamp' => '/utils/CTimestamp.php',
+		'CVarDumper' => '/utils/CVarDumper.php',
+		'CBooleanValidator' => '/validators/CBooleanValidator.php',
+		'CCaptchaValidator' => '/validators/CCaptchaValidator.php',
+		'CCompareValidator' => '/validators/CCompareValidator.php',
+		'CDateValidator' => '/validators/CDateValidator.php',
+		'CDefaultValueValidator' => '/validators/CDefaultValueValidator.php',
+		'CEmailValidator' => '/validators/CEmailValidator.php',
+		'CExistValidator' => '/validators/CExistValidator.php',
+		'CFileValidator' => '/validators/CFileValidator.php',
+		'CFilterValidator' => '/validators/CFilterValidator.php',
+		'CInlineValidator' => '/validators/CInlineValidator.php',
+		'CNumberValidator' => '/validators/CNumberValidator.php',
+		'CRangeValidator' => '/validators/CRangeValidator.php',
+		'CRegularExpressionValidator' => '/validators/CRegularExpressionValidator.php',
+		'CRequiredValidator' => '/validators/CRequiredValidator.php',
+		'CSafeValidator' => '/validators/CSafeValidator.php',
+		'CStringValidator' => '/validators/CStringValidator.php',
+		'CTypeValidator' => '/validators/CTypeValidator.php',
+		'CUniqueValidator' => '/validators/CUniqueValidator.php',
+		'CUnsafeValidator' => '/validators/CUnsafeValidator.php',
+		'CUrlValidator' => '/validators/CUrlValidator.php',
+		'CValidator' => '/validators/CValidator.php',
+		'CActiveDataProvider' => '/web/CActiveDataProvider.php',
+		'CArrayDataProvider' => '/web/CArrayDataProvider.php',
+		'CAssetManager' => '/web/CAssetManager.php',
+		'CBaseController' => '/web/CBaseController.php',
+		'CCacheHttpSession' => '/web/CCacheHttpSession.php',
+		'CClientScript' => '/web/CClientScript.php',
+		'CController' => '/web/CController.php',
+		'CDataProvider' => '/web/CDataProvider.php',
+		'CDataProviderIterator' => '/web/CDataProviderIterator.php',
+		'CDbHttpSession' => '/web/CDbHttpSession.php',
+		'CExtController' => '/web/CExtController.php',
+		'CFormModel' => '/web/CFormModel.php',
+		'CHttpCookie' => '/web/CHttpCookie.php',
+		'CHttpRequest' => '/web/CHttpRequest.php',
+		'CHttpSession' => '/web/CHttpSession.php',
+		'CHttpSessionIterator' => '/web/CHttpSessionIterator.php',
+		'COutputEvent' => '/web/COutputEvent.php',
+		'CPagination' => '/web/CPagination.php',
+		'CSort' => '/web/CSort.php',
+		'CSqlDataProvider' => '/web/CSqlDataProvider.php',
+		'CTheme' => '/web/CTheme.php',
+		'CThemeManager' => '/web/CThemeManager.php',
+		'CUploadedFile' => '/web/CUploadedFile.php',
+		'CUrlManager' => '/web/CUrlManager.php',
+		'CWebApplication' => '/web/CWebApplication.php',
+		'CWebModule' => '/web/CWebModule.php',
+		'CWidgetFactory' => '/web/CWidgetFactory.php',
+		'CAction' => '/web/actions/CAction.php',
+		'CInlineAction' => '/web/actions/CInlineAction.php',
+		'CViewAction' => '/web/actions/CViewAction.php',
+		'CAccessControlFilter' => '/web/auth/CAccessControlFilter.php',
+		'CAuthAssignment' => '/web/auth/CAuthAssignment.php',
+		'CAuthItem' => '/web/auth/CAuthItem.php',
+		'CAuthManager' => '/web/auth/CAuthManager.php',
+		'CBaseUserIdentity' => '/web/auth/CBaseUserIdentity.php',
+		'CDbAuthManager' => '/web/auth/CDbAuthManager.php',
+		'CPhpAuthManager' => '/web/auth/CPhpAuthManager.php',
+		'CUserIdentity' => '/web/auth/CUserIdentity.php',
+		'CWebUser' => '/web/auth/CWebUser.php',
+		'CFilter' => '/web/filters/CFilter.php',
+		'CFilterChain' => '/web/filters/CFilterChain.php',
+		'CHttpCacheFilter' => '/web/filters/CHttpCacheFilter.php',
+		'CInlineFilter' => '/web/filters/CInlineFilter.php',
+		'CForm' => '/web/form/CForm.php',
+		'CFormButtonElement' => '/web/form/CFormButtonElement.php',
+		'CFormElement' => '/web/form/CFormElement.php',
+		'CFormElementCollection' => '/web/form/CFormElementCollection.php',
+		'CFormInputElement' => '/web/form/CFormInputElement.php',
+		'CFormStringElement' => '/web/form/CFormStringElement.php',
+		'CGoogleApi' => '/web/helpers/CGoogleApi.php',
+		'CHtml' => '/web/helpers/CHtml.php',
+		'CJSON' => '/web/helpers/CJSON.php',
+		'CJavaScript' => '/web/helpers/CJavaScript.php',
+		'CJavaScriptExpression' => '/web/helpers/CJavaScriptExpression.php',
+		'CPradoViewRenderer' => '/web/renderers/CPradoViewRenderer.php',
+		'CViewRenderer' => '/web/renderers/CViewRenderer.php',
+		'CWebService' => '/web/services/CWebService.php',
+		'CWebServiceAction' => '/web/services/CWebServiceAction.php',
+		'CWsdlGenerator' => '/web/services/CWsdlGenerator.php',
+		'CActiveForm' => '/web/widgets/CActiveForm.php',
+		'CAutoComplete' => '/web/widgets/CAutoComplete.php',
+		'CClipWidget' => '/web/widgets/CClipWidget.php',
+		'CContentDecorator' => '/web/widgets/CContentDecorator.php',
+		'CFilterWidget' => '/web/widgets/CFilterWidget.php',
+		'CFlexWidget' => '/web/widgets/CFlexWidget.php',
+		'CHtmlPurifier' => '/web/widgets/CHtmlPurifier.php',
+		'CInputWidget' => '/web/widgets/CInputWidget.php',
+		'CMarkdown' => '/web/widgets/CMarkdown.php',
+		'CMaskedTextField' => '/web/widgets/CMaskedTextField.php',
+		'CMultiFileUpload' => '/web/widgets/CMultiFileUpload.php',
+		'COutputCache' => '/web/widgets/COutputCache.php',
+		'COutputProcessor' => '/web/widgets/COutputProcessor.php',
+		'CStarRating' => '/web/widgets/CStarRating.php',
+		'CTabView' => '/web/widgets/CTabView.php',
+		'CTextHighlighter' => '/web/widgets/CTextHighlighter.php',
+		'CTreeView' => '/web/widgets/CTreeView.php',
+		'CWidget' => '/web/widgets/CWidget.php',
+		'CCaptcha' => '/web/widgets/captcha/CCaptcha.php',
+		'CCaptchaAction' => '/web/widgets/captcha/CCaptchaAction.php',
+		'CBasePager' => '/web/widgets/pagers/CBasePager.php',
+		'CLinkPager' => '/web/widgets/pagers/CLinkPager.php',
+		'CListPager' => '/web/widgets/pagers/CListPager.php',
+	);
 }
 
 spl_autoload_register(array('YiiBase','autoload'));

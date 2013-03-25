@@ -4,7 +4,7 @@ class SiteController extends FrontController {
 
 	public function actionIndex() {
 		
-	//	FaqApi::model()->getAll('INTERNET_MARKETING',true);
+	
 		$page = 'HOME';
 
 		$this->render('index');
@@ -25,10 +25,7 @@ class SiteController extends FrontController {
 
 	public function actionAbout(){
 
-		$this->breadcrumbs = array(
-				'Home',
-				array('About'=>$this->createUrl('/front/site/about')),
-		);
+		$this->breadcrumbs = array('Home',array('About'=>$this->createUrl('/front/site/about')));
 
 		$this->render('about');
 	}

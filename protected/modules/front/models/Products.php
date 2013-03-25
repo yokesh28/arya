@@ -8,7 +8,11 @@
  * @property string $name
  * @property string $img_url
  * @property integer $cat_id
+ * @property string $des
  * @property string $updated_time
+ *
+ * The followings are the available model relations:
+ * @property Catagories $cat
  */
 class Products extends CActiveRecord
 {
@@ -41,10 +45,10 @@ class Products extends CActiveRecord
 			array('cat_id', 'required'),
 			array('cat_id', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>30),
-			array('img_url, updated_time', 'safe'),
+			array('img_url, des, updated_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, img_url, cat_id, updated_time', 'safe', 'on'=>'search'),
+			array('id, name, img_url, cat_id, des, updated_time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -56,6 +60,7 @@ class Products extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'cat' => array(self::BELONGS_TO, 'Catagories', 'cat_id'),
 		);
 	}
 
@@ -69,6 +74,7 @@ class Products extends CActiveRecord
 			'name' => 'Name',
 			'img_url' => 'Img Url',
 			'cat_id' => 'Cat',
+			'des' => 'Des',
 			'updated_time' => 'Updated Time',
 		);
 	}
@@ -88,12 +94,10 @@ class Products extends CActiveRecord
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('img_url',$this->img_url,true);
 		$criteria->compare('cat_id',$this->cat_id);
+		$criteria->compare('des',$this->des,true);
 		$criteria->compare('updated_time',$this->updated_time,true);
 
 		return new CActiveDataProvider($this, array(
-			'pagination'=>array(
-        		'pageSize'=> Yii::app()->user->getState('pageSize',Yii::app()->params['defaultPageSize']),
-    		),		
 			'criteria'=>$criteria,
 		));
 	}

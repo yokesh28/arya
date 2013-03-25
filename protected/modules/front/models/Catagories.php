@@ -5,8 +5,13 @@
  *
  * The followings are the available columns in table 'catagories':
  * @property integer $id
- * @property integer $name
+ * @property string $name
+ * @property string $image_url
+ * @property string $des
  * @property string $updated_time
+ *
+ * The followings are the available model relations:
+ * @property Products[] $products
  */
 class Catagories extends CActiveRecord
 {
@@ -37,11 +42,10 @@ class Catagories extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('name', 'required'),
-			array('name', 'numerical', 'integerOnly'=>true),
-			array('updated_time', 'safe'),
+			array('image_url, des, updated_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, updated_time', 'safe', 'on'=>'search'),
+			array('id, name, image_url, des, updated_time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,6 +57,7 @@ class Catagories extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'products' => array(self::HAS_MANY, 'Products', 'cat_id'),
 		);
 	}
 
@@ -64,6 +69,8 @@ class Catagories extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'name' => 'Name',
+			'image_url' => 'Image Url',
+			'des' => 'Des',
 			'updated_time' => 'Updated Time',
 		);
 	}
@@ -80,13 +87,12 @@ class Catagories extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('name',$this->name);
+		$criteria->compare('name',$this->name,true);
+		$criteria->compare('image_url',$this->image_url,true);
+		$criteria->compare('des',$this->des,true);
 		$criteria->compare('updated_time',$this->updated_time,true);
 
 		return new CActiveDataProvider($this, array(
-			'pagination'=>array(
-        		'pageSize'=> Yii::app()->user->getState('pageSize',Yii::app()->params['defaultPageSize']),
-    		),		
 			'criteria'=>$criteria,
 		));
 	}

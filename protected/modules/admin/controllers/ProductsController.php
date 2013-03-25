@@ -33,16 +33,30 @@ class ProductsController extends AdminController
 
 		if(isset($_POST['Products']))
 		{
+			$rnd = rand(0,9999);
 			$model->attributes=$_POST['Products'];
+			$uploadedFile=CUploadedFile::getInstance($model,'image');
+			$fileName = "{$rnd}-{$uploadedFile}";  // random number + file name
+			$model->img_url = $fileName;
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$uploadedFile->saveAs(Yii::app()->basePath.'/../products/'.$fileName);  // image will uplode to rootDirectory/banner/
+			 $this->redirect(array('admin'));
 		}
 
-		$this->render('create',array(
-			'model'=>$model,
+		
+		
+	$this->render('create',array(
+				'model'=>$model,
 		));
+		
+		
+		
 	}
 
+	
+	
+	
+	
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
@@ -57,9 +71,28 @@ class ProductsController extends AdminController
 
 		if(isset($_POST['Products']))
 		{
+			
+			
+			
+			$_POST['Products']['image'] = $model->image;
 			$model->attributes=$_POST['Products'];
+			
+			$uploadedFile=CUploadedFile::getInstance($model,'image');
+			
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			{
+				if(!empty($uploadedFile))  // check if uploaded file is set or not
+				{
+					$uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$model->image);
+				}
+				$this->redirect(array('admin'));
+			}
+			
+			
+			
+			//	$this->redirect(array('view','id'=>$model->id));
+			
+			
 		}
 
 		$this->render('update',array(

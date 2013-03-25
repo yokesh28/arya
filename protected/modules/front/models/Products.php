@@ -68,6 +68,7 @@ class Products extends CActiveRecord
 			'id' => 'ID',
 			'name' => 'Name',
 			'img_url' => 'Img Url',
+				
 			'cat_id' => 'Cat',
 			'updated_time' => 'Updated Time',
 		);

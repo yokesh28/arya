@@ -15,12 +15,21 @@
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'img_url'); ?>
-		<?php echo $form->textArea($model,'img_url',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'img_url'); ?>
-	</div>
 
+	
+	
+	
+	<div class="row">
+        <?php echo $form->labelEx($model,'image'); ?>
+        <?php echo CHtml::activeFileField($model, 'image'); ?>  // by this we can upload image
+        <?php echo $form->error($model,'image'); ?>
+</div>
+
+	
+	
+	
+	
+	
 	<div class="row">
 		<?php echo $form->labelEx($model,'cat_id'); ?>
 		<?php echo $form->textField($model,'cat_id'); ?>

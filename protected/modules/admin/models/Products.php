@@ -45,6 +45,8 @@ class Products extends CActiveRecord
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, img_url, cat_id, updated_time', 'safe', 'on'=>'search'),
+				array('img_url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true),
+				
 		);
 	}
 

@@ -65,7 +65,7 @@
 										href="about.php">About Us</a>
 										</li>
 									<li><a
-										href="#">Product</a></li>
+										href="product.php">Product</a></li>
 									<li><a
 										href="service.php">Services</a></li>
 										<li><a

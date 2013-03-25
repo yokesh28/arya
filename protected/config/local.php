@@ -151,7 +151,7 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 				'adminEmail'=>'caffeineoverdose@stellarteam.in',
 				'adminName'=>'Administrator',
 				'globalSalt'=>'romeos@work',
-				'smtpUserName'=>'caffeineoverdose@stellarteam.in',
+				'smtpUserName'=>'lokesh@stellarteam.in',
 				'smtpPassword'=>'romeos@work24',
 				'smtpHostName'=>'smtp.gmail.com:587',
 				'defaultPageSize'=>50,

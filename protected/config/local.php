@@ -11,7 +11,7 @@ return array(
 		'defaultController' => 'front/site/index',
 		// preloading 'log' component
 		'preload'=>array('log'),
-	
+		'themes'=>'arya',
 		// autoloading model and component classes
 		'import'=>array(
 

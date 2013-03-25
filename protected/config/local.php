@@ -149,7 +149,7 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 				// this is used in contact page
 				'rootDir'=>dirname(dirname(dirname(__FILE__))),
 				'adminEmail'=>'caffeineoverdose@stellarteam.in',
-				'adminName'=>'Wallfeet Administrator',
+				'adminName'=>'Administrator',
 				'globalSalt'=>'romeos@work',
 				'smtpUserName'=>'caffeineoverdose@stellarteam.in',
 				'smtpPassword'=>'romeos@work24',

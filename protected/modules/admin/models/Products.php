@@ -10,6 +10,9 @@
  * @property integer $cat_id
  * @property string $des
  * @property string $updated_time
+ *
+ * The followings are the available model relations:
+ * @property Catagories $cat
  */
 class Products extends CActiveRecord
 {
@@ -57,6 +60,7 @@ class Products extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'cat' => array(self::BELONGS_TO, 'Catagories', 'cat_id'),
 		);
 	}
 

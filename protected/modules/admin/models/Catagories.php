@@ -17,6 +17,8 @@ class Catagories extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return Catagories the static model class
 	 */
+	
+	public $image;
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
@@ -30,6 +32,8 @@ class Catagories extends CActiveRecord
 		return 'catagories';
 	}
 
+	
+	
 	/**
 	 * @return array validation rules for model attributes.
 	 */
@@ -41,6 +45,8 @@ class Catagories extends CActiveRecord
 			array('name', 'required'),
 			array('name', 'numerical', 'integerOnly'=>true),
 			array('image_url, des, updated_time', 'safe'),
+				array('image_url', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+				array('image_url', 'length', 'max'=>255, 'on'=>'insert,update'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, image_url, des, updated_time', 'safe', 'on'=>'search'),

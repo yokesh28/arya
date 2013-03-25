@@ -16,7 +16,6 @@
  * See {@link CCache} manual for common cache operations that are supported by CWinCache.
  *
  * @author Alexander Makarov <sam@rmcreative.ru>
- * @version $Id: CWinCache.php 2799 2011-01-01 19:31:13Z qiang.xue $
  * @package system.caching
  * @since 1.1.2
  */

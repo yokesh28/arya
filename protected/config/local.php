@@ -34,6 +34,7 @@ return array(
 				'application.modules.front.widgets.*',
 				'application.modules.config.models.*',
 				'application.modules.config.api.*',
+				'application.modules.admin.*',
 		),
 
 		'modules'=>array(
@@ -48,6 +49,7 @@ return array(
 				'daemon'=>array(),
 				'front'=>array(),
 				'config'=>array(),
+				'admin'=>array(),
 		),
 
 		// application components

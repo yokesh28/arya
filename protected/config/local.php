@@ -82,7 +82,7 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 								//'<action:(search)>/<AdvancedSearchForm:\w+>' => 'front/search/<action>',
 								'home'=>'front/site/index',
 								'about'=>'front/site/about',
-								'portfolio'=>'front/site/portfolio',
+								
 								'carrier'=>'front/site/carrier',
 								'product'=>'front/site/product',
 								'service'=>'front/site/service',

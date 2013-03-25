@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0055)http://livedemo00.template-help.com/wt_43786/index.html -->
+
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,12 +8,7 @@
 <title>Home</title>
 <meta charset="utf-8">
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-<link rel="icon"
-	href="http://livedemo00.template-help.com/wt_43786/img/favicon.ico"
-	type="image/x-icon">
-<link rel="shortcut icon"
-	href="http://livedemo00.template-help.com/wt_43786/img/favicon.ico"
-	type="image/x-icon">
+
 <meta name="description" content="Your description">
 <meta name="keywords" content="Your keywords">
 <meta name="author" content="Your name">
@@ -116,10 +111,6 @@
   })();</script>
 
 
-	<div id="shadowMeasureIt"></div>
-	<div id="divCoordMeasureIt"></div>
-	<div id="divRectangleMeasureIt">
-		<div id="divRectangleBGMeasureIt"></div>
-	</div>
+
 </body>
 </html>

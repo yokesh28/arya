@@ -11,13 +11,13 @@ return array(
 		'defaultController' => 'front/site/index',
 		// preloading 'log' component
 		'preload'=>array('log'),
-		'themes'=>'arya',
+		'theme'=>'arya',
 		// autoloading model and component classes
 		'import'=>array(
 
 				'application.models.*',
 				'application.components.*',
-				/*		'application.extensions.*',
+				/*'application.extensions.*',
 				 'ext.widgets.*',*/
 				'application.utils.*',
 				'application.widgets.*',
@@ -115,7 +115,7 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 						// use 'site/error' action to display errors
 						'errorAction'=>'front/site/error',
 				),  
-				'log'=>array(
+			/*	'log'=>array(
 						'class'=>'CLogRouter',
 						'routes'=>array(								
 								array(
@@ -129,14 +129,14 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 								),
 								*/
 								// uncomment the following to show log messages on web pages
-								 array(
+							/*	 array(
 										'class'=>'CWebLogRoute',
 								),
 								array(
 										'class'=>'CProfileLogRoute',
 								),
 						),
-				),
+				), */
 				'cache'=>array(
 						'class'=>'system.caching.CFileCache',
 				),

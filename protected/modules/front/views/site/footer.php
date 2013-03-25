@@ -25,10 +25,10 @@
 								</div>
 							</div>
 							<div class="span5 social">
-							<a href="#"><img src="images/f.png"></a>
-								<a href="#"><img src="images/t.png"></a>
-								<a href="#"><img src="images/g.png"></a>
-								<a href="#"><img src="images/b.png"></a>
+							<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/f.png"></a>
+								<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/t.png"></a>
+								<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/g.png"></a>
+								<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/b.png"></a>
 							
 							</div>
 						</div>

@@ -106,7 +106,7 @@
 
 				</div>
 				<div class="span4 ">
-					<img src="images/about.png">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/images/about.png">
 				</div>
 
 
@@ -124,7 +124,7 @@
 					minimum dependance on outsourcing makes us a reliable partner.
 				</div>
 				<div class="span4">
-					<img src="images/pic3.png">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/images/pic3.png">
 				</div>
 				<div class="span4">
 					<h4>Our Team</h4>
@@ -143,7 +143,7 @@
 
 				<div class="span4">
 					<h4>One stop shop</h4>
-					<img src="images/pic1.png">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/images/pic1.png">
 				</div>
 
 				<div class="span4">
@@ -154,7 +154,7 @@
 				</div>
 				<div class="span4">
 
-					<img src="images/pic2.png">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/images/pic2.png">
 				</div>
 			</div>
 			<br> <br>
@@ -181,7 +181,7 @@
 					management
 				</div>
 				<div class="span4">
-					<br> <br> <img src="images/pic5.png">
+					<br> <br> <img src="<?php echo Yii::app()->theme->baseUrl;?>/images/pic5.png">
 				</div>
 				<div class="span4">
 					<h4>Our Team</h4>

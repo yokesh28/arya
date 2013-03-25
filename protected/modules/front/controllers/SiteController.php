@@ -10,6 +10,13 @@ class SiteController extends FrontController {
 		$this->render('index');
 	}
 
+
+	public function actionProduct(){
+		$this->render('product');
+	}
+	
+	
+	
 	public function actionPortfolio(){
 
 		$projects = PortfolioApi::getProjects();
@@ -96,7 +103,7 @@ class SiteController extends FrontController {
 			}
 		}
 	}
-
+	
 
 }
 

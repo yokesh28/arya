@@ -148,6 +148,8 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 		'params'=>array(
 				// this is used in contact page
 				'rootDir'=>dirname(dirname(dirname(__FILE__))),
+
+
 				'adminEmail'=>'',
 				'adminName'=>'',
 				'globalSalt'=>'',

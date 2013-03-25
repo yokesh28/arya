@@ -6,12 +6,12 @@
 							<div class="span7">
 								<div class="footer_menu span12">
 									<ul>
-										<li class="span2"><a href="index.php">HOME PAGE</a></li>
-										<li class="span2"><a href="about.php">ABOUT US</a></li>
-										<li class="span2"><a href="#">PRODUCT</a></li>
-										<li class="span2"><a href="service.php">SERVICES</a></li>
-										<li class="span2"><a href="#">CARRIERS</a></li>
-										<li class="span2"><a href="contact.php">CONTACT US</a></li>
+										<li class="span2"><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/home')?>">HOME PAGE</a></li>
+										<li class="span2"><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/about')?>">ABOUT US</a></li>
+										<li class="span2"><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/product')?>">PRODUCT</a></li>
+										<li class="span2"><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/services')?>">SERVICES</a></li>
+										<li class="span2"><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/career')?>">CAREERS</a></li>
+										<li class="span2"><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/contact')?>">CONTACT US</a></li>
 									</ul>
 								</div>
 								<div class="copy_rights span12">
@@ -25,10 +25,10 @@
 								</div>
 							</div>
 							<div class="span5 social">
-							<a href="#"><img src="images/f.png"></a>
-								<a href="#"><img src="images/t.png"></a>
-								<a href="#"><img src="images/g.png"></a>
-								<a href="#"><img src="images/b.png"></a>
+							<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/f.png"></a>
+								<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/t.png"></a>
+								<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/g.png"></a>
+								<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/b.png"></a>
 							
 							</div>
 						</div>

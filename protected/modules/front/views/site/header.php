@@ -10,7 +10,7 @@
 						<div class="nav-collapse nav-collapse_ collapse row-fluid ">
 							<div class="clearfix">
 								<ul class="nav sf-menu clearfix sf-js-enabled  ">
-									<li <?php echo (Yii::app()->controller->action->id== 'home' ? 'class=active' : '');?>><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/home')?>">Home</a></li>
+									<li <?php echo (Yii::app()->controller->action->id== 'index' ? 'class=active' : '');?>><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/home')?>">Home</a></li>
 									<li <?php echo (Yii::app()->controller->action->id== 'about' ? 'class=active' : '');?>>
 									<a href="<?php echo Yii::app()->CreateAbsoluteUrl('/about')?>">About Us</a>
 									</li>

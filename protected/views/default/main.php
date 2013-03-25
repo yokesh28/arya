@@ -45,7 +45,11 @@
 	<?php echo $content;?>
 
 	
-	<?php if(Yii::app()->controller->action->id!='home'):?>
+	<?php
+
+
+	
+	if(Yii::app()->controller->action->id!='index'):?>
 	
 	<?php include 'lib/footer.php';?>
 	<?php endif;?>

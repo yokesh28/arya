@@ -83,7 +83,7 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 								'home'=>'front/site/index',
 								'about'=>'front/site/about',
 								
-								'carrier'=>'front/site/carrier',
+								'career'=>'front/site/career',
 								'product'=>'front/site/product',
 								'service'=>'front/site/service',
 								'contact'=>'front/site/contact',

@@ -1,7 +1,11 @@
 
-	<?php include("header.php");
-	echo headerContant('service');?>
 	
+	<body cz-shortcut-listen="true">
+
+
+	
+	<?php include 'header.php'; ?> 
+
 	
 		<div class="container">
                
@@ -12,86 +16,86 @@
 				</p>
 				
 				<div>
-				<img alt="" src="images/service_03.gif">
+				<img alt="" src=" <?php echo Yii::app()->theme->baseUrl;?>/images/service_03.gif">
 				
 				
 				</div>
 				
 			<div class="row color">
 			<div class="span2">	
-		<img src="pictures/a.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/a.jpg">
 		<h6>Annual Reports</h6><br>
 		</div>
 		
 			<div class="span2">	
-		<img src="pictures/b.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/b.jpg">
 		<h6>Art Books</h6><br>
 		</div>
 		<div class="span2">	
-		<img src="pictures/c.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/c.jpg">
 		<h6>Brochures</h6><br>
 		</div>
 		<div class="span2">	
-		<img src="pictures/d.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/d.jpg">
 		<h6>Calendars</h6><br>
 		</div>
 		<div class="span2">	
-	<img src="pictures/e.jpg">
+	<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/e.jpg">
 		<h6>Carry Bags</h6><br>
 		</div>
 		<div class="span2">	
-		<img src="pictures/f.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/f.jpg">
 		<h6>Catalogues</h6><br>
 		</div>
 		<div class="span2">	
-		<img src="pictures/g.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/g.jpg">
 		<h6>Coffee Table Books</h6><br>
 		</div>
 		<div class="span2">	
-		<img src="pictures/h.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/h.jpg">
 		<h6>Corporate Stationary</h6><br>
 		</div>
 		<div class="span2">	
-		<img src="pictures/i.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/i.jpg">
 		<h6>Hardcase Books</h6><br>
 		</div>
 		<div class="span2">	
-	<img src="pictures/j.jpg">
+	<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/j.jpg">
 	<h6>Journals/Newsletters</h6><br>
 		</div>
 		<div class="span2">	
-		<img src="pictures/k.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/k.jpg">
 		<h6>Labels</h6><br>
 		</div>
 		<div class="span2">	
-		<img src="pictures/l.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/l.jpg">
 		<h6>Leaflets/Flyers</h6><br>
 		</div>
 		
 		<div class="span2">	
-		<img src="pictures/m.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/m.jpg">
 		<h6>Magazines</h6><br>
 		</div>	
 		
 		
 		<div class="span2">	
-		<img src="pictures/n.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/n.jpg">
 		<h6>Packaging Cartons</h6><br>
 		</div>	
 		<div class="span2">	
-		<img src="pictures/o.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/o.jpg">
 		<h6>Posters</h6><br>
 		</div>	
 		<div class="span2">	
-		<img src="pictures/p.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/p.jpg">
 		<h6>Presentation Folders</h6><br>
 		</div>	
 		<div class="span2">	
-		<img src="pictures/q.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/q.jpg">
 		<h6>Visual Aids</h6><br>
 		</div>	
 		<div class="span2">	
-		<img src="pictures/r.jpg">
+		<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/r.jpg">
 		<h6>Wedding/Invitation Cards</h6>
 		</div>	
 			</div>	
@@ -100,7 +104,7 @@
 
 		</div>
 	
-<?php require('footer.php')?>
+
 		
 
 

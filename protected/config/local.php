@@ -35,6 +35,7 @@ return array(
 				'application.modules.config.models.*',
 				'application.modules.config.api.*',
 				'application.modules.admin.*',
+				
 		),
 
 		'modules'=>array(
@@ -84,7 +85,7 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 								//'<action:(search)>/<AdvancedSearchForm:\w+>' => 'front/search/<action>',
 								'home'=>'front/site/index',
 								'about'=>'front/site/about',
-								
+								'admin'=>'admin/site/index',
 								'career'=>'front/site/career',
 								'product'=>'front/site/product',
 								'service'=>'front/site/service',

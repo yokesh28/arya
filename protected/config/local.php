@@ -48,6 +48,7 @@ return array(
 				'daemon'=>array(),
 				'front'=>array(),
 				'config'=>array(),
+				'admin'=>array(),
 		),
 
 		// application components

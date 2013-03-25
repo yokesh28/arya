@@ -39,9 +39,3 @@
 				</div>
 			</div>
 		</footer>
-		
-		<script type="text/javascript">
-
-
-	$('.sf-menu').mobileMenu();
-	</script>

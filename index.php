@@ -8,7 +8,7 @@ ini_set('include_path', $pear);
 defined('YII_DEBUG') or define('YII_DEBUG',true);
 
 // change the following paths if necessary
-$yii=dirname(__FILE__).'/library/yii/framework/yiilite.php';
+$yii=dirname(__FILE__).'/library/yii/framework/yii.php';
 
 if(YII_DEBUG)
 	$config=dirname(__FILE__).'/protected/config/local.php';

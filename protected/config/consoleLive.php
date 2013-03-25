@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 		'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-		'name'=>'Ones and Zeros Technologies Official Website',
+		'name'=>'',
 		// preloading 'log' component
 		'preload'=>array('log'),
 	
@@ -105,7 +105,7 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 						'connectionString' => 'mysql:host=localhost;dbname=onz',
 						'emulatePrepare' => true,
 						'username' => 'root',
-						'password' => 'password',
+						'password' => '',
 						'charset' => 'utf8',
 						'enableProfiling'=>'true',
 						'enableParamLogging' => true,
@@ -148,14 +148,14 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 		'params'=>array(
 				// this is used in contact page
 				'rootDir'=>dirname(dirname(dirname(__FILE__))),
-				'adminEmail'=>'caffeineoverdose@stellarteam.in',
-				'adminName'=>'Wallfeet Administrator',
-				'globalSalt'=>'romeos@work',
-				'smtpUserName'=>'caffeineoverdose@stellarteam.in',
-				'smtpPassword'=>'romeos@work24',
+				'adminEmail'=>'',
+				'adminName'=>'',
+				'globalSalt'=>'',
+				'smtpUserName'=>'',
+				'smtpPassword'=>'',
 				'smtpHostName'=>'smtp.gmail.com:587',
 				'defaultPageSize'=>50,
-				'supportEmail'=>'caffeineoverdose@stellarteam.in',
+				'supportEmail'=>'',
 
 		),
 );

@@ -20,7 +20,7 @@
 									<li><a
 										href="service.php">Services</a></li>
 										<li><a
-										href="carrier.php">Carriers</a></li>
+										href="carrier.php">Careers</a></li>
 									<li><a
 										href="contact.php">Contact Us</a></li>
 								</ul>

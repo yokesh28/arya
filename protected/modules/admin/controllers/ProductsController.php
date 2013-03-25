@@ -31,16 +31,28 @@ class ProductsController extends AdminController
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
+		
+		
 		if(isset($_POST['Products']))
 		{
 			$rnd = rand(0,9999);
 			$model->attributes=$_POST['Products'];
-			$uploadedFile=CUploadedFile::getInstance($model,'image');
+			
+			
+			$uploadedFile=CUploadedFile::getInstance($model,'img_url');
+			
+			
+			
 			$fileName = "{$rnd}-{$uploadedFile}";  // random number + file name
 			$model->img_url = $fileName;
 			if($model->save())
-				$uploadedFile->saveAs(Yii::app()->basePath.'/../products/'.$fileName);  // image will uplode to rootDirectory/banner/
-			 $this->redirect(array('admin'));
+				
+				
+				$images_path = realpath(Yii::app()->basePath . '/../upload/product');
+				
+				
+				$uploadedFile->saveAs($images_path.'/'.$fileName);  // image will uplode to rootDirectory/banner/
+	
 		}
 
 		

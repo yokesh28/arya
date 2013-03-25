@@ -1,5 +1,8 @@
-/README.md
-
-.settings
-.project
+.git/
+.settings/
 .buildpath
+.project
+/assets/
+protected/runtime/
+.gitignore~
+.htaccess~

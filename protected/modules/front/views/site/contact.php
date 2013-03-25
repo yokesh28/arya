@@ -17,10 +17,9 @@
 		<span class="dropcap1 color">Enquiry? Feedback? Coffee?</span>
 		<p>We would love to hear from you.</p>
 		<ul class="contact2-info">
-			<li><i class="icon-location"></i>#54, Bharathi Park 7th cross,
-				Saibaba Colony, Coimbatore - 641038</li>
-			<li><i class="icon-phone"></i>+91 422 4202684</li>
-			<li><i class="icon-mail"></i>hello at oandz dot in</li>
+			<li><i class="icon-location"></i></li>
+			<li><i class="icon-phone"></i>+/li>
+			<li><i class="icon-mail"></i></li>
 		</ul>
 		<!-- End Contact Information -->
 
@@ -107,7 +106,7 @@
 		markers: [{                   //List of points to be marked on the map
 		latitude: ' . $config->CONTACT_GMAPS_MARKER_LAT . ',        //Point on the map where the marker will be drawn
 		longitude: ' . $config->CONTACT_GMAPS_MARKER_LNG . ',    //Point on the map where the marker will be drawn
-		html: "<b>Ones and Zeros Technologies Private Limited</b>"
+		
 		/* Content that will be shown within the info window for this marker. If empty no info window will be shown when the user clicks the marker.  */
 }],
 		icon: {                       //Subset of properties for defining a custom marker image for all markers.

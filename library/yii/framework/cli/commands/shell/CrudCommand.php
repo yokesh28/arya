@@ -6,14 +6,12 @@
  * @link http://www.yiiframework.com/
  * @copyright Copyright &copy; 2008-2011 Yii Software LLC
  * @license http://www.yiiframework.com/license/
- * @version $Id: CrudCommand.php 2799 2011-01-01 19:31:13Z qiang.xue $
  */
 
 /**
  * CrudCommand generates code implementing CRUD operations.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CrudCommand.php 2799 2011-01-01 19:31:13Z qiang.xue $
  * @package system.cli.commands.shell
  * @since 1.0
  */
@@ -84,6 +82,7 @@ EOD;
 	/**
 	 * Execute the action.
 	 * @param array command line parameters specific for this command
+	 * @return integer|null non zero application exit code for help or null on success
 	 */
 	public function run($args)
 	{
@@ -91,7 +90,7 @@ EOD;
 		{
 			echo "Error: data model class is required.\n";
 			echo $this->getHelp();
-			return;
+			return 1;
 		}
 		$module=Yii::app();
 		$modelClass=$args[0];
@@ -151,31 +150,31 @@ EOD;
 		$fixtureName=$this->pluralize($modelClass);
 		$fixtureName[0]=strtolower($fixtureName);
 		$list=array(
-				basename($controllerFile)=>array(
-						'source'=>$templatePath.'/controller.php',
-						'target'=>$controllerFile,
-						'callback'=>array($this,'generateController'),
-						'params'=>array($controllerClass,$modelClass),
-				),
+			basename($controllerFile)=>array(
+				'source'=>$templatePath.'/controller.php',
+				'target'=>$controllerFile,
+				'callback'=>array($this,'generateController'),
+				'params'=>array($controllerClass,$modelClass),
+			),
 		);
 
 		if($functionalTestPath!==false)
 		{
 			$list[$modelClass.'Test.php']=array(
-					'source'=>$templatePath.'/test.php',
-					'target'=>$functionalTestPath.DIRECTORY_SEPARATOR.$modelClass.'Test.php',
-					'callback'=>array($this,'generateTest'),
-					'params'=>array($controllerID,$fixtureName,$modelClass),
+				'source'=>$templatePath.'/test.php',
+				'target'=>$functionalTestPath.DIRECTORY_SEPARATOR.$modelClass.'Test.php',
+				'callback'=>array($this,'generateTest'),
+				'params'=>array($controllerID,$fixtureName,$modelClass),
 			);
 		}
 
 		foreach($this->actions as $action)
 		{
 			$list[$action.'.php']=array(
-					'source'=>$templatePath.'/'.$action.'.php',
-					'target'=>$viewPath.'/'.$action.'.php',
-					'callback'=>array($this,'generateView'),
-					'params'=>$modelClass,
+				'source'=>$templatePath.'/'.$action.'.php',
+				'target'=>$viewPath.'/'.$action.'.php',
+				'callback'=>array($this,'generateView'),
+				'params'=>$modelClass,
 			);
 		}
 
@@ -197,16 +196,16 @@ EOD;
 		$id=$model->tableSchema->primaryKey;
 		if($id===null)
 			throw new ShellException(Yii::t('yii','Error: Table "{table}" does not have a primary key.',array('{table}'=>$model->tableName())));
-		else if(is_array($id))
+		elseif(is_array($id))
 			throw new ShellException(Yii::t('yii','Error: Table "{table}" has a composite primary key which is not supported by crud command.',array('{table}'=>$model->tableName())));
 
 		if(!is_file($source))  // fall back to default ones
 			$source=YII_PATH.'/cli/views/shell/crud/'.basename($source);
 
 		return $this->renderFile($source,array(
-				'ID'=>$id,
-				'controllerClass'=>$controllerClass,
-				'modelClass'=>$modelClass,
+			'ID'=>$id,
+			'controllerClass'=>$controllerClass,
+			'modelClass'=>$modelClass,
 		),true);
 	}
 
@@ -218,9 +217,9 @@ EOD;
 		if(!is_file($source))  // fall back to default ones
 			$source=YII_PATH.'/cli/views/shell/crud/'.basename($source);
 		return $this->renderFile($source,array(
-				'ID'=>$table->primaryKey,
-				'modelClass'=>$modelClass,
-				'columns'=>$columns),true);
+			'ID'=>$table->primaryKey,
+			'modelClass'=>$modelClass,
+			'columns'=>$columns),true);
 	}
 
 	public function generateTest($source,$params)
@@ -229,9 +228,9 @@ EOD;
 		if(!is_file($source))  // fall back to default ones
 			$source=YII_PATH.'/cli/views/shell/crud/'.basename($source);
 		return $this->renderFile($source, array(
-				'controllerID'=>$controllerID,
-				'fixtureName'=>$fixtureName,
-				'modelClass'=>$modelClass,
+			'controllerID'=>$controllerID,
+			'fixtureName'=>$fixtureName,
+			'modelClass'=>$modelClass,
 		),true);
 	}
 
@@ -244,7 +243,7 @@ EOD;
 	{
 		if($column->type==='boolean')
 			return "CHtml::activeCheckBox(\$model,'{$column->name}')";
-		else if(stripos($column->dbType,'text')!==false)
+		elseif(stripos($column->dbType,'text')!==false)
 			return "CHtml::activeTextArea(\$model,'{$column->name}',array('rows'=>6, 'cols'=>50))";
 		else
 		{
@@ -273,7 +272,7 @@ EOD;
 	{
 		if($column->type==='boolean')
 			return "\$form->checkBox(\$model,'{$column->name}')";
-		else if(stripos($column->dbType,'text')!==false)
+		elseif(stripos($column->dbType,'text')!==false)
 			return "\$form->textArea(\$model,'{$column->name}',array('rows'=>6, 'cols'=>50))";
 		else
 		{

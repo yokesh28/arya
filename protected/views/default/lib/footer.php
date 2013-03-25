@@ -16,9 +16,9 @@
 								</div>
 								<div class="copy_rights span12">
 									<ul>
-										<li class="span2"><a href="#">Arya  &#169;  2012</a></li>
-										<li class="span2"><a href="#">Privacy Policy</a></li>
-										<li class="span3"><a href="http://www.s-creative.me" target="_blank">Designed by S-CREATIVE</a></li>
+										<li class="span3"><a href="#">Arya  &#169;  2012</a></li>
+										<li class="span3"><a href="#">Privacy Policy</a></li>
+										<li class="span4"><a href="http://www.s-creative.me" target="_blank">Designed by S-CREATIVE</a></li>
 										
 
 									</ul>

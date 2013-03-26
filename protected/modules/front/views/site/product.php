@@ -3,19 +3,16 @@
 	<div id="content">
 		<div class="container">
 			<div class="row-fluid product">
-			<?php 
-			if(!empty($catgories)):
-			foreach ($catgories as $cat):?>
+			
+		
 			<div class="span3">
-			<h3><?php echo $cat->name;?></h3>
-			<a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/list/id/'.$cat->id)?>"><img src="<?php echo Yii::app()->baseUrl?>/upload/cat/<?php echo $cat->image_url;?>"></a>
+			<h3>BUSSINESS CARD</h3>
+			<a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/list/id/1')?>"><img src="<?php echo Yii::app()->baseUrl?>/upload/cat/card.png"></a>
 			<span class="span12">
-			<?php echo $cat->des;?>
+			A sturdy laminating film protects your business cards on both sides.Also ensures solid colours don't get scratched.
 			</span>
 			</div>
-			<?php endforeach;
-			endif;
-			?>
+		
 			
 			</div>
 		</div>

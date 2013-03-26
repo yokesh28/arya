@@ -1627,3 +1627,15 @@ footer li{
 	border:1px solid black;
 	padding:10px;
 }
+.paypal-button{
+	width:100px;
+	margin:50px;
+}
+.price select{
+	width:84px;height:25px;
+}
+.price label{
+	width: 59px;
+margin-left: 2px;
+}
+.text p{margin-left:-2px;}

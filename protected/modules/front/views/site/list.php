@@ -13,15 +13,28 @@
 						src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
 					</a>
 					<div class="price">
-						<label>Price:</label> <span>500
+						<label><b>Price :</b></label> <select><option>500</option>
+						<option>1000</option>
+						<option>1500</option>
+						<option>2000</option>
+						<option>2500</option>
+						</select>
 						</span>
+					
+					<div class="text span12"><p>This card is a special card</p>
 					</div>
-					<span class="span12">Sample card
-					</span>
+					
+					
+					</div>
 				</div>
-				<script
+				
+				
+				
+				<script  
+				
 					src="<?php echo Yii::app()->theme->baseUrl; ?>/js/paypal-button.min.js?merchant=YOUR_MERCHANT_ID"
 					data-button="buynow" data-name="My product" data-amount="1.00"></script>
+		
 			
 		<?php endif;?>
 			</div>

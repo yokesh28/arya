@@ -20,8 +20,7 @@ class SiteController extends FrontController {
 	
 	public function actionList($id)
 	{
-		$products=Catagories::model()->findByPk($id);
-		$this->render('list',array('products'=>$products->products));
+		$this->render('list');
 	}
 	
 	public function actionProductlist($id){

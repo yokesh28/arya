@@ -90,6 +90,7 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 								'product'=>'front/site/product',
 								'service'=>'front/site/service',
 								'contact'=>'front/site/contact',
+								'paypal'=>'front/site/paypal',
 								'error'=>'front/site/error',
 								'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 								'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',

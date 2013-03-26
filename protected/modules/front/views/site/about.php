@@ -65,7 +65,7 @@
 
 
 
-			<div class="row-fluid">
+			<div class=" align row-fluid">
 
 
 

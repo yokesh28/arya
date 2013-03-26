@@ -24,6 +24,13 @@ class CatagoriesController extends AdminController
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
+	
+	
+	
+	
+	
+	
+	
 	public function actionCreate()
 	{
 		$model=new Catagories;
@@ -33,9 +40,20 @@ class CatagoriesController extends AdminController
 
 		if(isset($_POST['Catagories']))
 		{
+			
+			$rnd = rand(0,9999);
 			$model->attributes=$_POST['Catagories'];
+			$uploadedFile=CUploadedFile::getInstance($model,'image_url');
+			$fileName = "{$rnd}-{$uploadedFile}";  // random number + file name
+			$model->image_url = $fileName;
+			
 			if($model->save())
+			{
+				$uploadedFile->saveAs(Yii::app()->basePath.'/../upload/cat/'.$fileName);// image will uplode to rootDirectory/banner/
+				
 				$this->redirect(array('view','id'=>$model->id));
+				
+			}
 		}
 
 		$this->render('create',array(
@@ -48,6 +66,7 @@ class CatagoriesController extends AdminController
 	 * If update is successful, the browser will be redirected to the 'view' page.
 	 * @param integer $id the ID of the model to be updated
 	 */
+	
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
@@ -57,9 +76,20 @@ class CatagoriesController extends AdminController
 
 		if(isset($_POST['Catagories']))
 		{
+			$_POST['Catagories']['image_url'] = $model->image_url;
 			$model->attributes=$_POST['Catagories'];
+			
+			$uploadedFile=CUploadedFile::getInstance($model,'image_url');
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				{
+					if(!empty($uploadedFile))  // check if uploaded file is set or not
+					{
+						$uploadedFile->saveAs(Yii::app()->basePath.'/../upload/cat/'.$model->image_url);
+						
+					}
+					$this->redirect(array('view','id'=>$model->id));
+				}
+				
 		}
 
 		$this->render('update',array(

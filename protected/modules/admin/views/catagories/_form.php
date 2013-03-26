@@ -3,8 +3,19 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'catagories-form',
 	'enableAjaxValidation'=>false,
+		
+		'htmlOptions' => array(
+				'enctype' => 'multipart/form-data',
+		),
+		
+		
+		
 )); ?>
 
+    
+    
+    
+    
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
@@ -16,12 +27,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'image_url'); ?>
-		<?php echo $form->textArea($model,'image_url',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'image_url'); ?>
-	</div>
+        <?php echo $form->labelEx($model,'image_url'); ?>
+        <?php echo CHtml::activeFileField($model, 'image_url'); ?>  // by this we can upload image
+        <?php echo $form->error($model,'image_url'); ?>
+    </div>
+       
 
-	<div class="row">
+    <div class="row">
 		<?php echo $form->labelEx($model,'updated_time'); ?>
 		<?php echo $form->textField($model,'updated_time'); ?>
 		<?php echo $form->error($model,'updated_time'); ?>

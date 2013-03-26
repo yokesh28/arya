@@ -5,7 +5,7 @@
 			<div class="row-fluid productDetail">
 			
 			<div class="proImage">
-			<img src="<?php echo Yii::app()->basePath;?>/upload/product/<?php echo $product->image_url?>">
+			<img src="<?php echo Yii::app()->basePath;?>/upload/product/card.png">
 			</div>
 			
 			</div>

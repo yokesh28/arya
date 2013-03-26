@@ -10,7 +10,7 @@
 
 	
 	<div id="content">
-		<div class="container">
+		<div class="align container">
 			<div class="row">
 				<article class="span5">
 					<h2>Vision and Mission</h2>
@@ -65,7 +65,7 @@
 
 
 
-			<div class=" align row-fluid">
+			<div class=" row-fluid">
 
 
 
@@ -114,7 +114,7 @@
 			</div>
 			<br>
 
-			<div class="row-fluid">
+			<div class=" row-fluid">
 
 				<div class="span4">
 					<h4>Infrastructure</h4>

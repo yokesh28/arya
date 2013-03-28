@@ -43,6 +43,17 @@ body {
 	width: 100%;
 }
 
+.mail{
+margin-left:40%;	
+
+}
+
+
+.mail .form-inline{color:#393838;}
+
+
+
+
 p {
 	margin-bottom: 22px;
 	text-align: justify;

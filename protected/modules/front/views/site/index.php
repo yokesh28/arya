@@ -12,12 +12,26 @@
 	src="<?php echo Yii::app()->theme->baseUrl;?>/js/a.js"></script>
 <body
 	id="splash" cz-shortcut-listen="true">
+	
+	
+	
+	
 	<div id="homepage" class="row-fluid">
 		<div class="logo span3">
 			<a href="#"><img
-				src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.png"> </a>
-		</div>
+				src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.png"> </a></div>
 
+				
+				
+				
+				<form>
+  <div class="mail span1"><input type="text" class="input-small" placeholder="Email"></div>
+  <div class="span1"><input type="password" class="input-small" placeholder="Password"></div>
+ 
+ <div class="span1 offset1"> <button type="submit" class="btn">Sign in</button></div>
+</form>
+		
+				
 		<div class="top span7"></div>
 		<div id="wowslider-container1">
 			<div class="ws_images">

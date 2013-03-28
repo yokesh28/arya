@@ -111,17 +111,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </script>
 
 
-
-
-
-
-<div id="top"></div>
-
-<div class="container" >
-
-
-
-
 <div class="ruled1">
 				
 				
@@ -141,6 +130,17 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 	
 <br/>	
 </div>
+
+
+
+<div id="top"></div>
+
+<div class="container" >
+
+
+
+
+
 
 
 	<p align="right" style="margin-bottom: 0;">

@@ -47,6 +47,9 @@ class Contacts extends CActiveRecord
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, email, number, message, reference, time, ip', 'safe', 'on'=>'search'),
+				
+						
+				
 		);
 	}
 

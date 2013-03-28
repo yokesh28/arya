@@ -19,6 +19,7 @@ body {
 	top: 0px;
 	left: 0px;
 	z-index: 101;
+	max-width: 300px;
 }
 
 .top {
@@ -428,6 +429,8 @@ header {
 	margin: 0;
 	padding: 0;
 	background: black;
+	position: absolute;
+	z-index: 102;
 }
 
 .nav-collapse_:before,.nav-collapse_:after {

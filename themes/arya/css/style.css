@@ -8,12 +8,39 @@ html {
 
 body {
 	min-height: 100%;
+	
 }
 
 #splash {
-	background: url(../images/home.png) center 0 no-repeat #010d1b;
+	background: #252525;
 }
+.logo{
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index: 3;
+}
+.top{
+	margin:0px !important;
+	width:100%;
+	height: 130px;
+	background: black;
+}
+#homepage .foot{
+	position: absolute;
+	bottom:0px;
 
+	width:100%;
+height:70px;
+	background: black;
+	margin-left: 0px !important;
+}
+.slider{
+	
+	
+	max-height:514px;
+	width:100%;
+}
 p {
 	margin-bottom: 22px;
 	text-align: justify;
@@ -325,7 +352,7 @@ header {
 }
 /* navbar */
 #splash header {
-	padding: 138px 0 0 0;
+	
 	background: none;
 }
 
@@ -402,7 +429,7 @@ header {
 	display: block;
 	margin: 0;
 	padding: 0;
-	background: url(../img/bg-nav.jpg) 0 0 repeat-x #071422;
+	background: black;
 }
 
 .nav-collapse_:before,.nav-collapse_:after {
@@ -581,19 +608,7 @@ header {
 
 .nav-collapse_ .nav>li.sfHover>a,.nav-collapse_ .nav>li.sfHover>a:hover,.nav-collapse_ .nav>li>a:hover,.nav-collapse_ .nav>li.active>a,.nav-collapse_ .nav>li.active>a:hover
 	{
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	background-color: #12498e;
-	background-image: -moz-linear-gradient(top, #185baa, #092e63);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#185baa),
-		to(#092e63));
-	background-image: -webkit-linear-gradient(top, #185baa, #092e63);
-	background-image: -o-linear-gradient(top, #185baa, #092e63);
-	background-image: linear-gradient(to bottom, #185baa, #092e63);
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff185baa',
-		endColorstr='#ff092e63', GradientType=0);
+	background:#ef7501;
 	color: #ffffff;
 }
 /*hover for second level*/
@@ -805,7 +820,7 @@ dl dt {
 	overflow: hidden;
 	width: 150px;
 	margin: 0 0 0 0;
-	background: #0b131c;
+	background: #393838;
 	border-bottom: 1px solid #18232f;
 	border-left: 1px solid #0a1119;
 	border-right: 1px solid #0a1119;
@@ -1434,7 +1449,7 @@ footer li{
 		margin-bottom: 2px;
 		width: 100%;
 		border: 1px solid #fff;
-		background: #224378;
+		background: black;
 		color: #fff;
 		cursor: pointer;
 	}
@@ -1642,3 +1657,5 @@ margin-left: 2px;
 
 
 .align{text-align:justify;}
+
+

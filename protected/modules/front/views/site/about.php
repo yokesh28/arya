@@ -2,8 +2,11 @@
 
 	<body cz-shortcut-listen="true">
 
-
-	
+<div id="innerpage">
+	<div class="logo span3">
+			<a href="#"><img
+				src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.png"> </a>
+		</div>
 	<?php include 'header.php'; ?> 
 
 	
@@ -197,3 +200,4 @@
 
 </div>
 
+</div>

@@ -1680,9 +1680,61 @@ footer li {
 	margin-left: 0px;
 zoom: 0.7;
 }
+.login{
+	margin:50px 0px;
+	position: absolute;
+	z-index: 99999;
+}
+.username{
+	background: url("../images/username.png") no-repeat;
+}
+.password{
+	background: url("../images/password.png") no-repeat;
+}
+.password input{
+background: transparent !important;
+border: none;
+padding: 0px 5px;
+margin: 0px;
+height: 42px;
+width: 198px;
+color: white;
+}
+.login .button{
+	background: url("../images/login.png") no-repeat;
+}
+.login .button input{
+border: none;
+padding: 0px;
+margin: 0px;
+height: 36px;
+width: 76px;
+color: white;
+background: transparent;
+}
+.login .button:hover{
+
+	background: url("../images/login.png") no-repeat;
+}
+.username input{
+	background: transparent !important;
+border: none;
+padding: 0px 0px 0px 52px;
+margin: 0px;
+height: 42px;
+width: 198px;
+color: white;
+}
 
 @media (min-width: 1200px){
 #innerpage .navbar_ .brand {
 margin: 0;
 }
 }
+
+@media (max-width: 767px){
+	#wowslider-container1{
+		margin-top: 150px !important;
+	}
+
+	}

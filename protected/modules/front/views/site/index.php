@@ -16,7 +16,27 @@
 				src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.png"> </a>
 		</div>
 
-		<div class="top span7"></div>
+		<div class="top span12">
+		
+		<div class="login offset6" >
+		<form >
+		<div class="label username">
+		<input type="text" name="email">
+		</div>
+		<div class="label password">
+		<input type="password" name="email" pattern="">
+		</div>
+		
+		<div class="button">
+		<input type="submit" name="" value="">
+		</div>
+		</form>
+		
+		
+		</div>
+		
+		
+		</div>
 		<div id="wowslider-container1">
 			<div class="ws_images">
 				<ul>

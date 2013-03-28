@@ -24,7 +24,7 @@
 		<input type="text" name="email">
 		</div>
 		<div class="label password">
-		<input type="password" name="email" pattern="">
+		<input type="password" name="email" >
 		</div>
 		
 		<div class="button">

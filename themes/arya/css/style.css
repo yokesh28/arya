@@ -401,7 +401,7 @@ header {
 }
 
 .navbar_ .navbar-inner {
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled=    false);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=     false);
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
@@ -429,6 +429,9 @@ header {
 	margin: 0;
 	padding: 0;
 	background: black;
+}
+
+#splash .nav-collapse {
 	position: absolute;
 	z-index: 102;
 }

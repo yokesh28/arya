@@ -18,7 +18,7 @@
 				src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.png"> </a>
 		</div>
 
-		<div class="top span12"></div>
+		<div class="top span7"></div>
 		<div id="wowslider-container1">
 			<div class="ws_images">
 				<ul>

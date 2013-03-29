@@ -7,16 +7,17 @@
 // CWebApplication properties can be configured here.
 return array(
 		'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-		'name'=>'',
+		'name'=>'Arya',
+		'defaultController' => 'front/site/index',
 		// preloading 'log' component
 		'preload'=>array('log'),
-	
+		'theme'=>'arya',
 		// autoloading model and component classes
 		'import'=>array(
 
 				'application.models.*',
 				'application.components.*',
-				/*		'application.extensions.*',
+				/*'application.extensions.*',
 				 'ext.widgets.*',*/
 				'application.utils.*',
 				'application.widgets.*',
@@ -33,14 +34,23 @@ return array(
 				'application.modules.front.widgets.*',
 				'application.modules.config.models.*',
 				'application.modules.config.api.*',
+				'application.modules.admin.*',
+				
 		),
 
 		'modules'=>array(
+				// uncomment the following to enable the Gii tool
+				'gii'=>array(
+						'class'=>'system.gii.GiiModule',
+						'password'=>'pass',
+						// If removed, Gii defaults to localhost only. Edit carefully to taste.
+						'ipFilters'=>array('127.0.0.1','::1'),
+				),
 				'email'=>array(),
 				'daemon'=>array(),
-				'admin'=>array(),
 				'front'=>array(),
 				'config'=>array(),
+				'admin'=>array(),
 		),
 
 		// application components
@@ -73,6 +83,15 @@ array('user/userResource/delete', 'pattern'=>'user/<id:\d+>', 'verb'=>'DELETE'),
 array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 								//'<action:(search)>' => 'front/search/<action>',
 								//'<action:(search)>/<AdvancedSearchForm:\w+>' => 'front/search/<action>',
+								'home'=>'front/site/index',
+								'about'=>'front/site/about',
+								'admin'=>'admin/site/index',
+								'career'=>'front/site/career',
+								'product'=>'front/site/product',
+								'service'=>'front/site/service',
+								'contact'=>'front/site/contact',
+								'paypal'=>'front/site/paypal',
+								'error'=>'front/site/error',
 								'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 								'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 								'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
@@ -81,20 +100,6 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 
 						),
 				),
-				'authManager'=>array(
-						// Path to SDbAuthManager in srbac module if you want to use case insensitive
-						// access checking (or CDbAuthManager for case sensitive access checking)
-						'class'=>'application.modules.srbac.components.SDbAuthManager',
-						//	'class'=>'CDbAuthManager',
-						// The database component used
-						'connectionID'=>'db',
-						// The itemTable name (default:authitem)
-						'itemTable'=>'auth_items',
-						// The assignmentTable name (default:authassignment)
-						'assignmentTable'=>'auth_assignments',
-						// The itemChildTable name (default:authitemchild)
-						'itemChildTable'=>'auth_itemchildren',
-				),
 
 				/*		'db'=>array(
 				 'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
@@ -102,10 +107,10 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 				// uncomment the following to use a MySQL database
 
 				'db'=>array(
-						'connectionString' => 'mysql:host=localhost;dbname=onz',
+						'connectionString' => 'mysql:host=localhost;dbname=shill_arya',
 						'emulatePrepare' => true,
-						'username' => 'root',
-						'password' => '',
+						'username' => 'shill_arya',
+						'password' => 'password',
 						'charset' => 'utf8',
 						'enableProfiling'=>'true',
 						'enableParamLogging' => true,
@@ -114,7 +119,7 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 						// use 'site/error' action to display errors
 						'errorAction'=>'front/site/error',
 				),  
-				'log'=>array(
+			/*	'log'=>array(
 						'class'=>'CLogRouter',
 						'routes'=>array(								
 								array(
@@ -128,15 +133,14 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 								),
 								*/
 								// uncomment the following to show log messages on web pages
-								 array(
+							/*	 array(
 										'class'=>'CWebLogRoute',
 								),
 								array(
 										'class'=>'CProfileLogRoute',
 								),
 						),
-				)
-				,
+				), */
 				'cache'=>array(
 						'class'=>'system.caching.CFileCache',
 				),
@@ -148,6 +152,8 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 		'params'=>array(
 				// this is used in contact page
 				'rootDir'=>dirname(dirname(dirname(__FILE__))),
+
+
 				'adminEmail'=>'',
 				'adminName'=>'',
 				'globalSalt'=>'',

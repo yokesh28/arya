@@ -73,8 +73,7 @@
 				
 				
 				
-<script  src="<?php echo Yii::app()->theme->baseUrl; ?>/js/paypal-button.min.js?merchant=YOUR_MERCHANT_ID"
-					data-button="" data-name="My product" data-amount="1.00"></script>
+
 		
 			
 		<?php endif;?>

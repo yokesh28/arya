@@ -1652,7 +1652,10 @@ footer li {
 }
 
 .price {
-	margin: 10px auto;
+	margin: -13px auto;
+	top: 246px;
+left: 65px;
+position: relative;
 }
 
 .product .price label {

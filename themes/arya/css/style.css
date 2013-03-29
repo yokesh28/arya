@@ -1644,9 +1644,14 @@ footer li {
 
 .product h3 {
 	text-align: center;
+	
+}
+.product1 h3 {
+	text-align: center;
 	position: relative;
 top: 45px;
 left: 20px;
+	
 }
 
 .product span {

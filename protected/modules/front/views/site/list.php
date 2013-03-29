@@ -29,7 +29,7 @@
 			<div class="row-fluid product">
 				<?php if($_GET['id']=='1'):?>
 				<div class="span3">
-					<h3>
+					<h3 class="product1">
 						sample
 					</h3>
 					

@@ -14,7 +14,7 @@
 			
 		
 			<div class="span3">
-			<h3>BUSINESS CARD</h3>
+			<h3 >BUSINESS CARD</h3>
 			<a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/list/id/1')?>">
 			<img src="<?php echo Yii::app()->baseUrl?>/upload/cat/card.png"></a>
 			<span class="span12">

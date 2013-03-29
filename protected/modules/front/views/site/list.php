@@ -37,7 +37,7 @@
 					
 					<a
 						href="<?php echo Yii::app()->createAbsoluteUrl('/front/site/productlist/id/')?>">
-						<div class="container">
+						
 			
 			
 

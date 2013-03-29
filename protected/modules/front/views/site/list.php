@@ -48,11 +48,8 @@
 						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
 					</div>
 						<img  src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
-					</a></div>
-				
-				
-			
-       
+					</a>
+					
 					<div class="price">
 						<label><b>Price :</b></label> <select><option>500</option>
 						<option>1000</option>
@@ -67,6 +64,21 @@
 					
 					
 					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					</div>
+				
+				
+			
+       
+					
 				</div>
 				
 				

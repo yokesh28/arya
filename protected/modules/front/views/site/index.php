@@ -10,11 +10,15 @@
 	src="<?php echo Yii::app()->theme->baseUrl;?>/js/a.js"></script>
 <body
 	id="splash" cz-shortcut-listen="true">
+	
+	
+	
+	
 	<div id="homepage" class="row-fluid">
 		<div class="logo span3">
 			<a href="#"><img
-				src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.png"> </a>
-		</div>
+				src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.png"> </a></div>
+
 
 		<div class="top span12">
 		
@@ -37,6 +41,7 @@
 		
 		
 		</div>
+
 		<div id="wowslider-container1">
 			<div class="ws_images">
 				<ul>

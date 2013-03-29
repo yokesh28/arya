@@ -46,6 +46,17 @@ body {
 	width: 100%;
 }
 
+.mail{
+margin-left:40%;	
+
+}
+
+
+.mail .form-inline{color:#393838;}
+
+
+
+
 p {
 	margin-bottom: 22px;
 	text-align: justify;
@@ -1641,7 +1652,10 @@ footer li {
 }
 
 .price {
-	margin: 10px auto;
+	margin: -13px auto;
+	top: 246px;
+left: 65px;
+position: relative;
 }
 
 .product .price label {

@@ -27,6 +27,10 @@ class ContactForm extends CFormModel
 			// rememberMe needs to be a boolean
 			array('email', 'email'),
 			array('number','match','pattern'=>'/^([0-9]{10,})$/')
+				
+				
+				
+				
 		);
 	}
 

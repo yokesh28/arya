@@ -415,7 +415,7 @@ header {
 }
 
 .navbar_ .navbar-inner {
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled=     false);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;

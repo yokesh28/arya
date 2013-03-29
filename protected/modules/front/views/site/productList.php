@@ -1,4 +1,5 @@
 <body cz-shortcut-listen="true">
+<div id="innerpage">
 	<?php include 'header.php'; ?>
 	<div id="content">
 		<div class="container">
@@ -10,4 +11,5 @@
 			
 			</div>
 		</div>
+	</div>
 	</div>

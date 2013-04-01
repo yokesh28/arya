@@ -1742,14 +1742,33 @@ footer li {
 	border: none;
 	padding: 0px 0px 0px 44px;
 	margin: 0px;
-	height: 28px; width : 156px;
+	height: 28px;
+	width: 156px;
 	color: white;
 	width: 156px;
 }
 
 @media ( min-width : 1200px) {
+	.container {
+		margin-left: 207px !important;
+	}
 	#innerpage .navbar_ .brand {
 		margin: 0;
+	}
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 767px) { 
+    /* STYLES HERE */
+    .clearfix {
+		width: 400px;
+		margin-left: 70px;
+	}
+}
+
+
+@media ( min-width :767px) {
+	.container {
+		margin-left: 160px;
 	}
 }
 
@@ -1759,8 +1778,8 @@ footer li {
 		WIDTH: 220PX;
 		margin-left: 20px !important;
 	}
-	.password input{
-	width: 190px !important;
+	.password input {
+		width: 190px !important;
 	}
 	#wowslider-container1 {
 		margin-top: 150px !important;

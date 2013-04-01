@@ -20,7 +20,7 @@
 	<?php include 'header.php'; ?>
 	<div id="content">
 		<div class="container">
-			<div class="row-fluid product">
+			<div class="row-fluid product list">
 				<?php if($_GET['id']=='1'):?>
 				<div class="span3">
 					<h3 >

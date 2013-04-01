@@ -304,6 +304,7 @@ jQuery.fn.wowSlider = function(y) {
 		Z.append(V)
 	}
 	E(Z).css({
+		display:'none',
 		zIndex : 11,
 		right : "5px",
 		bottom : "2px"

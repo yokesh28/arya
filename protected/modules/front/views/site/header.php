@@ -8,7 +8,11 @@
 		<div class="navbar navbar_ clearfix">
 			<div class="navbar-inner">
 				<div class="clearfix">
-					<h1 class="brand"></h1>
+				<?php if(Yii::app()->controller->action->id!= 'index'):?>
+					<h1 class="brand"><a href="#"><img
+				src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.png"> </a></h1>
+				<?php endif;?>
+				
 					<div class="nav-collapse nav-collapse_ collapse row-fluid ">
 						<div class="clearfix">
 							<ul class="nav sf-menu clearfix sf-js-enabled  ">

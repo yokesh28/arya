@@ -401,7 +401,7 @@ header {
 	position: relative;
 	display: block;
 	overflow: hidden;
-	width: 291px;
+
 	float: none;
 	padding: 0;
 	line-height: 0;
@@ -1588,10 +1588,7 @@ footer li {
 }
 
 @media ( max-width : 480px) {
-	.navbar_ .brand {
-		width: 145px;
-		height: 178px;
-	}
+	
 	#splash header {
 		padding: 10px 0 0 0;
 	}
@@ -1749,12 +1746,11 @@ footer li {
 }
 
 @media ( min-width : 1200px) {
-	.container {
-		margin-left: 207px !important;
-	}
+	
 	#innerpage .navbar_ .brand {
 		margin: 0;
 	}
+	
 }
 
 @media screen and (min-device-width: 481px) and (max-device-width: 767px) { 
@@ -1766,17 +1762,15 @@ footer li {
 }
 
 
-@media ( min-width :767px) {
-	.container {
-		margin-left: 160px;
-	}
-}
+
 
 @media ( max-width : 767px) {
-	.login {
-		margin-top: 180px !important;
-		WIDTH: 220PX;
-		margin-left: 20px !important;
+
+	 .footer_menu li{
+	border-right:none !important; 
+	}
+	.copy_rights li{
+	border-right:none;
 	}
 	.password input {
 		width: 190px !important;

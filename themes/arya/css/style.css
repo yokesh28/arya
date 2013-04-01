@@ -1347,7 +1347,7 @@ footer li {
 		margin: 58px auto 192px;
 	}
 	.nav-collapse_ .nav>li>a {
-		padding: 34px 42px 32px 42px;
+		padding: 34px 30px 32px 30px;
 	}
 	.div-search {
 		margin: 25px 19px 0 0;
@@ -1746,6 +1746,7 @@ footer li {
 }
 
 @media ( min-width : 1200px) {
+
 	
 	#innerpage .navbar_ .brand {
 		margin: 0;
@@ -1793,6 +1794,7 @@ footer li {
 }
 .product {
 	min-height: 650px;
+	margin: 70px 0px;
 }
 .clearfix select{
 	width:40%;

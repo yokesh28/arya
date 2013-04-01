@@ -42,7 +42,7 @@
 							</ul>
 
 							<div class="div-search">
-								<span>search</span>
+								
 								<form id="search" action="#" method="GET" accept-charset="utf-8">
 									<input type="text" value="" name="s"> <a href="#"
 										onclick="document.getElementById('search').submit()"></a>

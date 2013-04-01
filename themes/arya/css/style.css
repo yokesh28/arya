@@ -1766,11 +1766,18 @@ footer li {
 
 @media ( max-width : 767px) {
 
+
 	 .footer_menu li{
 	border-right:none !important; 
 	}
 	.copy_rights li{
 	border-right:none;
+	}
+	.login {
+		margin-top: 180px !important;
+		width: 220PX;
+		margin-left: 20px !important;
+
 	}
 	.password input {
 		width: 190px !important;

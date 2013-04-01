@@ -1775,7 +1775,7 @@ footer li {
 @media ( max-width : 767px) {
 	.login {
 		margin-top: 180px !important;
-		WIDTH: 220PX;
+		width: 220PX;
 		margin-left: 20px !important;
 	}
 	.password input {

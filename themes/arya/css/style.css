@@ -1766,7 +1766,12 @@ footer li {
 
 @media ( max-width : 767px) {
 
-
+.clearfix form{
+	margin-left: -25% !important;
+}
+.clearfix .div-search{
+	width: 40%;
+}
 	 .footer_menu li{
 	border-right:none !important; 
 	}
@@ -1785,4 +1790,11 @@ footer li {
 	#wowslider-container1 {
 		margin-top: 150px !important;
 	}
+}
+.product {
+	min-height: 650px;
+}
+.clearfix select{
+	width:40%;
+	margin-left: 55%;
 }

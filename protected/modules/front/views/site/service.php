@@ -32,7 +32,7 @@
 
 			</div>
 
-		<div class="row-fluid color">
+		<div class="row color">
 				<div class="span2">
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/a.jpg">
 					<h6>Annual Reports</h6>
@@ -65,7 +65,7 @@
 					<br>
 				</div>
 		</div>
-		<div class="row-fluid color">	
+		<div class="row color">	
 				<div class="span2">
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/g.jpg">
 					<h6>Coffee Table Books</h6>
@@ -98,7 +98,7 @@
 				</div>
          </div>  
          
-        <div class="row-fluid color">	
+        <div class="row color">	
                
 				<div class="span2">
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/m.jpg">

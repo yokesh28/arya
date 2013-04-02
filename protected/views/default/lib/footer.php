@@ -9,7 +9,7 @@
 										<li ><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/home')?>">HOME PAGE </a></li>
 										<li><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/about')?>">ABOUT US</a></li>
 										<li><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/product')?>">PRODUCT</a></li>
-										<li ><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/services')?>">SERVICES</a></li>
+										<li ><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/service')?>">SERVICES</a></li>
 										<li><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/career')?>">CAREERS </a></li>
 										<li><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/contact')?>">CONTACT US </a></li>
 									</ul>

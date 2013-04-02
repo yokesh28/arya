@@ -24,7 +24,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="span5 social">
+							<div class="span5 social inline">
 							<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/f.png"></a>
 								<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/t.png"></a>
 								<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/g.png"></a>

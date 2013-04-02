@@ -1184,6 +1184,8 @@ footer .span12 {
 	border-right: 1px solid #242424;
 	text-align: center;
 	margin-left: 0px !important;
+	min-width: 70px;
+	text-align: center;
 }
 
 .footer_menu ul li:last-child {
@@ -1263,14 +1265,12 @@ footer .span12 {
 	background: url(../img/icon-2.png) 0 0 no-repeat;
 }
 
-
-
 .copy_rights li {
 	text-align: center;
 	border-right: 1px solid #242424;
 	min-height: auto !important;
 	margin: 0px !important;
-   float:left;
+	float: left;
 }
 
 .copy_rights ul li:first-child a {
@@ -1736,16 +1736,15 @@ footer li {
 }
 
 @media screen and (min-device-width: 481px) and (max-device-width:
-	767px) {
-	/* STYLES HERE */
-
+	767px) { /* STYLES HERE */
 }
 
 @media ( max-width : 767px) {
-	
 	.footer_menu li {
 		border-right: none !important;
+		text-align: left;
 	}
+	
 	.copy_rights li {
 		border-right: none;
 	}
@@ -1764,18 +1763,15 @@ footer li {
 
 .product {
 	min-height: 550px;
-
 }
-
-
 
 .menu {
 	margin-left: 0px !important;
 }
 
 @media ( max-width : 480px) {
-	
 }
+
 #homepage .logo {
 	position: absolute;
 	top: 0px;
@@ -1783,4 +1779,3 @@ footer li {
 	z-index: 101;
 	max-width: 300px;
 }
-

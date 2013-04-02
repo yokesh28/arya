@@ -13,10 +13,7 @@
 
 <body cz-shortcut-listen="true">
 <div id="innerpage">
-<div class="logo span3">
-			<a href="#"><img
-				src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.png" > </a>
-		</div>
+
 	<?php include 'header.php'; ?>
 	<div id="content">
 		<div class="container">
@@ -30,7 +27,7 @@
 					
 					
 					<a
-						href="<?php echo Yii::app()->createAbsoluteUrl('/front/site/productlist/id/')?>">
+						href="<?php echo Yii::app()->createAbsoluteUrl('/front/site/productlist/id/')?>"></a>
 						
 			
 			
@@ -42,7 +39,7 @@
 						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
 					</div>
 						<img  src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
-					</a>
+					
 					
 					
 					
@@ -74,7 +71,8 @@
 			</div>
 		</div>
 	</div>
-	
+	</div>
+	</div>
 	
 	 
 		<script type="text/javascript">	

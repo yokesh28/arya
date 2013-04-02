@@ -41,117 +41,117 @@
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/a.jpg">
 					<h6>Annual Reports</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 
 				<li>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/b.jpg">
 					<h6>Art Books</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 				
 				<li>
 				
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/c.jpg">
 					<h6>Brochures</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 				
 				<li>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/d.jpg">
 					<h6>Calendars</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 				
 				<li>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/e.jpg">
 					<h6>Carry Bags</h6>
 					<br>
-					</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
 					
 				<li>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/f.jpg">
 					<h6>Catalogues</h6>
 					<br>
 
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 		
 				<li>
 
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/g.jpg">
 					<h6>Coffee Table Books</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 				
 				<li>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/h.jpg">
 					<h6>Corporate Stationary</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 				<li>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/i.jpg">
 					<h6>Hardcase Books</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 				
 				<li>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/j.jpg">
 					<h6>Journals</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 				
 				<li>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/k.jpg">
 					<h6>Labels</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 				
 				<li>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/l.jpg">
 					<h6>Leaflets</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
        
          <li>
 
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/m.jpg">
 					<h6>Magazines</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 				
 				<li>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/n.jpg">
 					<h6>Packaging Cartons</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 				
 				<li>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/o.jpg">
 					<h6>Posters</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 				
 				<li>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/p.jpg">
 					<h6>Presentation Folders</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 				
 				<li>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/q.jpg">
 					<h6>Visual Aids</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 				
 				<li>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/r.jpg">
 					<h6>Invitation Cards</h6>
 					<br>
-				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</li>
 				
 				</ul>
 		
 
-
+</div>
 
 		</div>
 

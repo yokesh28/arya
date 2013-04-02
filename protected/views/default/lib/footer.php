@@ -18,13 +18,13 @@
 									<ul class="inline">
 										<li><a href="#">Arya  &#169;  2012</a></li>
 										<li><a href="#">Privacy Policy </a></li>
-										<li><a href="http://www.s-creative.me" target="_blank">Designed by S-CREATIVE &nbsp&nbsp&nbsp</a></li>
+										<li><a href="http://www.s-creative.me" target="_blank">Designed by S-CREATIVE </a></li>
 										
 
 									</ul>
 								</div>
 							</div>
-							<div class="span5 social inline">
+							<div class="span5 social">
 							<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/f.png"></a>
 								<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/t.png"></a>
 								<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/g.png"></a>

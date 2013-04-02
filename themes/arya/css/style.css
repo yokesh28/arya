@@ -1298,7 +1298,9 @@ footer .span12 {
 .copy_rights ul li:last-child {
 	border-right: none;
 }
-
+.social{
+	display: inline-block !important;
+}
 .social img {
 	float: right;
 	margin: 30px 4px;
@@ -1742,7 +1744,7 @@ footer li {
 @media ( max-width : 767px) {
 	.footer_menu li {
 		border-right: none !important;
-		text-align: left;
+		text-align: left !important;
 	}
 	
 	.copy_rights li {

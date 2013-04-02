@@ -4,35 +4,19 @@
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl;?>/css/style3.css" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css' />
 		<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl;?>/js/modernizr.custom.69142.js"></script> 
-
-	
-	
-	
-	
-	
-
 <body cz-shortcut-listen="true">
 <div id="innerpage">
 
 	<?php include 'header.php'; ?>
 	<div id="content">
 		<div class="container">
-			<div class="row-fluid product list">
+			<div class="product">
 				<?php if($_GET['id']=='1'):?>
-				<div class="span3">
-					<h3 >
-						sample
-					</h3>
-					
-					
-					
-					<a
-						href="<?php echo Yii::app()->createAbsoluteUrl('/front/site/productlist/id/')?>"></a>
-						
-			
+				
 			
 
-            <div id="grid" class="main">
+            <div id="grid" class="main list">
+            <h3>Sample</h3>
 				<div class="view">
 					<div class="view-back">
 						
@@ -61,14 +45,8 @@
 					
 					</div>
 			</div>
-				
-				
-				
-
-		
+				<?php endif;?>
 			
-		<?php endif;?>
-			</div>
 		</div>
 	</div>
 	</div>

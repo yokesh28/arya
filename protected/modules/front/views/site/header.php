@@ -1,15 +1,9 @@
 
 <header>
-
-	
-	
 	<div class="container">
-
 		<div class="navbar navbar_ clearfix">
 			<div class="navbar-inner">
 				<div class="clearfix">
-				
-				
 					<div class="nav-collapse nav-collapse_ collapse row-fluid ">
 						<div class="clearfix">
 							<ul class="nav sf-menu clearfix sf-js-enabled  ">

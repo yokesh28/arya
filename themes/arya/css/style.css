@@ -15,15 +15,7 @@ body {
 }
 
 #innerpage header {
-	background: black;
-}
-
-.logo {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	z-index: 101;
-	max-width: 300px;
+	
 }
 
 .top {
@@ -90,7 +82,7 @@ h2 {
 	color: #33383d;
 	font-size: 22px;
 	line-height: 23px;
-	margin: 74px 0 29px 0;
+	margin: 28px 0 28px 0;
 }
 
 h2.h2indent {
@@ -401,7 +393,6 @@ header {
 	position: relative;
 	display: block;
 	overflow: hidden;
-
 	float: none;
 	padding: 0;
 	line-height: 0;
@@ -1588,7 +1579,6 @@ footer li {
 }
 
 @media ( max-width : 480px) {
-	
 	#splash header {
 		padding: 10px 0 0 0;
 	}
@@ -1687,11 +1677,6 @@ footer li {
 	text-align: justify;
 }
 
-#innerpage .logo {
-	margin-left: 0px;
-	zoom: 0.7;
-}
-
 .login {
 	margin: 50px 0px;
 	position: absolute;
@@ -1746,44 +1731,29 @@ footer li {
 }
 
 @media ( min-width : 1200px) {
-
-	
 	#innerpage .navbar_ .brand {
 		margin: 0;
 	}
-	
 }
 
-@media screen and (min-device-width: 481px) and (max-device-width: 767px) { 
-    /* STYLES HERE */
-    .clearfix {
-		width: 400px;
-		margin-left: 70px;
-	}
+@media screen and (min-device-width: 481px) and (max-device-width:
+	767px) {
+	/* STYLES HERE */
+
 }
-
-
-
 
 @media ( max-width : 767px) {
-
-.clearfix form{
-	margin-left: -25% !important;
-}
-.clearfix .div-search{
-	width: 40%;
-}
-	 .footer_menu li{
-	border-right:none !important; 
+	
+	.footer_menu li {
+		border-right: none !important;
 	}
-	.copy_rights li{
-	border-right:none;
+	.copy_rights li {
+		border-right: none;
 	}
 	.login {
 		margin-top: 180px !important;
 		width: 220PX;
 		margin-left: 20px !important;
-
 	}
 	.password input {
 		width: 190px !important;
@@ -1792,11 +1762,20 @@ footer li {
 		margin-top: 150px !important;
 	}
 }
+
 .product {
 	min-height: 650px;
 	margin: 70px 0px;
 }
-.clearfix select{
-	width:40%;
-	margin-left: 55%;
+
+
+
+.menu {
+	margin-left: 0px !important;
+}
+
+@media ( max-width : 480px) {
+	.logo {
+		width:50%;
+	}
 }

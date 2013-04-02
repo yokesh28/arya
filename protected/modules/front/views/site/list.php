@@ -10,9 +10,9 @@
 	<?php include 'header.php'; ?>
 	<div id="content">
 		<div class="container">
-			<div class="row-fluid product list">
+			<div class="row-fluid product">
 				<?php if($_GET['id']=='1'):?>
-				<div class="span3">
+				<div class="span3 list">
 					<h3 >
 						sample
 					</h3>
@@ -22,7 +22,7 @@
 					<a
 						href="<?php echo Yii::app()->createAbsoluteUrl('/front/site/productlist/id/')?>"></a>
 						
-			
+			</div>
 			
 
             <div id="grid" class="main">
@@ -55,7 +55,7 @@
 					</div>
 			</div>
 				<?php endif;?>
-			</div>
+			
 		</div>
 	</div>
 	</div>

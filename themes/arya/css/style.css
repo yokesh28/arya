@@ -1272,15 +1272,14 @@ footer .span12 {
 	background: url(../img/icon-2.png) 0 0 no-repeat;
 }
 
-.footer_menu {
-	border-bottom: 1px solid #242424;
-}
+
 
 .copy_rights li {
 	text-align: center;
 	border-right: 1px solid #242424;
 	min-height: auto !important;
 	margin: 0px !important;
+   float:left;
 }
 
 .copy_rights ul li:first-child a {

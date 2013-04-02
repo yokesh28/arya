@@ -1763,8 +1763,8 @@ footer li {
 }
 
 .product {
-	min-height: 650px;
-	margin: 70px 0px;
+	min-height: 550px;
+
 }
 
 
@@ -1774,7 +1774,13 @@ footer li {
 }
 
 @media ( max-width : 480px) {
-	.logo {
-		width:50%;
-	}
+	
 }
+#homepage .logo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 101;
+	max-width: 300px;
+}
+

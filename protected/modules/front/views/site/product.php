@@ -14,6 +14,7 @@
 			<h3 >BUSINESS CARD</h3>
 			<a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/list/id/1')?>">
 			<img src="<?php echo Yii::app()->baseUrl?>/upload/cat/card.png"></a>
+			
 			<span class="span12">
 			A sturdy laminating film protects your business cards on both sides.Also ensures solid colours don't get scratched.
 			</span>

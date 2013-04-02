@@ -18,7 +18,7 @@
 									<ul class="inline">
 										<li><a href="#">Arya  &#169;  2012</a></li>
 										<li><a href="#">Privacy Policy </a></li>
-										<li><a href="http://www.s-creative.me" target="_blank">Designed by S-CREATIVE &nbsp&nbsp&nbsp</a></li>
+										<li><a href="http://www.s-creative.me" target="_blank">Designed by S-CREATIVE </a></li>
 										
 
 									</ul>

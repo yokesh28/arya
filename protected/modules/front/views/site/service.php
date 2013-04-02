@@ -32,8 +32,11 @@
 
 			</div>
 
+
 		<div class="row-fluid color">
 				<ul class="inline">
+
+		
 				<li>
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/a.jpg">
 					<h6>Annual Reports</h6>
@@ -69,9 +72,11 @@
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/f.jpg">
 					<h6>Catalogues</h6>
 					<br>
+
 				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		
 				<li>
+
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/g.jpg">
 					<h6>Coffee Table Books</h6>
 					<br>
@@ -106,9 +111,8 @@
 					<br>
 				</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
        
-         
-       
-				<li>
+         <li>
+
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/m.jpg">
 					<h6>Magazines</h6>
 					<br>

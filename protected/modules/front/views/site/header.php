@@ -19,7 +19,7 @@
 									</li>
 									<li class=""
 									<?php echo (Yii::app()->controller->action->id== 'about Us' ? 'class=active' : '');?>>
-										<a href="<?php echo Yii::app()->CreateAbsoluteUrl('/about')?>">About
+										<a href="<?php echo Yii::app()->CreateAbsoluteUrl('/about')?>">About Us
 											</a>
 									</li>
 									<li class=""

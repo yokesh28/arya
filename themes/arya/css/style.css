@@ -632,6 +632,27 @@ header {
 	position: relative;
 	padding: 8px 0 9px 0;
 }
+#content .rowsize{
+	
+	margin-left: -59px;
+	
+}
+
+#content .rowheight
+{
+position: relative;
+top: -183px;
+
+}
+
+.imgsize img{
+	
+	width:200px;
+	height: 150px;
+	
+}
+
+
 
 #content-1 {
 	position: relative;
@@ -1630,8 +1651,13 @@ footer li {
 .list h3 {
 	text-align: center;
 	position: relative;
-	top: 0px;
+	top: -4px;
 	left: -176px;
+}
+
+.list h5
+{
+margin-left: 119px;
 }
 
 .product span {
@@ -1641,8 +1667,8 @@ footer li {
 
 .price {
 	margin: -13px auto;
-	top: 246px;
-	left: 65px;
+	top: 197px;
+	left: 0px;
 	position: relative;
 }
 
@@ -1661,8 +1687,9 @@ footer li {
 }
 
 .price select {
-	width: 84px;
-	height: 25px;
+	width: 127px;
+	height: 28px;
+	margin-left: 20px;
 }
 
 .price label {
@@ -1671,9 +1698,14 @@ footer li {
 }
 
 .text p {
-	margin-left: -2px;
+	margin-left: 60px;
 }
-
+.textsize p{
+	
+	margin-left: 26px;
+	
+	
+}
 .align {
 	text-align: justify;
 }
@@ -1763,9 +1795,7 @@ footer li {
 	}
 }
 
-.product {
-	min-height: 550px;
-}
+
 
 .menu {
 	margin-left: 0px !important;

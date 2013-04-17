@@ -46,11 +46,10 @@
 					
 					</div>
 					
-					
 					</div>
 			</div>
 				
-			
+			<img width="150"  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
 		</div>
 		
 		

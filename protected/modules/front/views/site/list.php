@@ -41,19 +41,19 @@
 						<option>Front&Back</option>
 						
 						</select>
-						
 					
 					</div>
-				
-					
-					</div>
-					
-				
-					
-					</div>
-					
+					<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
 			</div>
-				<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
+					
+					</div>
+					
+					
+					
+					</div>
+			</div>
+				
 		</div>
 		
 		

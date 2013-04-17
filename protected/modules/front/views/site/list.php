@@ -14,11 +14,7 @@
 			<div class="row rowsize">
 			
 			<div class="product span4">
-				
-				
-			
-
-            <div id="grid" class="main list ">
+				<div id="grid" class="main list ">
             
             <h5>Gloss</h5>
 				<div class="view">
@@ -42,18 +38,18 @@
 						
 						</select>
 					
-					</div>
-					
-					
-					</div>
-					
-					
-					
-					</div>
 			</div>
-				<div class="isize">
+					
+					
+					</div>
+					<div class="isize">
 			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
+					
+					
+					</div>
 			</div>
+				
 		</div>
 		
 		

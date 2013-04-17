@@ -24,7 +24,7 @@
 				<div class="view">
 					<div class="view-back">
 						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
+						
 					</div>
 						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
 					
@@ -32,6 +32,7 @@
 					
 					
 					<div class="price">
+					<div class="quantityinfo">
 						<label><b>Quantity:</b></label> <select><option>500nos</option>
 						<option>1000nos</option>
 						
@@ -40,16 +41,19 @@
 						<option>Front&Back</option>
 						
 						</select>
-					
-					
-					
+						
 					
 					</div>
-					
-					</div>
-			</div>
 				
-			<img width="150"  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+					
+					</div>
+					
+				
+					
+					</div>
+					
+			</div>
+				<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
 		</div>
 		
 		
@@ -88,7 +92,9 @@
 					
 					</div>
 			</div>
-				
+				<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 			
 		</div>
 		
@@ -125,10 +131,13 @@
 					
 					</div>
 			</div>
+			<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 			
 		</div>
 		
-		<div class="product span4">
+		<div class="product span4 ">
 				
 				
 			
@@ -162,7 +171,9 @@
 					
 					</div>
 			</div>
-				
+				<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 			
 		</div>
 		</div>
@@ -210,7 +221,9 @@
 					
 					</div>
 			</div>
-				
+				<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 			
 		</div>
 		
@@ -251,7 +264,9 @@
 					
 					</div>
 			</div>
-				
+				<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 			
 		</div>
 		
@@ -293,7 +308,9 @@
 					
 					</div>
 			</div>
-				
+				<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 			
 		</div>
 		
@@ -335,7 +352,9 @@
 					
 					</div>
 			</div>
-				
+				<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 			
 		</div>
 		<div class="product span4">
@@ -377,7 +396,9 @@
 					
 					</div>
 			</div>
-				
+				<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 			
 		</div>
 		</div>
@@ -423,7 +444,9 @@
 					
 					</div>
 			</div>
-				
+				<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 			
 		</div>
 			
@@ -464,7 +487,9 @@
 					</div>
 			</div>
 				
-			
+			<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 		</div>
 		
 		<div class="product span4">
@@ -502,7 +527,9 @@
 					
 					</div>
 			</div>
-				
+				<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 			
 		</div>
 		</div>
@@ -548,7 +575,9 @@
 					
 					</div>
 			</div>
-				
+				<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 			
 		</div>
 		
@@ -586,7 +615,9 @@
 					
 					</div>
 			</div>
-				
+				<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 			
 		</div>
 			
@@ -626,7 +657,9 @@
 					
 					</div>
 			</div>
-				
+				<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 			
 		</div>
 		
@@ -667,7 +700,9 @@
 					</div>
 			</div>
 				
-			
+			<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 		</div>
 		
 		
@@ -707,7 +742,9 @@
 					
 					</div>
 			</div>
-				
+				<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 			
 		</div>
 		
@@ -756,7 +793,9 @@
 					</div>
 			</div>
 				
-			
+			<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 		</div>
 		</div>
 		</div>

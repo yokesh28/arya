@@ -652,6 +652,22 @@ top: -183px;
 	
 }
 
+.isize img
+{
+	width: 50px;
+height: 45px;
+margin-left: 250px;
+margin-top: -150px;
+	cursor: pointer;
+	
+}
+
+.quantityinfo {
+	
+	float: left;
+	width: 220px;
+}
+
 
 
 #content-1 {

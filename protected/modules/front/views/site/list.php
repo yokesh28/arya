@@ -12,15 +12,11 @@
 		<div class="container imgsize">
 		<h2>Visiting Card</h2>
 			<div class="row rowsize">
-			
-			<div class="product span4">
+			<form id="paypal_form" class="paypal" action="payments.php" method="post" >
+			<div class="product span6">
 
 				
-				
-				
-			
-
-            <div id="grid" class="main list ">
+				<div id="grid" class="main list ">
 
             
             <h5>Gloss</h5>
@@ -29,18 +25,18 @@
 						
 						
 					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
+						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/gloss/1.jpg">
 					
 					
 					
 					
 					<div class="price">
 					<div class="quantityinfo">
-						<label><b>Quantity:</b></label> <select><option>500nos</option>
+						<label><b>Quantity:</b></label> <select name="quantity"><option>500nos</option>
 						<option>1000nos</option>
 						
 						</select><br><br>
-						<label><b>Type :</b></label> <select><option>Single Side</option>
+						<label><b>Type :</b></label> <select name="type"><option>Single Side</option>
 						<option>Front&Back</option>
 						
 						</select>
@@ -55,13 +51,13 @@
 					</div>
 			</div>
 				<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+		<input type="image" src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png" alt="submit">
 			</div>	
 		</div>
 		
-		
+		</form>
 	
-				<div class="product span4">
+				<div class="product span6">
 				
 				
 			
@@ -71,19 +67,19 @@
 				<div class="view">
 					<div class="view-back">
 						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
+						
 					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
+						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/mat/1.JPEG">
 					
 					
 					
 					
 					<div class="price">
-						<label><b>Quantity:</b></label> <select><option>500nos</option>
+						<label><b>Quantity:</b></label> <select name="quantity1"><option>500nos</option>
 						<option>1000nos</option>
 						
 						</select><br><br>
-						<label><b>Type :</b></label> <select><option>Single Side</option>
+						<label><b>Type :</b></label> <select name="type1"><option>Single Side</option>
 						<option>Front&Back</option>
 						
 						</select>
@@ -96,12 +92,12 @@
 					</div>
 			</div>
 				<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
-			</div>	
+		<input type="image" src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png" alt="submit">
+			</div>		
 			
 		</div>
 		
-		<div class="product span4">
+		<div class="product span6">
 				
 				
 			
@@ -111,19 +107,19 @@
 				<div class="view">
 					<div class="view-back">
 						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
+						
 					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
+						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/sy/1.jpg">
 					
 					
 					
 					
 					<div class="price">
-						<label><b>Quantity:</b></label> <select><option>500nos</option>
+						<label><b>Quantity:</b></label> <select name="quantity2"><option>500nos</option>
 						<option>1000nos</option>
 						
 						</select><br><br>
-						<label><b>Type :</b></label> <select><option>Single Side</option>
+						<label><b>Type :</b></label> <select name="type2"><option>Single Side</option>
 						<option>Front&Back</option>
 						
 						</select>
@@ -135,12 +131,12 @@
 					</div>
 			</div>
 			<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+		<input type="image" src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png" alt="submit">
 			</div>	
 			
 		</div>
 		
-		<div class="product span4 ">
+		<div class="product span6">
 				
 				
 			
@@ -150,19 +146,19 @@
 				<div class="view">
 					<div class="view-back">
 						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
+						
 					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
+						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/uv/1.jpg">
 					
 					
 					
 					
 					<div class="price">
-						<label><b>Quantity:</b></label> <select><option>500nos</option>
+						<label><b>Quantity:</b></label> <select name="quantity3"><option>500nos</option>
 						<option>1000nos</option>
 						
 						</select><br><br>
-						<label><b>Type :</b></label> <select><option>Per Side</option>
+						<label><b>Type :</b></label> <select name="type3"><option>Per Side</option>
 						
 						
 						</select>
@@ -175,7 +171,7 @@
 					</div>
 			</div>
 				<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+		<input type="image" src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png" alt="submit">
 			</div>	
 			
 		</div>
@@ -186,7 +182,7 @@
 		<h2>Letter Heads</h2>
 			<div class="row rowsize">
 		
-		<div class="product span4">
+		<div class="product span6">
 				
 				
 			
@@ -196,19 +192,19 @@
 				<div class="view">
 					<div class="view-back">
 						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
+						
 					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
+						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/letterhead/1.jpg">
 					
 					
 					
 					
 					<div class="price">
-						<label><b>Quantity:</b></label> <select><option>500nos</option>
+						<label><b>Quantity:</b></label> <select name="quantity4"><option>500nos</option>
 						<option>1000nos</option>
 						
 						</select><br><br>
-						<label><b>Type :</b></label> <select><option>Single Side</option>
+						<label><b>Type :</b></label> <select name="type4"><option>Single Side</option>
 						<option>extra</option>
 						<option>Per Side</option>
 						<option>Knurling</option>
@@ -225,77 +221,36 @@
 					</div>
 			</div>
 				<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+		<input type="image" src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png" alt="submit">
 			</div>	
 			
 		</div>
 		
-		<div class="product span4">
-			
-			
+		
+		
+		<div class="product span6">
+				
+				
 			
 
             <div id="grid5" class="main list ">
-            <h5>Letter Head</h5>	
-				<div class="view">
-					<div class="view-back">
-						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
-					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
-					
-					
-					
-					
-					<div class="price">
-						<label><b>Quantity:</b></label> <select><option>500nos</option>
-						<option>1000nos</option>
-						
-						</select><br><br>
-						<label><b>Type :</b></label> <select><option>Single Side</option>
-						<option>extra</option>
-						<option>Per Side</option>
-						<option>Knurling</option>
-						<option>envelope</option>
-						</select>
-					
-					
-					
-					
-					</div>
-					
-					
-					</div>
-			</div>
-				<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
-			</div>	
-			
-		</div>
-		
-		<div class="product span4">
-				
-				
-			
-
-            <div id="grid6" class="main list ">
             <h5>Pad Charges</h5>	
 				<div class="view">
 					<div class="view-back">
 						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
+						
 					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
+						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/pad/1.jpg">
 					
 					
 					
 					
 					<div class="price">
-						<label><b>Quantity:</b></label> <select><option>10pads</option>
+						<label><b>Quantity:</b></label> <select name="quantity5"><option>10pads</option>
 						
 						
 						</select><br><br>
-						<label><b>Type :</b></label> <select><option>Single Side</option>
+						<label><b>Type :</b></label> <select name="type5"><option>Single Side</option>
 						<option>extra</option>
 						<option>Per Side</option>
 						<option>Knurling</option>
@@ -312,98 +267,13 @@
 					</div>
 			</div>
 				<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
-			</div>	
+		<input type="image" src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png" alt="submit">
+			</div>		
 			
 		</div>
 		
-		<div class="product span4">
-				
-				
-			
-
-            <div id="grid7" class="main list ">
-            <h5>9x4 inches</h5>	
-				<div class="view">
-					<div class="view-back">
-						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
-					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
-					
-					
-					
-					
-					<div class="price">
-						<label><b>Quantity:</b></label> <select>
-						<option>1000nos</option>
-						
-						</select><br><br>
-						<label><b>Type :</b></label> <select><option>Single Side</option>
-						<option>extra</option>
-						<option>Per Side</option>
-						<option>Knurling</option>
-						<option>envelope</option>
-						
-						</select>
-					
-					
-					
-					
-					</div>
-					
-					
-					</div>
-			</div>
-				<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
-			</div>	
-			
-		</div>
-		<div class="product span4">
-				
-				
-			
-
-            <div id="grid8" class="main list ">
-            <h5>10.5x4.5 inches</h5>	
-				<div class="view">
-					<div class="view-back">
-						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
-					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
-					
-					
-					
-					
-					<div class="price">
-						<label><b>Quantity:</b></label> <select>
-						<option>1000nos</option>
-						
-						</select><br><br>
-						<label><b>Type :</b></label> <select><option>envelope</option>
-						<option>Single Side</option>
-						<option>extra</option>
-						<option>Per Side</option>
-						<option>Knurling</option>
-						
-						
-						</select>
-					
-					
-					
-					
-					</div>
-					
-					
-					</div>
-			</div>
-				<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
-			</div>	
-			
-		</div>
+		
+		
 		</div>
 		</div>
 		</div>
@@ -411,29 +281,29 @@
 		<div class="container imgsize">
 		<h2>Sticker</h2>
 			<div class="row rowsize">
-		<div class="product span4">
+		<div class="product span6">
 				
 				
 			
 
-            <div id="grid9" class="main list ">
+            <div id="grid6" class="main list ">
             <h5>Sticker</h5>	
 				<div class="view">
 					<div class="view-back">
 						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
+						
 					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
+						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/sticker/1.jpg">
 					
 					
 					
 					
 					<div class="price">
-						<label><b>Quantity:</b></label> <select>
+						<label><b>Quantity:</b></label> <select name="quantity6">
 						<option>1000nos</option>
 						
 						</select><br><br>
-						<label><b>Type :</b></label> <select><option>5x5</option>
+						<label><b>Type :</b></label> <select name="type6"><option>5x5</option>
 						
 						<option>1000nos</option>
 						<option>A4 Size</option>
@@ -448,34 +318,34 @@
 					</div>
 			</div>
 				<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+		<input type="image" src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png" alt="submit">
 			</div>	
 			
 		</div>
 			
-			<div class="product span4">
+			<div class="product span6">
 				
 				
 			
 
-            <div id="grid10" class="main list ">
+            <div id="grid7" class="main list ">
             <h5>CD Sticker</h5>	
 				<div class="view">
 					<div class="view-back">
 						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
+						
 					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
+						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/cd/1.jpg">
 					
 					
 					
 					
 					<div class="price">
-						<label><b>Quantity:</b></label> <select>
+						<label><b>Quantity:</b></label> <select name="quantity7">
 						<option>1000nos</option>
 						
 						</select><br><br>
-						<label><b>Type :</b></label> <select><option>5x5</option>
+						<label><b>Type :</b></label> <select name="type7"><option>5x5</option>
 						
 						<option>1000nos</option>
 						<option>A4 Size</option>
@@ -491,50 +361,11 @@
 			</div>
 				
 			<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
-			</div>	
+		<input type="image" src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png" alt="submit">
+			</div>		
 		</div>
 		
-		<div class="product span4">
-				
-				
-			
-
-            <div id="grid11" class="main list ">
-            <h5> Sticker</h5>	
-				<div class="view">
-					<div class="view-back">
-						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
-					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
-					
-					
-					
-					
-					<div class="price">
-						<label><b>Quantity:</b></label> <select>
-						<option>1000nos</option>
-						
-						</select><br><br>
-						<label><b>Type :</b></label> <select><option>5x5</option>
-						
-						<option>1000nos</option>
-						<option>A4 Size</option>
-						</select>
-					
-					
-					
-					
-					</div>
-					
-					</div>
-			</div>
-				<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
-			</div>	
-			
-		</div>
+		
 		</div>
 		</div>
 		</div>
@@ -543,71 +374,38 @@
 		<h2>Hand Outs</h2>
 			<div class="row rowsize">
 		
-		<div class="product span4">
+		<div class="product span6">
 				
 				
 			
 
-            <div id="grid12" class="main list ">
-            <h5>170gsm - 210x280mm</h5>	
+            <div id="grid8" class="main list ">
+            
 				<div class="view">
 					<div class="view-back">
 						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
+						
 					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
+						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/hand/1.jpg">
 					
 					
 					
 					
 					<div class="price">
-						<label><b>Quantity:</b></label> <select>
+						<label><b>Quantity:</b></label> <select name="quantity8">
 						<option>1000nos</option>
 						
 						</select><br><br>
-						<label><b>Type :</b></label> <select><option>SingleSide </option>
+						<label><b>Type :</b></label> <select name="type8"><option>SingleSide </option>
 						<option>front&back </option>
-						
-						</select>
-					
-					
-					
-					
-					</div>
-					
-					
-					</div>
-			</div>
-				<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
-			</div>	
-			
-		</div>
-		
-		<div class="product span4">
-				
-				
-			
-
-            <div id="grid13" class="main list ">
-            <h5>100gsm - 210 x 280mm</h5>	
-				<div class="view">
-					<div class="view-back">
-						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
-					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
-					
-					
-					
-					
-					<div class="price">
-						<label><b>Quantity:</b></label> <select>
-						<option>1000nos</option>
 						
 						</select><br><br>
-						<label><b>Type :</b></label> <select><option>SingleSide </option>
-						<option>front&back </option>
+					<label><b>Size :</b></label><select name="size"><option>170gsm - 210x280mm </option>
+						<option>100gsm - 210 x 280mm </option>
+						<option>170 Gsm - 140 x 210mm </option>
+						<option>100Gsm - 140 x 210mm </option>
+						<option>220 Gsm - 210 x 280mm</option>
+						<option>100gsm - 210 x 280mm </option>
 						
 						</select>
 					
@@ -618,138 +416,21 @@
 					
 					</div>
 			</div>
-				<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
-			</div>	
-			
-		</div>
-			
-			<div class="product span4">
-				
-				
-			
-
-            <div id="grid14" class="main list ">
-            <h5>170 Gsm - 140 x 210mm</h5>	
-				<div class="view">
-					<div class="view-back">
-						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
-					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
 					
-					
-					
-					
-					<div class="price">
-						<label><b>Quantity:</b></label> <select>
-						<option>1000nos</option>
-						
-						</select><br><br>
-						<label><b>Type :</b></label> <select><option>SingleSide </option>
-						<option>front&back </option>
-						
-						</select>
-						
-					
-					
-					
-					
-					</div>
-					
-					
-					</div>
-			</div>
-				<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
-			</div>	
-			
-		</div>
-		
-		<div class="product span4">
-				
-				
-			
-
-            <div id="grid15" class="main list ">
-            <h5>100Gsm - 140 x 210mm</h5>	
-				<div class="view">
-					<div class="view-back">
-						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
-					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
-					
-					
-					
-					
-					<div class="price">
-						<label><b>Quantity:</b></label> <select>
-						<option>1000nos</option>
-						
-						</select><br><br>
-						<label><b>Type :</b></label> <select><option>SingleSide </option>
-						<option>front&back </option>
-						
-						</select>
-						
-					
-					
-					
-					
-					</div>
-					
-					
-					</div>
-			</div>
-				
-			<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			<div class="isize hand">
+		<input type="image" src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png" alt="submit">
 			</div>	
 		</div>
 		
 		
+			
+			
 		
-		<div class="product span4">
-				
-				
-			
-
-            <div id="grid16" class="main list ">
-            <h5>220 Gsm - 210 x 280mm</h5>	
-				<div class="view">
-					<div class="view-back">
-						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
-					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
-					
-					
-					
-					
-					<div class="price">
-						<label><b>Quantity:</b></label> <select>
-						<option>1000nos</option>
-						
-						</select><br><br>
-						<label><b>Type :</b></label> <select><option>SingleSide </option>
-						<option>front&back </option>
-						
-						</select>
-						
-					
-					
-					
-					</div>
-					
-					
-					</div>
-			</div>
-				<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
-			</div>	
-			
-		</div>
+		
+		
+		
+		
+		
 		
 
 		
@@ -759,47 +440,7 @@
 	
 	
 			
-			<div class="product span4">
-				
-				
 			
-
-            <div id="grid17" class="main list ">
-            <h5>300 Gsm - 210 x 280mm</h5>	
-				<div class="view">
-					<div class="view-back">
-						
-						<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">Pay</a>
-					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/card.png">
-					
-					
-					
-					
-					<div class="price">
-						<label><b>Quantity:</b></label> <select>
-						<option>1000nos</option>
-						
-						</select><br><br>
-						<label><b>Type :</b></label> <select><option>SingleSide </option>
-						<option>front&back </option>
-						
-						</select>
-						
-					
-					
-					
-					
-					</div>
-					
-					
-					</div>
-			</div>
-				
-			<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
-			</div>	
-		</div>
 		</div>
 		</div>
 	
@@ -835,15 +476,7 @@
 				$( '#grid6' ).hoverfold();
 				$( '#grid7' ).hoverfold();
 				$( '#grid8' ).hoverfold();
-				$( '#grid9' ).hoverfold();
-				$( '#grid10' ).hoverfold();
-				$( '#grid11' ).hoverfold();
-				$( '#grid12' ).hoverfold();
-				$( '#grid13' ).hoverfold();
-				$( '#grid14' ).hoverfold();
-				$( '#grid15' ).hoverfold();
-				$( '#grid16' ).hoverfold();
-				$( '#grid17' ).hoverfold();
+				
 					}
 
 				}

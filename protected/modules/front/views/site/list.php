@@ -49,14 +49,14 @@
 					
 					
 					</div>
-					<div class="isize">
-			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
-			</div>	
+					
 					
 					
 					</div>
 			</div>
-				
+				<div class="isize">
+			<img  src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png">
+			</div>	
 		</div>
 		
 		

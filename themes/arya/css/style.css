@@ -1345,9 +1345,11 @@ footer .span12 {
 .copy_rights ul li:last-child {
 	border-right: none;
 }
-.social{
+
+.social {
 	display: inline-block !important;
 }
+
 .social img {
 	float: right;
 	margin: 30px 4px;
@@ -1675,7 +1677,10 @@ footer li {
 }
 
 .list h3 {
+	width: 334px;
+
 	text-align: center;
+	margin: 0px;
 	position: relative;
 	top: -4px;
 	left: -176px;
@@ -1689,6 +1694,7 @@ margin-left: 119px;
 .product span {
 	text-align: justify;
 	padding: 10px;
+
 }
 
 .price {
@@ -1804,7 +1810,6 @@ margin-left: 119px;
 		border-right: none !important;
 		text-align: left !important;
 	}
-	
 	.copy_rights li {
 		border-right: none;
 	}
@@ -1836,4 +1841,10 @@ margin-left: 119px;
 	left: 0px;
 	z-index: 101;
 	max-width: 300px;
+}
+
+.price {
+	width: 340px;
+	display: inline-block;
+	padding: 0px 18px;
 }

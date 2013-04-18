@@ -29,7 +29,13 @@
 					
 					
 					
+
 					
+					
+					
+					</div>
+			</div>
+			
 					<div class="price">
 					<div class="quantityinfo">
 						<label><b>Quantity:</b></label> <select name="quantity"><option>500nos</option>
@@ -38,12 +44,9 @@
 						</select><br><br>
 						<label><b>Type :</b></label> <select name="type"><option>Single Side</option>
 						<option>Front&Back</option>
-						
 						</select>
-					
+					<div class="text"><p>This card is a special card</p>
 			</div>
-					
-					
 					</div>
 					
 					
@@ -55,7 +58,7 @@
 			</div>	
 		</div>
 		
-		</form>
+
 	
 				<div class="product span6">
 				
@@ -87,6 +90,7 @@
 					
 					
 					</div>
+
 					
 					
 					</div>
@@ -94,6 +98,7 @@
 				<div class="isize">
 		<input type="image" src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png" alt="submit">
 			</div>		
+
 			
 		</div>
 		

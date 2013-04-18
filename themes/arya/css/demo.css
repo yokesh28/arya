@@ -53,6 +53,7 @@
 	color: #781430;
 }
 
+
 .main{
 	width: 672px;
 	height: 323px;
@@ -65,6 +66,7 @@
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
+
 /* Header Style */
 .codrops-top{
 	line-height: 24px;

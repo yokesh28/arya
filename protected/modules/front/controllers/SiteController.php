@@ -18,7 +18,7 @@ class SiteController extends FrontController {
 	}
 	
 	
-	public function actionList($id)
+	public function actionList()
 	{
 		$this->render('list');
 	}

@@ -17,7 +17,178 @@
 <body cz-shortcut-listen="true">
 	<div id="innerpage">
 
-		<?php include 'header.php'; ?>
+
+	<?php include 'header.php'; ?>
+	<div id="content">
+		<div class="container imgsize">
+		<h2>Visiting Card</h2>
+			<div class="row rowsize">
+			<form id="paypal_form"  action="" method="post" >
+			<div class="product span6">
+
+				
+				<div id="grid" class="main list ">
+
+            
+            <h5>Gloss</h5>
+				<div class="view">
+					<div class="view-back">
+						
+						
+					</div>
+						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/gloss/1.jpg">
+					
+					
+					
+					
+					<div class="price">
+					<div class="quantityinfo">
+						<label><b>Quantity:</b></label> <select name="quantity"><option>500nos</option>
+						<option>1000nos</option>
+						
+						</select><br><br>
+						<label><b>Type :</b></label> <select name="type"><option>Single Side</option>
+						<option>Front&Back</option>
+						
+						</select>
+					
+			</div>
+					
+					
+					</div>
+					
+					
+					
+					</div>
+			</div>
+				<div class="isize">
+		<input type="image" src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png" alt="submit">
+			</div>	
+		</div>
+		
+		</form>
+	
+				<div class="product span6">
+				
+				
+			
+
+            <div id="grid1" class="main list ">
+            <h5>Matt</h5>
+				<div class="view">
+					<div class="view-back">
+						
+						
+					</div>
+						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/mat/1.jpeg">
+					
+					
+					
+					
+					<div class="price">
+						<label><b>Quantity:</b></label> <select name="quantity1"><option>500nos</option>
+						<option>1000nos</option>
+						
+						</select><br><br>
+						<label><b>Type :</b></label> <select name="type1"><option>Single Side</option>
+						<option>Front&Back</option>
+						
+						</select>
+					
+					
+					
+					</div>
+					
+					
+					</div>
+			</div>
+				<div class="isize">
+		<input type="image" src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png" alt="submit">
+			</div>		
+			
+		</div>
+		
+		<div class="product span6">
+				
+				
+			
+
+            <div id="grid2" class="main list ">
+           <h5>Synthetic</h5>
+				<div class="view">
+					<div class="view-back">
+						
+						
+					</div>
+						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/sy/1.jpg">
+					
+					
+					
+					
+					<div class="price">
+						<label><b>Quantity:</b></label> <select name="quantity2"><option>500nos</option>
+						<option>1000nos</option>
+						
+						</select><br><br>
+						<label><b>Type :</b></label> <select name="type2"><option>Single Side</option>
+						<option>Front&Back</option>
+						
+						</select>
+					
+					
+					</div>
+					
+					
+					</div>
+			</div>
+			<div class="isize">
+		<input type="image" src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png" alt="submit">
+			</div>	
+			
+		</div>
+		
+		<div class="product span6">
+				
+				
+			
+
+            <div id="grid3" class="main list ">
+           <h5>Uv</h5>	
+				<div class="view">
+					<div class="view-back">
+						
+						
+					</div>
+						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/uv/1.jpg">
+					
+					
+					
+					
+					<div class="price">
+						<label><b>Quantity:</b></label> <select name="quantity3"><option>500nos</option>
+						<option>1000nos</option>
+						
+						</select><br><br>
+						<label><b>Type :</b></label> <select name="type3"><option>Per Side</option>
+						
+						
+						</select>
+					
+					
+					
+					</div>
+					
+					
+					</div>
+			</div>
+				<div class="isize">
+		<input type="image" src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png" alt="submit">
+			</div>	
+			
+		</div>
+		</div>
+		</div>
+>>>>>>> branch 'master' of https://github.com/yokesh28/arya.git
 		<div id="content">
 			<div class="container imgsize">
 				<h2>Visiting Card</h2>

@@ -91,9 +91,7 @@
 					
 					
 					</div>
-<<<<<<< HEAD
-				<?php endif;?>
-=======
+
 					
 					
 					</div>
@@ -101,7 +99,7 @@
 				<div class="isize">
 		<input type="image" src="<?php echo Yii::app()->theme->baseUrl;?>/images/buy.png" alt="submit">
 			</div>		
->>>>>>> branch 'master' of https://github.com/yokesh28/arya.git
+
 			
 		</div>
 		

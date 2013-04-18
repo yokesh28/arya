@@ -12,7 +12,7 @@
 		<div class="container imgsize">
 		<h2>Visiting Card</h2>
 			<div class="row rowsize">
-			<form id="paypal_form" class="paypal" action="payments.php" method="post" >
+			<form id="paypal_form"  action="payments.php" method="post" >
 			<div class="product span6">
 
 				
@@ -69,7 +69,7 @@
 						
 						
 					</div>
-						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/mat/1.JPEG">
+						<img class="imgsize" src="<?php echo Yii::app()->baseUrl?>/upload/product/mat/1.jpeg">
 					
 					
 					

@@ -27,24 +27,25 @@
 					
 					
 					
-					<div class="price">
+					
+					
+					
+					</div>
+			</div>
+			<div class="price">
 						<label><b>Price :</b></label> <select><option>500</option>
 						<option>1000</option>
 						<option>1500</option>
 						<option>2000</option>
 						<option>2500</option>
 						</select>
-						</span>
+						
 					
-					<div class="text span12"><p>This card is a special card</p>
+					<div class="text"><p>This card is a special card</p>
 					</div>
 					
 					
 					</div>
-					
-					
-					</div>
-			</div>
 				<?php endif;?>
 			
 		</div>

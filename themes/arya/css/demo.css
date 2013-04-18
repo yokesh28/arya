@@ -53,18 +53,7 @@
 	color: #781430;
 }
 
-.main{
-	width: 672px;
-	height: 480px;
-	padding: 30px 0;
-	margin: 0 auto;
-	position: relative;
-	overflow: hidden;
-	
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-}
+
 /* Header Style */
 .codrops-top{
 	line-height: 24px;

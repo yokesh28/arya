@@ -23,7 +23,7 @@
 			<div class="container imgsize">
 				<h2>Visiting Card</h2>
 				<div class="row rowsize">
-					<form id="paypal_form" action="" method="post">
+				
 						<div class="product span6">
 
 
@@ -32,6 +32,7 @@
 
 								<h5>Gloss</h5>
 								<div class="view">
+								
 									<div class="view-back"></div>
 									<img class="imgsize"
 										src="<?php echo Yii::app()->baseUrl?>/upload/product/gloss/1.jpg">
@@ -41,6 +42,7 @@
 
 									<div class="price">
 										<div class="quantityinfo">
+										<form id="id1">
 											<label><b>Quantity:</b> </label> <select name="quantity"><option>500nos</option>
 												<option>1000nos</option>
 
@@ -48,9 +50,9 @@
 												name="type"><option>Single Side</option>
 												<option>Front&Back</option>
 
-											</select>
-														<input type="hidden" name="price">
-																				</div>
+											</select> <input type="hidden" name="price">
+											</form>
+										</div>
 
 
 									</div>
@@ -66,7 +68,7 @@
 							</div>
 						</div>
 
-					</form>
+				
 
 					<div class="product span6">
 
@@ -84,6 +86,7 @@
 
 
 								<div class="price">
+								<form id="id2">
 									<label><b>Quantity:</b> </label> <select name="quantity1"><option>500nos</option>
 										<option>1000nos</option>
 
@@ -94,7 +97,7 @@
 									</select>
 
 
-
+</form>
 								</div>
 
 
@@ -124,6 +127,7 @@
 
 
 								<div class="price">
+								<form id="id3">
 									<label><b>Quantity:</b> </label> <select name="quantity2"><option>500nos</option>
 										<option>1000nos</option>
 
@@ -132,7 +136,7 @@
 										<option>Front&Back</option>
 
 									</select>
-
+                                    </form>
 
 								</div>
 
@@ -163,6 +167,7 @@
 
 
 								<div class="price">
+								<form id="id4">
 									<label><b>Quantity:</b> </label> <select name="quantity3"><option>500nos</option>
 										<option>1000nos</option>
 
@@ -173,7 +178,7 @@
 									</select>
 
 
-
+</form>
 								</div>
 
 
@@ -205,6 +210,7 @@
 										<img class="imgsize"
 											src="<?php echo Yii::app()->baseUrl?>/upload/product/gloss/1.jpg">
 										<div class="price">
+										<form id="id5">
 											<div class="quantityinfo">
 												<label><b>Quantity:</b> </label> <select name="quantity"><option>500nos</option>
 													<option>1000nos</option>
@@ -213,6 +219,7 @@
 													<option>Front&Back</option>
 												</select>
 											</div>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -233,6 +240,7 @@
 									<img class="imgsize"
 										src="<?php echo Yii::app()->baseUrl?>/upload/product/mat/1.jpeg">
 									<div class="price">
+									<form="id6">
 										<label><b>Quantity:</b> </label> <select name="quantity1"><option>500nos</option>
 											<option>1000nos</option>
 
@@ -241,6 +249,7 @@
 											<option>Front&Back</option>
 
 										</select>
+										</form>
 									</div>
 
 
@@ -270,6 +279,7 @@
 
 
 									<div class="price">
+									<form id="id7">
 										<label><b>Quantity:</b> </label> <select name="quantity2"><option>500nos</option>
 											<option>1000nos</option>
 
@@ -279,7 +289,7 @@
 
 										</select>
 
-
+</form>
 									</div>
 
 
@@ -309,6 +319,7 @@
 
 
 									<div class="price">
+									<form id="id8">
 										<label><b>Quantity:</b> </label> <select name="quantity3"><option>500nos</option>
 											<option>1000nos</option>
 
@@ -318,7 +329,7 @@
 
 										</select>
 
-
+                                     </form>
 
 									</div>
 
@@ -355,6 +366,7 @@
 
 
 										<div class="price">
+										<form id="id9">
 											<label><b>Quantity:</b> </label> <select name="quantity4"><option>500nos</option>
 												<option>1000nos</option>
 
@@ -368,7 +380,7 @@
 											</select>
 
 
-
+                                           </form>
 
 										</div>
 
@@ -401,6 +413,7 @@
 
 
 										<div class="price">
+										<form id="id10">
 											<label><b>Quantity:</b> </label> <select name="quantity5"><option>10pads</option>
 
 
@@ -415,7 +428,7 @@
 
 
 
-
+</form>
 										</div>
 
 
@@ -454,6 +467,7 @@
 
 
 										<div class="price">
+										<form id="id11">
 											<label><b>Quantity:</b> </label> <select name="quantity6">
 												<option>1000nos</option>
 
@@ -465,7 +479,7 @@
 											</select>
 
 
-
+</form>
 
 										</div>
 
@@ -496,6 +510,7 @@
 
 
 										<div class="price">
+										<form id="id12">
 											<label><b>Quantity:</b> </label> <select name="quantity7">
 												<option>1000nos</option>
 
@@ -508,7 +523,7 @@
 
 
 
-
+</form>
 										</div>
 
 
@@ -547,6 +562,7 @@
 
 
 										<div class="price">
+										<form id="id13">
 											<label><b>Quantity:</b> </label> <select name="quantity8">
 												<option>1000nos</option>
 
@@ -564,7 +580,7 @@
 
 											</select>
 
-
+</form>
 
 										</div>
 

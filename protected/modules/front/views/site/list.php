@@ -29,8 +29,7 @@
 					
 					
 					
-					
-<<<<<<< HEAD
+
 					
 					
 					
@@ -59,7 +58,7 @@
 			</div>	
 		</div>
 		
-		</form>
+
 	
 				<div class="product span6">
 				

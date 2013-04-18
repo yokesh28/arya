@@ -8,7 +8,9 @@ html {
 
 body {
 	height: 100%;
+	background: url("../images/bground.jpg");
 }
+
 .back {
 	min-width: 100%;
 	min-height: 100%;
@@ -636,53 +638,38 @@ header {
 	position: relative;
 	padding: 8px 0 9px 0;
 }
-#content .rowsize{
-	
+
+#content .rowsize {
 	margin-left: -59px;
-	
 }
 
-#content .rowheight
-{
-position: relative;
-top: -183px;
-
+#content .rowheight {
+	position: relative;
+	top: -183px;
 }
 
-.imgsize img{
-	
-	width:200px;
+.imgsize img {
+	width: 200px;
 	height: 150px;
-	
 }
 
-
-
-
-
-.isize input[type="image"]
-{
+.isize input[type="image"] {
 	width: 50px;
-height: 45px;
-margin-left: 250px;
-margin-top: -81px;
+	height: 45px;
+	margin-left: 250px;
+	margin-top: -81px;
 	cursor: pointer;
-	position:absolute;
-	
+	position: absolute;
 }
-.hand input[type="image"]{
-	
+
+.hand input[type="image"] {
 	margin-top: -115px;
 }
 
-
 .quantityinfo {
-	
 	float: left;
 	width: 220px;
 }
-
-
 
 #content-1 {
 	position: relative;
@@ -1682,7 +1669,6 @@ footer li {
 
 .list h3 {
 	width: 334px;
-
 	text-align: center;
 	margin: 0px;
 	position: relative;
@@ -1690,15 +1676,13 @@ footer li {
 	left: -176px;
 }
 
-.list h5
-{
-margin-left: 119px;
+.list h5 {
+	margin-left: 119px;
 }
 
 .product span {
 	text-align: justify;
 	padding: 10px;
-
 }
 
 .price {
@@ -1736,12 +1720,11 @@ margin-left: 119px;
 .text p {
 	margin-left: 60px;
 }
-.textsize p{
-	
+
+.textsize p {
 	margin-left: 26px;
-	
-	
 }
+
 .align {
 	text-align: justify;
 }
@@ -1799,6 +1782,48 @@ margin-left: 119px;
 	width: 156px;
 }
 
+.imageholder {
+	width: 54px;
+	float: left;
+}
+
+.cartproduct {
+	background: url("../images/pop_payment_img.png");
+	width: 253px;
+	height: 54px;
+	padding: 16px;
+	float: left;
+	height: 54px;
+}
+
+.closebutton {
+	position: absolute;
+	width: 100%;
+	margin-left: -14px;
+	margin-top: -10px;
+}
+
+.checkout {
+	margin: 8px;
+	display: inline-block;
+	float: right;
+}
+
+
+.item{
+	display: inline-block;
+}
+#cart {
+	position: fixed;
+	right: 50px;
+	bottom: 0px;
+	width: 320px;
+}
+
+.imageholder img {
+	margin-bottom: 0px;
+}
+
 @media ( min-width : 1200px) {
 	#innerpage .navbar_ .brand {
 		margin: 0;
@@ -1829,8 +1854,6 @@ margin-left: 119px;
 		margin-top: 150px !important;
 	}
 }
-
-
 
 .menu {
 	margin-left: 0px !important;

@@ -48,9 +48,8 @@
 												name="type"><option>Single Side</option>
 												<option>Front&Back</option>
 
-											</select>
-														<input type="hidden" name="price">
-																				</div>
+											</select> <input type="hidden" name="price">
+										</div>
 
 
 									</div>
@@ -613,6 +612,50 @@
 
 
 		</div>
+		<div id="cart">
+
+			<div class="item">
+				<div class="imageholder">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/images/img.png"
+						class="img-polaroid"> <span>sdfsdfd</span>
+				</div>
+				<div class="cartproduct">dfgdfgfdgdf</div>
+				<a href="#" class="closebutton"><img
+					src="<?php echo Yii::app()->theme->baseUrl;?>/images/checkout_close.png">
+				</a>
+			</div>
+				<div class="item">
+				<div class="imageholder">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/images/img.png"
+						class="img-polaroid"> <span>sdfsdfd</span>
+				</div>
+				<div class="cartproduct">dfgdfgfdgdf</div>
+				<a href="#" class="closebutton"><img
+					src="<?php echo Yii::app()->theme->baseUrl;?>/images/checkout_close.png">
+				</a>
+			</div>
+				<div class="item">
+				<div class="imageholder">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/images/img.png"
+						class="img-polaroid"> <span>sdfsdfd</span>
+				</div>
+				<div class="cartproduct">dfgdfgfdgdf</div>
+				<a href="#" class="closebutton"><img
+					src="<?php echo Yii::app()->theme->baseUrl;?>/images/checkout_close.png">
+				</a>
+			</div>
+			
+			
+			<div class="checkout">
+			<form >
+			
+			
+			</form>
+			<img src="<?php echo Yii::app()->theme->baseUrl;?>/images/checkout.png">
+			</div>
+		</div>
+
+
 
 
 		<script type="text/javascript">	
@@ -637,6 +680,11 @@
 					}
 
 				}
+			});
+
+
+			$('.closebutton').click(function(){
+				$(this).parent().fadeOut();
 			});
 				
 		</script>

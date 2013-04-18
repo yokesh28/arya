@@ -3,8 +3,8 @@
 class SiteController extends FrontController {
 
 	public function actionIndex() {
-		
-	
+
+
 		$page = 'HOME';
 
 		$this->render('index');
@@ -12,23 +12,27 @@ class SiteController extends FrontController {
 
 
 	public function actionProduct(){
-		
+
 		$catgories=Catagories::model()->findAll();
 		$this->render('product',array('catgories'=>$catgories));
 	}
-	
-	
+
+
 	public function actionList()
 	{
 		$this->render('list');
 	}
-	
+
+	public function actionCart()
+	{
+		$this->render('cart');
+	}
 	public function actionProductlist($id){
-		
+
 		$product=Products::model()->findByPk($id);
 		$this->render('productList',array('product'=>$project));
 	}
-	
+
 	public function actionPortfolio(){
 
 		$projects = PortfolioApi::getProjects();
@@ -49,20 +53,17 @@ class SiteController extends FrontController {
 		$this->render('about');
 	}
 	public function actionCareer(){
-	
+
 		$this->render('career');
 	}
 	public function actionService(){
-	
+
 		$this->render('service');
-		
-	
-	
 	}
-	
-	
-	
-	
+
+
+
+
 	public function actionContact($ref='DIRECT'){
 
 		$config = ConfigApi::model();
@@ -111,7 +112,7 @@ class SiteController extends FrontController {
 			}
 		}
 	}
-	
+
 
 }
 

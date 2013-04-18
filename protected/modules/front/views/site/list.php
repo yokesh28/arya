@@ -12,7 +12,7 @@
 		<div class="container imgsize">
 		<h2>Visiting Card</h2>
 			<div class="row rowsize">
-			<form id="paypal_form"  action="payments.php" method="post" >
+			<form id="paypal_form"  action="" method="post" >
 			<div class="product span6">
 
 				

@@ -17,16 +17,39 @@ class SiteController extends FrontController {
 		$this->render('product',array('catgories'=>$catgories));
 	}
 
+	public function actionPrice($type,$price=''){
+	
+	
+		$session=new CHttpSession;
+		$session->open();
+		if($type=='add')
+		$session['price']=$_POST['price']+$session['price'];
+		elseif($type='sub')
+		$session['price']=$session['price']-$price;
+		echo 'Rs. '.$session['price'];
+	}
+	
 
 	public function actionList()
 	{
+		$session=new CHttpSession;
+		$session->open();
+		$session['price']='';
+		
 		$this->render('list');
 	}
 
 	public function actionCart()
 	{
-		$this->render('cart');
+	
+		
+		
+		$this->renderPartial('cart',array(),false,true);
 	}
+	
+	
+	
+	
 	public function actionProductlist($id){
 
 		$product=Products::model()->findByPk($id);

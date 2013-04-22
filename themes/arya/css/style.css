@@ -1801,6 +1801,14 @@ footer li {
 	width: 100%;
 	margin-left: -14px;
 	margin-top: -10px;
+	cursor: pointer;
+}
+
+.updatePrice {
+	position: absolute;
+	bottom: 14px;
+	right: 50%;
+	font-weight: bold;
 }
 
 .checkout {
@@ -1809,10 +1817,10 @@ footer li {
 	float: right;
 }
 
-
-.item{
+.item {
 	display: inline-block;
 }
+
 #cart {
 	position: fixed;
 	right: 50px;

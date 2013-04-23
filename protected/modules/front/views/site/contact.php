@@ -24,9 +24,9 @@
 
 							<strong class="title1"> <h4>Offset Private Limited</h4><br> No.228 A Sakthi Nagar,<br>
 							
-							Sathy Road,	GanaPathy Post,<br>
-							Coimbatore.India.<br>
-							</strong> <em> ph: +91 42223233359,2530072<br>Email:
+							Sathy Road,	Ganapathy Post,<br>
+							Coimbatore-641006,<br>India.<br>
+							</strong> <em> Phone: +91 (0422)-23233359,2530072<br>Email:
 								printatglobal@gmail.com<br> 
 							</em> 
 

@@ -15,9 +15,9 @@
 				excellence, offers a complete printing package that fits the
 				clients`s requirements. An organization that provides printing
 				solutions for Annual Reports, Brochures, Sales Kits, Catalogues,
-				Pacaging &more, we guarantee complete customer satisfaction.
+				Packaging & more, we guarantee complete customer satisfaction.
 				Understanding their needs and establishing a long-term committed
-				relationship with our customers is what motvates us to be the best
+				relationship with our customers is what motivates us to be the best
 				inthis field. Our team of creative professionals strives to think
 				out of the `box' while assisting clients. Starting out small and
 				family-held, ARYA has grown into a print production house that is at

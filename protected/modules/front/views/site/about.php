@@ -15,12 +15,12 @@
 			<div class="row">
 				<article class="span5">
 					<h2>Vision and Mission</h2>
-					<h4>Vision</h4>
+					<h4>Vision</h4><br>
 					<p>To be a customer-oriented organization that value-adds its
 						way to leadership through people, effective communication channels
 						and technology management.</p>
 
-					<h4>Mission</h4>
+					<h4>Mission</h4><br>
 
 					<p>Customer satisfication and employee empowerment in tandem
 						with innovation and excellence are the key factors propelling ARYA
@@ -28,7 +28,7 @@
 						their goals. Our success lies in your success.</p>
 
 
-					<h4>Values</h4>
+					<h4>Values</h4><br>
 
 					<p>Honesty, integrity, dedication and commitment will always be
 						our priority and trademark. Dignity and respect to all will be our
@@ -39,7 +39,7 @@
 
 				</article>
 				<article class="span7">
-					<h2>a few words about us</h2>
+					<h2>a few words about us</h2><br>
 
 					<p>Arya Offset Pvt. LTd., Coimbatore, with affluent experience
 						of excellence, offers a complete printing package that fits the
@@ -60,7 +60,7 @@
 			</div>
 
 
-			<h2 class="h2indent">Our Philosophy</h2>
+			<h2 class="h2indent">Our Philosophy</h2><br>
 			<p>"Customers are our top priority". All employees will strive to
 				meet customer needs.</p>
 
@@ -71,7 +71,7 @@
 
 
 				<div class="span4">
-					<h4>Continuous improvement</h4>
+					<h4>Continuous improvement</h4><br>
 
 					<p>Everyone will be actively involved in the continuous improvement of
 					all company activities. Open communication will be the key to our
@@ -92,14 +92,14 @@
 
 				</div>
 				<div class="span4">
-					<h4>Employees are our most valuable assests</h4>
+					<h4>Employees are our most valuable assests</h4><br>
 					<p>All employees will be treated with respect and dignity, recognition
 					being given to the value of each individual's contribution and
 					achievement. Employees will also treat each other with concern and
 					dignity, lending each other a helping hand whenever they can.</p><br>
 					<br>
 
-					<h4>Education & empowerment of employees</h4>
+					<h4>Education & empowerment of employees</h4><br>
 					<p>We will continuously strive to upgrade employee skills by imparting
 					education, offering training and encouraging varied skills, that
 					our illustrious clientele clearly proves. We ensure that your
@@ -118,7 +118,7 @@
 			<div class=" row-fluid">
 
 				<div class="span4">
-					<h4>Infrastructure</h4>
+					<h4>Infrastructure</h4><br>
 					<p>Arya is equipped with the latest technology and equipment to ensure
 					high quality and fast turnaround. A high-level of
 					redundancy (multiple machines that can carry out each operation) and
@@ -128,7 +128,7 @@
 					<img src="<?php echo Yii::app()->theme->baseUrl;?>/images/pic3.png">
 				</div>
 				<div class="span4">
-					<h4>Our Team</h4>
+					<h4>Our Team</h4><br>
 					We enjoy transforming your vision into the final product, and have
 					the experience and repertoire of tools to make it happen. More
 					importantly, our team has not just the skills, but also the attitude
@@ -165,7 +165,7 @@
 			<div class="row-fluid">
 
 				<div class="span4">
-					<h4>Quality Policy</h4>
+					<h4>Quality Policy</h4><br>
 					<p>When quality is the keystone, quality accerdiations are bound to
 					fall in place.  Arya printing press was born out of the need to
 					provide quality print sevices and hence it went about setting up a
@@ -185,7 +185,7 @@
 					<br> <br> <img src="<?php echo Yii::app()->theme->baseUrl;?>/images/pic5.png">
 				</div>
 				<div class="span4">
-					<h4>Our Team</h4>
+					<h4>Our Team</h4><br>
 					<p>We enjoy transforming your vision into the final produst, and have
 					the experience and repertoire of tools to make it happen. More
 					importantly, our team has not just the skills, but also the attitude

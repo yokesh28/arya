@@ -73,14 +73,14 @@
 				<div class="span4">
 					<h4>Continuous improvement</h4><br>
 
-					<p>Everyone will be actively involved in the continuous improvement of
-					all company activities. Open communication will be the key to our
-					effective working at all levels in the company. We will strive to
+					<p>Everyone will be actively involved in the continuous 
+					improvement of all company activities. Open communication will be the
+					 key to our effective working at all levels in the company. We will strive to
 					create an environment that encourages employee involvement and team
 					work. We will constantly upgrade technical skills and take pride in
 					keeping our surroundings immaculately clean. An acute environmental
 					consciousness will be inculcated.</p> <br> <br>
-					<h4>Responsibility for actions</h4>
+					<h4>Responsibility for actions</h4><br>
 					<p>Our business will be conducted in such a way that organizationally
 					and as individuals we accept that we have a responsibility towards
 					the customers, towards the company and towards each other. Our
@@ -129,10 +129,10 @@
 				</div>
 				<div class="span4">
 					<h4>Our Team</h4><br>
-					We enjoy transforming your vision into the final product, and have
+					<p>We enjoy transforming your vision into the final product, and have
 					the experience and repertoire of tools to make it happen. More
 					importantly, our team has not just the skills, but also the attitude
-					and enthusiasm to bring out the best product.
+					and enthusiasm to bring out the best product.</p>
 
 				</div>
 			</div>

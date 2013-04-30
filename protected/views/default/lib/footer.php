@@ -17,7 +17,10 @@
 								<div class="copy_rights span12">
 									<ul class="inline">
 										<li><a href="#">Arya  &#169;  2012</a></li>
-										<li><a href="#">Privacy Policy </a></li>
+										<li><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/privacy')?>">Privacy Policy </a></li>
+										<li><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/replacement')?>">Replacement Policy </a></li>
+										<li><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/shipping')?>">Shipping Policy </a></li>
+										<li><a href="<?php echo Yii::app()->CreateAbsoluteUrl('/terms')?>">Terms Of Service </a></li>
 										<li><a href="http://www.s-creative.me" target="_blank">Designed by S-CREATIVE </a></li>
 										
 

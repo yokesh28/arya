@@ -88,8 +88,18 @@ h2 {
 	color: #33383d;
 	font-size: 22px;
 	line-height: 23px;
-	margin: 28px 0 28px 0;
+	margin: 28px 0 35px 0;
+	text-align: center;
 }
+.policy li{
+	
+	list-style: initial;
+	
+}
+.list_number li{
+	list-style-type: decimal;
+	
+	}
 
 h2.h2indent {
 	margin: 56px 0 31px 0;

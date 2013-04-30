@@ -84,6 +84,30 @@ class SiteController extends FrontController {
 		$this->render('service');
 	}
 
+	public function actionPrivacy()
+	{
+	
+		$this->render('privacy');
+	}
+	
+	public function actionReplacement()
+	{
+	
+		$this->render('replacement');
+	}
+	
+	public function actionShipping()
+	{
+	
+		$this->render('shipping');
+	}
+	
+	public function actionTerms()
+	{
+	
+		$this->render('terms');
+	}
+	
 
 
 

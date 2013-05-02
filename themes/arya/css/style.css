@@ -1878,6 +1878,19 @@ footer li {
 	margin-bottom: 0px;
 }
 
+
+.rightside .btn 
+{
+z-index: 9999;
+position: absolute;
+right: 156px;
+top: 77px;
+}
+.fir
+{ 
+margin-right: 75px;
+}
+
 @media ( min-width : 1200px) {
 	#innerpage .navbar_ .brand {
 		margin: 0;
@@ -1921,8 +1934,7 @@ footer li {
 	margin-left: 0px !important;
 }
 
-@media ( max-width : 480px) {
-}
+
 
 #homepage .logo {
 	position: absolute;
@@ -1938,3 +1950,6 @@ footer li {
 	display: inline-block;
 	padding: 0px 18px;
 }
+
+
+

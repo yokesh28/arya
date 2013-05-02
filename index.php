@@ -5,7 +5,7 @@ $pear=dirname(__FILE__).'/library/pear';
 ini_set('include_path', $pear);
 
 // remove the following lines when in production mode
-defined('YII_DEBUG') or define('YII_DEBUG',false);
+defined('YII_DEBUG') or define('YII_DEBUG',true);
 
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/library/yii/framework/yii.php';

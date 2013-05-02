@@ -31,6 +31,16 @@ body {
 	background: black;
 }
 
+.productpage{
+	
+	position:absolute;
+	top: 200px;
+left: 70px;
+	
+	
+}
+
+
 #homepage .foot {
 	position: absolute;
 	bottom: 0px;
@@ -653,6 +663,15 @@ header {
 	margin-left: -59px;
 }
 
+@media (max-width: 767px) { 
+
+#content .rowsize {
+	margin-left: 3px;
+}
+	
+	
+}
+
 #content .rowheight {
 	position: relative;
 	top: -183px;
@@ -660,6 +679,10 @@ header {
 
 .imgsize img {
 	width: 200px;
+	height: 150px;
+}
+.imgsize1 img {
+	width: 290px;
 	height: 150px;
 }
 
@@ -1677,6 +1700,19 @@ footer li {
 	box-sizing: border-box;
 }
 
+.productlist h3{
+	
+	width: 334px;
+	text-align: center;
+	margin: 0px;
+	position: relative;
+	top: -4px;
+	
+	
+	left: -66px;
+	
+}
+
 .list h3 {
 	width: 334px;
 	text-align: center;
@@ -1817,7 +1853,7 @@ footer li {
 .updatePrice {
 	position: absolute;
 	bottom: 14px;
-	right: 50%;
+	right: 45%;
 	font-weight: bold;
 }
 

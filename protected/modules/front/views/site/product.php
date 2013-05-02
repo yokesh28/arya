@@ -6,19 +6,96 @@
 	
 	<?php include 'header.php'; ?>
 	<div id="content">
-		<div class="container">
-			<div class="row-fluid product">
+		<div class="container imgsize1">
+			<div class="row rowsize">
 			
 		
-			<div class="span3">
-			<h3 >BUSINESS CARD</h3>
-			<a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/list/id/1')?>">
+			<div class="product span6">
+
+
+						<div  class="main productlist">
+
+
+							<h3>BUSINESS HEAD</h3>
+							<div class="view">
+
+								<div class="view-back"></div>
+			
+			<a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/list/')?>">
 			<img src="<?php echo Yii::app()->baseUrl?>/upload/cat/card.png"></a>
 			
-			<span class="span12">
-			A sturdy laminating film protects your business cards on both sides. Also ensures solid colours don't get scratched.
-			</span>
+			
 			</div>
+			</div>
+			</div>
+			
+			
+			<div class="product span6">
+
+
+						<div  class="main productlist">
+
+
+							<h3>LETTER HEAD</h3>
+							<div class="view">
+
+								<div class="view-back"></div>
+			
+			<a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/letter/')?>">
+			<img src="<?php echo Yii::app()->baseUrl?>/upload/cat/letterhead.jpg"></a>
+			
+			
+			</div>
+			</div>
+			</div>
+			
+			
+			
+			
+			
+			<div class="product span6">
+
+
+						<div  class="main productlist">
+
+
+							<h3>STICKERS</h3>
+							<div class="view">
+
+								<div class="view-back"></div>
+			
+			<a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/sticker/')?>">
+			<img src="<?php echo Yii::app()->baseUrl?>/upload/cat/sticker.jpg"></a>
+			
+			
+			</div>
+			</div>
+			</div>
+			
+			
+			<div class="product span6">
+
+
+						<div  class="main productlist">
+
+
+							<h3>HAND OUTS</h3>
+							<div class="view">
+
+								<div class="view-back"></div>
+			
+			<a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/handout/')?>">
+			<img src="<?php echo Yii::app()->baseUrl?>/upload/cat/handouts.jpg"></a>
+			
+			
+			</div>
+			</div>
+			</div>
+			
+			
+			
+			
+			
 		
 			
 			</div>
@@ -26,7 +103,8 @@
 	</div>
 	
 
-	
+	</div>
+	</body>
       
 	
 	

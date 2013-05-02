@@ -108,8 +108,22 @@ class SiteController extends FrontController {
 		$this->render('terms');
 	}
 	
-
-
+	public function actionLetter()
+	{
+	
+		$this->render('letter');
+	}
+	
+	public function actionSticker()
+	{
+	
+		$this->render('sticker');
+	}
+	public function actionHandout()
+	{
+	
+		$this->render('handout');
+	}
 
 	public function actionContact($ref='DIRECT'){
 

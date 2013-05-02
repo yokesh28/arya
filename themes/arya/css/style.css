@@ -1868,7 +1868,7 @@ footer li {
 }
 
 #cart {
-	position: fixed;
+	position: absolute;
 	right: 50px;
 	bottom: 150px;
 	width: 320px;
@@ -1889,6 +1889,14 @@ footer li {
 }
 
 @media ( max-width : 767px) {
+	
+	#cart {
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+	width: 320px;
+}
+	
 	.footer_menu li {
 		border-right: none !important;
 		text-align: left !important;

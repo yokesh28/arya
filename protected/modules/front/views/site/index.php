@@ -34,23 +34,23 @@
 			<div class="ws_images">
 				<ul>
 					<li><a href="#"><img
-							src="<?php echo Yii::app()->theme->baseUrl;?>/images/11.png"
+							src="<?php echo Yii::app()->theme->baseUrl;?>/images/bus.jpg"
 							alt="Fallen tree: jQuery Image Slider HTML" 
 							id="wows0" /> </a></li>
 					<li><a href="#"><img
-							src="<?php echo Yii::app()->theme->baseUrl;?>/images/22.png"
+							src="<?php echo Yii::app()->theme->baseUrl;?>/images/letter.jpg"
 							alt="Forest glade : How To Add jQuery Slider To HTML"
 							 id="wows1" /> </a></li>
 					<li><a href="#"><img
-							src="<?php echo Yii::app()->theme->baseUrl;?>/images/33.png"
+							src="<?php echo Yii::app()->theme->baseUrl;?>/images/booklet.jpg"
 							alt="In the woods : jQuery Div Slider" 
 							id="wows2" />rays of light show through the trees</a></li>
 					<li><a href="#"><img
-							src="<?php echo Yii::app()->theme->baseUrl;?>/images/44.png"
+							src="<?php echo Yii::app()->theme->baseUrl;?>/images/broucher.jpg"
 							alt="The road in the woods : jQuery Slider Div Horizontal"
 							 id="wows3" /> </a></li>
 					<li><a href="#"><img
-							src="<?php echo Yii::app()->theme->baseUrl;?>/images/55.png"
+							src="<?php echo Yii::app()->theme->baseUrl;?>/images/envelop.jpg"
 							alt="Sapling : jQuery HTML Slider"  id="wows4" />
 					</a></li>
 

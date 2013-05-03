@@ -1,5 +1,5 @@
 
-<header class="row-fluid">
+
 	<div class="menu">
 		<div class="navbar navbar_ clearfix">
 			<div class="navbar-inner">
@@ -49,4 +49,4 @@
 			</div>
 		</div>
 	</div>
-</header>
+

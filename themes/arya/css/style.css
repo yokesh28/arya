@@ -635,9 +635,7 @@ header {
 /*hover for first level*/
 .nav-collapse_ .nav>li.sfHover,.nav-collapse_ .nav>li.sfHover:hover,.nav-collapse_ .nav>li:hover,.nav-collapse_ .nav>li.active,.nav-collapse_ .nav>li.active:hover
 	{
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
+	
 }
 
 .nav-collapse_ .nav>li.sfHover>a,.nav-collapse_ .nav>li.sfHover>a:hover,.nav-collapse_ .nav>li>a:hover,.nav-collapse_ .nav>li.active>a,.nav-collapse_ .nav>li.active>a:hover
@@ -1964,6 +1962,13 @@ background-color:rgb(250, 140, 21);
 
 .ws_images img{
 	height:85%;
+}
+
+.head li:first-child{
+	
+moz-box-shadow: 3px 17px 0px #888;
+-webkit-box-shadow: 0px 0px 0px 5px #887;
+box-shadow: 5px 5px 10px 0px #888;
 }
 
 .head li:Last-child{

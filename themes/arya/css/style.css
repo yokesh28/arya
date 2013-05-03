@@ -1952,4 +1952,11 @@ margin-right: 75px;
 }
 
 
+.rightside .btn{
+background-color:rgb(250, 140, 21);
+	background-image: linear-gradient(to bottom, rgb(250, 140, 21), rgb(224, 127, 21));
+}
 
+.ws_images img{
+	height:100%;
+}

@@ -36,7 +36,7 @@
 					<li><a href="#"><img
 							src="<?php echo Yii::app()->theme->baseUrl;?>/images/11.png"
 							alt="Fallen tree: jQuery Image Slider HTML" 
-							id="wows0" /> </a></li>
+							id="wows0"/> </a></li>
 					<li><a href="#"><img
 							src="<?php echo Yii::app()->theme->baseUrl;?>/images/22.png"
 							alt="Forest glade : How To Add jQuery Slider To HTML"

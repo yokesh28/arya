@@ -39,11 +39,13 @@ jQuery.fn.wowSlider = function(y) {
 	var J = a.find("ul");
 	function b(c) {
 		J.css({
-			left : -c + "00%"
+			left : -c + "00%",
+			top:'117px',
 		})
 	}
 	E("<div>").css({
 		width : "100%",
+		
 		visibility : "hidden",
 		"font-size" : 0,
 		"line-height" : 0

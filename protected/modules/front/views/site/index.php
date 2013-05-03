@@ -61,3 +61,5 @@
 		src="<?php echo Yii::app()->theme->baseUrl;?>/js/wowslider.js"></script>
 	<script type="text/javascript"
 		src="<?php echo Yii::app()->theme->baseUrl;?>/js/script.js"></script>
+		
+		

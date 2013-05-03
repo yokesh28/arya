@@ -41,6 +41,16 @@ left: 70px;
 	
 }
 
+.productpadding{
+	
+	margin-top: 100px;
+}
+
+.productspacing{
+	
+	margin-top: 50px;
+}
+
 
 #homepage .foot {
 	position: absolute;
@@ -1271,7 +1281,7 @@ footer .span12 {
 }
 
 .footer_menu a {
-	color: #242424;
+	color: white;
 	font-family: arial;
 	font-weight: bold;
 	font-size: 12px;
@@ -1337,7 +1347,7 @@ footer .span12 {
 
 .copy_rights li {
 	text-align: center;
-	border-right: 1px solid #242424;
+	border-right: 1px solid white;
 	min-height: auto !important;
 	margin: 0px !important;
 	float: left;
@@ -1351,7 +1361,7 @@ footer .span12 {
 }
 
 .copy_rights a {
-	color: #242424;
+	color: white;
 	font-family: arial;
 	font-weight: bold;
 	font-size: 12px;
@@ -1706,7 +1716,7 @@ footer li {
 	text-align: center;
 	margin: 0px;
 	position: relative;
-	top: -4px;
+	top: -25px;
 	
 	
 	left: -66px;

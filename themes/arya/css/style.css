@@ -456,7 +456,7 @@ header {
 	*zoom: 1;
 	position: relative;
 	display: block;
-	margin: 0;
+	margin-left: 30px;
 	padding: 0;
 
 }
@@ -1977,12 +1977,12 @@ moz-box-shadow: 3px 17px 0px #888;
 -webkit-box-shadow: 0px 5px 1px 1px #887;
 box-shadow: 5px 5px 10px 0px #888;
 }
-.head li{
+/*.head li{
 	
 moz-box-shadow: 3px 17px 0px #888;
 -webkit-box-shadow: 1px 1px 1px 1px #887;
 box-shadow: 5px 5px 10px 0px #888;
-}
+}*/
 	
 	.head li:HOVER{
 	

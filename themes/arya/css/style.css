@@ -458,7 +458,7 @@ header {
 	display: block;
 	margin: 0;
 	padding: 0;
-	background: white;
+
 }
 
 #splash .nav-collapse {
@@ -635,9 +635,7 @@ header {
 /*hover for first level*/
 .nav-collapse_ .nav>li.sfHover,.nav-collapse_ .nav>li.sfHover:hover,.nav-collapse_ .nav>li:hover,.nav-collapse_ .nav>li.active,.nav-collapse_ .nav>li.active:hover
 	{
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
+	
 }
 
 .nav-collapse_ .nav>li.sfHover>a,.nav-collapse_ .nav>li.sfHover>a:hover,.nav-collapse_ .nav>li>a:hover,.nav-collapse_ .nav>li.active>a,.nav-collapse_ .nav>li.active>a:hover
@@ -1966,13 +1964,38 @@ background-color:rgb(250, 140, 21);
 	height:85%;
 }
 
-.head{
+.head li:first-child{
 	
-	moz-box-shadow: 3px 17px 0px #888;
+moz-box-shadow: 3px 17px 0px #888;
+-webkit-box-shadow: 0px 0px 0px 5px #887;
+box-shadow: 5px 5px 10px 0px #888;
+}
+
+.head li:Last-child{
+	
+moz-box-shadow: 3px 17px 0px #888;
 -webkit-box-shadow: 0px 5px 1px 1px #887;
 box-shadow: 5px 5px 10px 0px #888;
 }
+.head li{
 	
+moz-box-shadow: 3px 17px 0px #888;
+-webkit-box-shadow: 1px 1px 1px 1px #887;
+box-shadow: 5px 5px 10px 0px #888;
+}
+	
+	.head li:HOVER{
+	
+moz-box-shadow: 3px 17px 0px #888;
+-webkit-box-shadow: 1px 1px 1px 1px #887;
+box-shadow: 5px 5px 10px 0px #888;
+}
+	.head li.active{
+	
+moz-box-shadow: 3px 17px 0px #888;
+-webkit-box-shadow: 1px 1px 1px 1px #887;
+box-shadow: 5px 5px 10px 0px #888;
+}
 
 #g-search-button {
   display: inline-block;
@@ -1985,7 +2008,9 @@ box-shadow: 5px 5px 10px 0px #888;
   background-color: black;  /* Replace with your own image */
 }
 
-
+.ws_images>div{
+	min-height: 570px;
+}
 
 
 

@@ -20,7 +20,7 @@ html{margin:0;
           padding:0;
           overflow-y:scroll}
           
-body{text-shadow:#fff 0 1px 0;
+body{
            color:#2c2c2c;
            font-family:"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial;
            font-weight:400;
@@ -28,7 +28,7 @@ body{text-shadow:#fff 0 1px 0;
            font-variant:normal;
            line-height:normal;
            background-color:#e2e2d6;
-           background-image:url(../images/bg.jpg);
+          
            background-position:center 0;margin:0;padding:0}
 :focus{outline:0}
 .right386 .entry{margin-bottom:12px;

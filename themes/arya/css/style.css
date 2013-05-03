@@ -4,6 +4,7 @@
 html {
 	min-height: 100%;
 	position: relative;
+	overflow-x: hidden
 }
 
 body {
@@ -463,6 +464,7 @@ header {
 #splash .nav-collapse {
 	position: absolute;
 	z-index: 102;
+	left: 6%;
 }
 
 .nav-collapse_:before,.nav-collapse_:after {
@@ -1983,16 +1985,8 @@ box-shadow: 5px 5px 10px 0px #888;
   background-color: black;  /* Replace with your own image */
 }
 
-#site-search-input{
-	margin-left: 57px;
-margin-top: 22px;
-background: white;
-padding: 3px;
-}
 
-.margintop{
-	background: white !important;
-	padding: 7px !important;
-	
 
-}
+
+
+

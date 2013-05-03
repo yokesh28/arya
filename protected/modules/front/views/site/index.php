@@ -25,11 +25,11 @@
 		<div id="wowslider-container1">
 			<div class="ws_images">
 				<ul>
-					<li><a href="#"><img
+					<li><a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/list/')?>"><img
 							src="<?php echo Yii::app()->theme->baseUrl;?>/images/bus.jpg"
 							alt="Fallen tree: jQuery Image Slider HTML" 
 							id="wows0"/> </a></li>
-					<li><a href="#"><img
+					<li><a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/letter/')?>"><img
 							src="<?php echo Yii::app()->theme->baseUrl;?>/images/letter.jpg"
 							alt="Forest glade : How To Add jQuery Slider To HTML"
 							 id="wows1" /> </a></li>

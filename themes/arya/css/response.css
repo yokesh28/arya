@@ -18,6 +18,9 @@
 	right: 156px;
 	top: 53px;
 }
+.margintop{
+	display: none;
+}
 
 .head {
 	width: 907px;
@@ -30,7 +33,10 @@
 z-index: 9999;
 position: absolute;
 right: 8px;
-top: 29px;
+top: 27px;
+}
+.margintop{
+	display: none;
 }
 }
 

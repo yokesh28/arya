@@ -1,19 +1,27 @@
 @CHARSET "ISO-8859-1";
 
 
+
+@media (min-width: 1200px) {
+
+
 	
 
-@media (min-width: 768px) and (max-width: 979px) { 
+	
+}
+	
 
-
-	.rightside .btn 
-{
-z-index: 9999;
-position: absolute;
-right: 156px;
-top: 53px;
+@media (min-width: 768px) and (max-width: 979px) {
+.rightside .btn {
+	z-index: 9999;
+	position: absolute;
+	right: 156px;
+	top: 53px;
 }
 
+.head {
+	width: 907px;
+}
 }
 
 @media (max-width: 767px) {  

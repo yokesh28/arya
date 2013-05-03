@@ -480,7 +480,6 @@ header {
 	position: absolute;
 	content: '';
 	height: 8px;
-	background: #e9e9e9;
 	bottom: -8px;
 	width: 100%;
 	left: 0;
@@ -529,7 +528,7 @@ header {
 .nav-collapse_ .nav>li {
 	display: block;
 	float: left;
-	margin: 0;
+	margin-top: -16px;
 	border: none;
 	font-weight: normal;
 	font-family: 'Montserrat', sans-serif;
@@ -1413,6 +1412,7 @@ footer li {
 	}
 	.nav-collapse_ .nav>li>a {
 		padding: 34px 30px 32px 30px;
+	background:white;
 	}
 	.div-search {
 		margin: 25px 19px 0 0;
@@ -1961,5 +1961,38 @@ background-color:rgb(250, 140, 21);
 }
 
 .ws_images img{
-	height:100%;
+	height:85%;
+}
+
+.head{
+	
+	moz-box-shadow: 3px 17px 0px #888;
+-webkit-box-shadow: 0px 5px 1px 1px #887;
+box-shadow: 5px 5px 10px 0px #888;
+}
+	
+
+#g-search-button {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  left: -22px;
+  top: 3px;
+
+  background-color: black;  /* Replace with your own image */
+}
+
+#site-search-input{
+	margin-left: 57px;
+margin-top: 22px;
+background: white;
+padding: 3px;
+}
+
+.margintop{
+	background: white !important;
+	padding: 7px !important;
+	
+
 }

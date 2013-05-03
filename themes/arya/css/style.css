@@ -1966,13 +1966,31 @@ background-color:rgb(250, 140, 21);
 	height:85%;
 }
 
-.head{
+.head li:Last-child{
 	
-	moz-box-shadow: 3px 17px 0px #888;
+moz-box-shadow: 3px 17px 0px #888;
 -webkit-box-shadow: 0px 5px 1px 1px #887;
 box-shadow: 5px 5px 10px 0px #888;
 }
+.head li{
 	
+moz-box-shadow: 3px 17px 0px #888;
+-webkit-box-shadow: 1px 1px 1px 1px #887;
+box-shadow: 5px 5px 10px 0px #888;
+}
+	
+	.head li:HOVER{
+	
+moz-box-shadow: 3px 17px 0px #888;
+-webkit-box-shadow: 1px 1px 1px 1px #887;
+box-shadow: 5px 5px 10px 0px #888;
+}
+	.head li.active{
+	
+moz-box-shadow: 3px 17px 0px #888;
+-webkit-box-shadow: 1px 1px 1px 1px #887;
+box-shadow: 5px 5px 10px 0px #888;
+}
 
 #g-search-button {
   display: inline-block;
@@ -1985,7 +2003,9 @@ box-shadow: 5px 5px 10px 0px #888;
   background-color: black;  /* Replace with your own image */
 }
 
-
+.ws_images>div{
+	min-height: 570px;
+}
 
 
 

@@ -1,13 +1,5 @@
 
-<link rel="stylesheet"
-	href="<?php echo Yii::app()->theme->baseUrl;?>/css/mainstyle.css"
-	type="text/css" media="screen">
-<link rel="stylesheet" type="text/css"
-	href="<?php echo Yii::app()->theme->baseUrl;?>/css/style2.css"
-	media="screen" />
-<script
-	type="text/javascript"
-	src="<?php echo Yii::app()->theme->baseUrl;?>/js/a.js"></script>
+
 <body
 	id="splash" cz-shortcut-listen="true">
 	

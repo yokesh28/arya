@@ -11,7 +11,7 @@
 					<div class="clearfix span10">
 						<div class=" nav-collapse nav-collapse_ collapse row-fluid ">
 							<div class="clearfix">
-								<ul class="nav sf-menu clearfix sf-js-enabled  head span12">
+								<ul class="nav sf-menu clearfix sf-js-enabled  head span10">
 
 									<li class="span2"
 									<?php echo (Yii::app()->controller->action->id== 'index' ? 'class=active' : '');?>><a
@@ -40,7 +40,6 @@
 											Us</a></li>
                                           
 											
-								  
 								</ul>
 
 								

@@ -26,6 +26,7 @@
 
 		</div>
 		<div class="rightside">
+		
 			<button class="btn btn-primary fir" type="button">Register</button>
 			<button class="btn btn-primary" type="button">Login</button>
 		</div>

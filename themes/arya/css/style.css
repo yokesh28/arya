@@ -2026,3 +2026,7 @@ moz-box-shadow: 3px 17px 0px #888;
 	position: absolute;
 	right: -16px;
 }
+.top{
+	background: url("../images/header1.png") no-repeat;
+	background-position: 64% 0;
+}

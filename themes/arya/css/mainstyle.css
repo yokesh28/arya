@@ -45,7 +45,7 @@ caption,th,td{text-align:left;
                          
 strong{font-weight:700}
 
-em{font:italic 17px Georgia, "Times New Roman",Times,serif}
+/*em{font:italic 17px Georgia, "Times New Roman",Times,serif}*/
 
 *{border:0;outline:0;vertical-align:baseline;margin:0;padding:0;font:inherit inherit 100% inherit}
 

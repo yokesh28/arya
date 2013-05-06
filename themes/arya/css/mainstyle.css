@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'MisoBold';
     src: url('miso-bold-webfont.eot');
     src: url('miso-bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -14,9 +14,9 @@
 ::selection{color:#fff;
                      color:rgb(255,255,255);
                      color:rgb(255,255,255);
-                     background:#239AB2}
+                     background:#239AB2}*/
                      
-html{margin:0;
+/*html{margin:0;
           padding:0;
           overflow-y:scroll}
           
@@ -27,14 +27,14 @@ body{
            font-style:normal;
            font-variant:normal;
            line-height:normal;
-           background-color:#e2e2d6;
+           
           
-           background-position:center 0;margin:0;padding:0}
+           background-position:center 0;margin:0;padding:0}*/
 :focus{outline:0}
 .right386 .entry{margin-bottom:12px;
              padding-bottom:18px}
              
-input:focus{outline:none;outline-width:0}
+/*(input:focus{outline:none;outline-width:0}
 ul{list-style:none}
 input::-moz-focus-inner,input[type="reset"]::-moz-focus-inner,input[type="button"]::-moz-focus-inner,input[type="submit"]::-moz-focus-inner,input[type="file"]>
 input[type="button"]
@@ -43,17 +43,17 @@ input[type="button"]
 caption,th,td{text-align:left;
                          font-weight:400}
                          
-strong{font-weight:700}
+strong{font-weight:700}*/
 
-em{font:italic 17px Georgia, "Times New Roman",Times,serif}
-
+/*em{font:italic 17px Georgia, "Times New Roman",Times,serif}*/
+/*
 *{border:0;outline:0;vertical-align:baseline;margin:0;padding:0;font:inherit inherit 100% inherit}
 
 a{color:#b02d15;text-decoration:none;cursor:pointer}
 
 .whatsnew p{
 	margin: 0 0 0 0;
-}
+}*/
 .slideshow a:hover,.about a:hover,.entry a:hover,.entry2 a:hover,.sidebar a:hover,.right386 a:hover
 {/*background-color:#fffff4;*/
   text-decoration:none;
@@ -61,7 +61,7 @@ a{color:#b02d15;text-decoration:none;cursor:pointer}
 
 .entry a,.sidebar a,.right386 a{border-bottom:1px solid transparent}
 
-p{font-size:15px;
+/*p{font-size:15px;
     line-height:24px;
     margin-top:10px;
     margin-bottom:18px}
@@ -70,7 +70,7 @@ p{font-size:15px;
 
 p.large{font-size:24px;
               font-family:Cambria,Georgia,"Times New Roman",Times,serif;
-              line-height:30px;margin-top:0;margin-bottom:12px}
+              line-height:30px;margin-top:0;margin-bottom:12px}*/
               
 blockquote{font-family:Georgia,"Times New Roman",Times,serif;
                       font-style:italic;
@@ -120,7 +120,7 @@ a.go:hover,span.go a:hover{text-decoration:none !important}
 span.amp{font:italic 400 1.2em normal "Hoefler Text Alt", Baskerville, "Goudy Bookletter 1911", goudy-bookletter-1911-1, goudy-bookletter-1911-2, 
                "Goudy Old Style", Palatino, "Book Antiqua",serif}
                
-h1,h2{font-family:"Hoefler Text","Adobe Garamond Pro","AGaramond LT",Garamond,"Baskerville Old Face","Palatino Linotype",
+/*h1,h2{font-family:"Hoefler Text","Adobe Garamond Pro","AGaramond LT",Garamond,"Baskerville Old Face","Palatino Linotype",
          "Times New Roman",Times,serif,"Times New Roman"}
 h1{font-size:32px;
       font-weight:400;
@@ -136,13 +136,13 @@ h1.pagetitle{display:block;
                         margin-right:12px;
                         margin-left:12px;
                         padding-top:12px;
-                        border-top:3px solid #dbd6c7}
+                        border-top:3px solid #dbd6c7}*/
 /*a.sharp{background-image:url(../images/list1.jpg);
                   text-indent:-9999px;
                   width:960px;
                   height:350px}*/
                   
-h1 a{color:#3d3d3d;
+/*h1 a{color:#3d3d3d;
     display:block}
 h1.welcome{font-family:"Adobe Garamond Pro",Garamond,"Baskerville Old Face","Palatino Linotype","Times New Roman",Times,serif;
                        font-size:34px;
@@ -153,8 +153,8 @@ h1.welcome{font-family:"Adobe Garamond Pro",Garamond,"Baskerville Old Face","Pal
                        width:960px;
                        margin-top:30px;
                        margin-bottom:0;
-                       text-shadow:#fff 0 1px 0}
-h2{font:400 24px "Adobe Garamond Pro", "AGaramond LT", Garamond, "Baskerville Old Face", "Palatino Linotype", "Times New Roman", Times, serif, 
+                       text-shadow:#fff 0 1px 0}*/
+/*h2{font:400 24px "Adobe Garamond Pro", "AGaramond LT", Garamond, "Baskerville Old Face", "Palatino Linotype", "Times New Roman", Times, serif, 
       "Times New Roman"}
 .center{text-align:center}.toptitle,.entry .toptitle{margin-top:0}
 h3{color:#3a3a3a;
@@ -192,7 +192,7 @@ a{color:#323232;font-weight:700;text-decoration:none}
 * html .container{
 	width:984px;	
 }
-
+*/
 
 
 .container1{background-position:0 top;width:984px;margin:0

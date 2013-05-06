@@ -10,7 +10,7 @@
 			<div class="row rowsize">
 			
 		
-			<div class="product span6">
+			<div class="product span6 productspacing">
 
 
 						<div  class="main productlist">
@@ -30,7 +30,7 @@
 			</div>
 			
 			
-			<div class="product span6">
+			<div class="product span6 productspacing">
 
 
 						<div  class="main productlist">
@@ -53,7 +53,7 @@
 			
 			
 			
-			<div class="product span6">
+			<div class="product span6  productpadding">
 
 
 						<div  class="main productlist">
@@ -73,7 +73,7 @@
 			</div>
 			
 			
-			<div class="product span6">
+			<div class="product span6 productpadding">
 
 
 						<div  class="main productlist">
@@ -103,7 +103,7 @@
 	</div>
 	
 
-	</div>
+	</div><br><br><br>
 	</body>
       
 	

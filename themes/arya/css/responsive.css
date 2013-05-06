@@ -405,6 +405,11 @@
   .row-fluid .thumbnails {
     margin-left: 0;
   }
+  
+  
+
+  
+  
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .row {
@@ -721,6 +726,9 @@
   input.span1, textarea.span1, .uneditable-input.span1 {
     width: 28px;
   }
+  
+ 
+  
 }
 @media (max-width: 767px) {
   body {
@@ -869,6 +877,19 @@
   .carousel-caption {
     position: static;
   }
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
 @media (max-width: 979px) {
   body {
@@ -1021,5 +1042,11 @@
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
+ 
+margin-left: 31px;
   }
+
+
+
+
 }

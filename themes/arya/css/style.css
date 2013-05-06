@@ -29,7 +29,7 @@ body {
 	margin: 0px !important;
 	width: 100%;
 	height: 130px;
-	background: white;
+	background: black;
 }
 
 .productpage{
@@ -1411,7 +1411,7 @@ footer li {
 		margin: 58px auto 192px;
 	}
 	.nav-collapse_ .nav>li>a {
-		padding: 34px 30px 32px 30px;
+		padding: 18% 20%;
 	background:white;
 	}
 	.div-search {
@@ -1944,8 +1944,8 @@ margin-right: 75px;
 	top: 0px;
 	left: 0px;
 	z-index: 101;
-	width:100%;
-	height:100%;
+
+	
 }
 
 .price {
@@ -1961,7 +1961,7 @@ background-color:rgb(250, 140, 21);
 }
 
 .ws_images img{
-	height:85%;
+	height:76%;
 }
 
 .head li:first-child{
@@ -2007,9 +2007,8 @@ box-shadow: 5px 5px 10px 0px #888;
 
   background-color: black;  /* Replace with your own image */
 }
-
-.ws_images>div{
-	min-height: 570px;
+#splash .menu{
+	margin-top: -20px !important;
 }
 
 

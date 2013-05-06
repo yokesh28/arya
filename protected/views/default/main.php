@@ -24,7 +24,9 @@
 <link rel="stylesheet"
 	href="<?php echo Yii::app()->theme->baseUrl;?>/css/bootstrap.css"
 	type="text/css" media="screen">
-	<link href="<?php echo Yii::app()->theme->baseUrl;?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link
+	href="<?php echo Yii::app()->theme->baseUrl;?>/css/bootstrap.min.css"
+	rel="stylesheet" media="screen">
 <link rel="stylesheet"
 	href="<?php echo Yii::app()->theme->baseUrl;?>/css/responsive.css"
 	type="text/css" media="screen">

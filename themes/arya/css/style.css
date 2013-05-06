@@ -621,6 +621,7 @@ header {
 	width: 3px;
 	height: 6px;
 }
+ 
 
 .nav-collapse_ .nav ul li {
 	display: block;
@@ -2029,7 +2030,7 @@ moz-box-shadow: 3px 17px 0px #888;
 
 .top {
 	background: url("../images/header1.png") no-repeat;
-	background-position: 64% 0;
+	background-position: 45% 0;
 }
 
 #preloader {

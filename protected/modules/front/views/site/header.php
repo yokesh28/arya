@@ -14,10 +14,10 @@
 							
 								<ul class="nav sf-menu clearfix sf-js-enabled span12 ">
 
-									<li class="span2"
+									<li class="span2" style="margin-left: 25px;"
 									<?php echo (Yii::app()->controller->action->id== 'index' ? 'class=active' : '');?>>
 									
-									<img class="ls" src="<?php echo Yii::app()->theme->baseUrl;?>/images/ls.png">
+									
 									<a
 										href="<?php echo Yii::app()->CreateAbsoluteUrl('/home')?>">Home</a>
 									</li>
@@ -47,7 +47,7 @@
 
 								</ul>
 
-								<img class="rs" src="<?php echo Yii::app()->theme->baseUrl;?>/images/ls.png">
+								
 							</div>
 							
 						</div>

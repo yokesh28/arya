@@ -2,12 +2,16 @@
 
 
 <body
-	id="splash" cz-shortcut-listen="true">
+	id="splash" cz-shortcut-listen="true"  onload="hide_preloader();">
+
+<div id="preloader">
+		<div>
+			<img src="<?php echo Yii::app()->theme->baseUrl;?>/images/preloader.png">
+		</div>
+	</div>
 
 
-
-
-	<div id="homepage" class="row-fluid">
+	<div id="homepage" class="row-fluid"  style="display: none" >
 		<div class="logo span3">
 			<a href="#"><img
 				src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.png"

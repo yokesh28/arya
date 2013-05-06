@@ -48,7 +48,7 @@
 	media="screen" />
 
 
-
+<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl;?>/js/preloader.js"></script>
 
 
 

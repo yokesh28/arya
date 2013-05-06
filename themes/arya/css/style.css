@@ -2013,7 +2013,7 @@ moz-box-shadow: 3px 17px 0px #888;
 	border-image: url(../images/line.png) 0 20 0 0 !important;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
 	background: rgb(250, 140, 21) !important;
 }
 
@@ -2026,7 +2026,13 @@ moz-box-shadow: 3px 17px 0px #888;
 	position: absolute;
 	right: -16px;
 }
-.top{
+
+.top {
 	background: url("../images/header1.png") no-repeat;
 	background-position: 64% 0;
+}
+
+#preloader {
+	width: 244px;
+	margin: 172px auto;
 }

@@ -47,7 +47,7 @@
 
 								</ul>
 
-								<img class="rs" src="<?php echo Yii::app()->theme->baseUrl;?>/images/rs.png">
+								<img class="rs" src="<?php echo Yii::app()->theme->baseUrl;?>/images/ls.png">
 							</div>
 							
 						</div>

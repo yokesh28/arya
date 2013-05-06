@@ -18,7 +18,7 @@ body {
 }
 
 #splash {
-	background: white;
+	background: black;
 }
 
 #innerpage header {
@@ -2038,5 +2038,10 @@ box-shadow: 5px 5px 10px 0px #888;
 	background: black !important;
 
 	}
-
+.menu ul li{
+	border-image: url(../images/line.png) 0 20 0 0 !important;
+}
+.menu ul li:first-child{
+	b
+}
 

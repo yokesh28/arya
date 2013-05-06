@@ -22,7 +22,7 @@
 
 
 
-		<div id="wowslider-container1">
+		<div id="">
 			<div class="ws_images">
 				<ul>
 					<li><a

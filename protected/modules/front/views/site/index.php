@@ -30,7 +30,7 @@
 
 
 
-		<div id="">
+		<div id="wowslider-container1">
 			<div class="ws_images">
 				<ul>
 					<li><a

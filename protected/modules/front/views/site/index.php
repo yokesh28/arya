@@ -9,17 +9,9 @@
 	<div id="homepage" class="row-fluid">
 		<div class="logo span3">
 			<a href="#"><img
-				src="<?php echo Yii::app()->theme->baseUrl;?>/images/logo.png"
-				width=100%> </a>
+				src="<?php echo Yii::app()->theme->baseUrl;?>/images/header.png"> </a>
 
 
-
-
-
-		</div>
-		<div class="top span12">
-
-			<div class="login offset6"></div>
 
 
 		</div>
@@ -30,12 +22,12 @@
 
 
 
-		<div id="">
+		<div id="wowslider-container1">
 			<div class="ws_images">
 				<ul>
 					<li><a
 						href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/list/')?>"><img
-							src="<?php echo Yii::app()->theme->baseUrl;?>/images/bc.jpg"
+							src="<?php echo Yii::app()->theme->baseUrl;?>/images/bus.jpg"
 							alt="Fallen tree: jQuery Image Slider HTML" id="wows0" /> </a></li>
 					<li><a
 						href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/letter/')?>"><img
@@ -69,3 +61,5 @@
 		src="<?php echo Yii::app()->theme->baseUrl;?>/js/wowslider.js"></script>
 	<script type="text/javascript"
 		src="<?php echo Yii::app()->theme->baseUrl;?>/js/script.js"></script>
+		
+		

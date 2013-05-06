@@ -11,10 +11,14 @@
 					<div class="clearfix span10">
 						<div class="nav-collapse nav-collapse_ collapse row-fluid ">
 							<div class="clearfix">
+							
 								<ul class="nav sf-menu clearfix sf-js-enabled span12 ">
 
 									<li class="span2"
-									<?php echo (Yii::app()->controller->action->id== 'index' ? 'class=active' : '');?>><a
+									<?php echo (Yii::app()->controller->action->id== 'index' ? 'class=active' : '');?>>
+									
+							
+									<a
 										href="<?php echo Yii::app()->CreateAbsoluteUrl('/home')?>">Home</a>
 									</li>
 									<li class="span2"

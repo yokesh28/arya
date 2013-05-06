@@ -43,7 +43,7 @@ left: 70px;
 
 .productpadding{
 	
-	margin-top: 100px;
+	margin-top: 53px;
 }
 
 .productspacing{
@@ -51,6 +51,10 @@ left: 70px;
 	margin-top: 50px;
 }
 
+.imgsize1 .span6{
+	
+	width: 375px;
+}
 
 #homepage .foot {
 	position: absolute;

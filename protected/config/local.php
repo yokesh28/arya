@@ -114,7 +114,7 @@ array('user/userResource/create', 'pattern'=>'user', 'verb'=>'POST'),*/
 						'connectionString' => 'mysql:host=localhost;dbname=arya',
 						'emulatePrepare' => true,
 						'username' => 'root',
-						'password' => 'password',
+						'password' => '',
 						'charset' => 'utf8',
 						'enableProfiling'=>'true',
 						'enableParamLogging' => true,

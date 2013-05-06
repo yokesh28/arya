@@ -2013,8 +2013,8 @@ moz-box-shadow: 3px 17px 0px #888;
 	border-image: url(../images/line.png) 0 20 0 0 !important;
 }
 
-.menu ul li:first-child {
-	
+.btn-primary:hover{
+	background: rgb(250, 140, 21) !important;
 }
 
 .ls {

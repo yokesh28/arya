@@ -22,7 +22,7 @@
 								<div class="view-back"></div>
 			
 			<a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/list/')?>">
-			<img src="<?php echo Yii::app()->baseUrl?>/upload/cat/card.png"></a>
+			<img src="<?php echo Yii::app()->baseUrl?>/upload/cat/visit.jpg"></a>
 			
 			
 			</div>
@@ -42,7 +42,7 @@
 								<div class="view-back"></div>
 			
 			<a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/letter/')?>">
-			<img src="<?php echo Yii::app()->baseUrl?>/upload/cat/letterhead.jpg"></a>
+			<img src="<?php echo Yii::app()->baseUrl?>/upload/cat/letter.jpg"></a>
 			
 			
 			</div>
@@ -85,7 +85,7 @@
 								<div class="view-back"></div>
 			
 			<a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/handout/')?>">
-			<img src="<?php echo Yii::app()->baseUrl?>/upload/cat/handouts.jpg"></a>
+			<img src="<?php echo Yii::app()->baseUrl?>/upload/cat/hand.jpg"></a>
 			
 			
 			</div>

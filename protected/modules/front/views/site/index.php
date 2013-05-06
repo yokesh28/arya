@@ -44,17 +44,14 @@
 							alt="Forest glade : How To Add jQuery Slider To HTML" id="wows1" />
 					</a></li>
 					<li><a href="#"><img
-							src="<?php echo Yii::app()->theme->baseUrl;?>/images/booklet.jpg"
+							src="<?php echo Yii::app()->theme->baseUrl;?>/images/sticker.jpg"
 							alt="In the woods : jQuery Div Slider" id="wows2" />rays of light
 							show through the trees</a></li>
 					<li><a href="#"><img
 							src="<?php echo Yii::app()->theme->baseUrl;?>/images/broucher.jpg"
 							alt="The road in the woods : jQuery Slider Div Horizontal"
 							id="wows3" /> </a></li>
-					<li><a href="#"><img
-							src="<?php echo Yii::app()->theme->baseUrl;?>/images/envelop.jpg"
-							alt="Sapling : jQuery HTML Slider" id="wows4" /> </a></li>
-
+					
 				</ul>
 			</div>
 

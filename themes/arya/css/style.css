@@ -1565,7 +1565,7 @@ footer li {
 		box-sizing: border-box;
 	}
 	#splash header {
-		padding: 38px 0 0 0;
+		padding: 166px 0 0 0;
 	}
 	header {
 		-webkit-background-size: 500%;
@@ -1664,7 +1664,7 @@ footer li {
 
 @media ( max-width : 480px) {
 	#splash header {
-		padding: 10px 0 0 0;
+		padding: 263px 0 0 0;
 	}
 	.thumbnails .thumbnail {
 		float: none;
@@ -1906,6 +1906,14 @@ footer li {
 }
 
 @media ( max-width : 767px) {
+	
+	
+	#wowslider-container1 {
+margin-top: 414px !important;
+	}
+	
+	
+	
 	#cart {
 		position: absolute;
 		right: 50px;
@@ -1927,9 +1935,7 @@ footer li {
 	.password input {
 		width: 190px !important;
 	}
-	#wowslider-container1 {
-		margin-top: 150px !important;
-	}
+	
 }
 
 .menu {

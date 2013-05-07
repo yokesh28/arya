@@ -255,6 +255,7 @@
 
 			function addProduct(temp)
 			{
+				return false;
 				
 				jQuery.ajax({'type':'POST',
 					'url':'/front/site/cart',

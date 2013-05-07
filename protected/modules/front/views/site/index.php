@@ -49,12 +49,12 @@
 							src="<?php echo Yii::app()->theme->baseUrl;?>/images/letter.jpg"
 							alt="Forest glade : How To Add jQuery Slider To HTML" id="wows1" />
 					</a></li>
-					<li><a href="#"><img
+					<li><a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/sticker/')?>"><img
 							src="<?php echo Yii::app()->theme->baseUrl;?>/images/sticker.png"
 							alt="In the woods : jQuery Div Slider" id="wows2" />rays of light
 							show through the trees</a></li>
-					<li><a href="#"><img
-							src="<?php echo Yii::app()->theme->baseUrl;?>/images/broucher.jpg"
+					<li><a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/handout/')?>"><img
+							src="<?php echo Yii::app()->theme->baseUrl;?>/images/hand.jpg"
 							alt="The road in the woods : jQuery Slider Div Horizontal"
 							id="wows3" /> </a></li>
 					

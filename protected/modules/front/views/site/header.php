@@ -14,7 +14,7 @@
 							
 								<ul class="nav sf-menu clearfix sf-js-enabled span12 ">
 
-									<li class="span2" style="margin-left: 25px;"
+									<li class="span2" style="margin-left: 60px;"
 									<?php echo (Yii::app()->controller->action->id== 'index' ? 'class=active' : '');?>>
 									
 									

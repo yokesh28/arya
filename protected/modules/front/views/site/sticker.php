@@ -29,9 +29,9 @@
 
 
 
-							<div id="grid6" class="main list ">
+							<div class="main list ">
 								<h5>Sticker</h5>
-								<div class="view">
+								<div class="view imgvisitingcard">
 									<div class="view-back"></div>
 									<img class="imgsize"
 										src="<?php echo Yii::app()->baseUrl?>/upload/product/sticker/1.jpg">
@@ -73,9 +73,9 @@
 
 
 
-							<div id="grid7" class="main list ">
+							<div  class="main list ">
 								<h5>CD Sticker</h5>
-								<div class="view">
+								<div class="view imgvisitingcard">
 									<div class="view-back"></div>
 									<img class="imgsize"
 										src="<?php echo Yii::app()->baseUrl?>/upload/product/cd/1.jpg">

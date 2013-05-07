@@ -30,9 +30,9 @@
 
 
 
-							<div id="grid8" class="main list ">
+							<div  class="main list ">
 
-								<div class="view">
+								<div class="view imgvisitingcard">
 									<div class="view-back"></div>
 									<img class="imgsize"
 										src="<?php echo Yii::app()->baseUrl?>/upload/product/hand/1.jpg">

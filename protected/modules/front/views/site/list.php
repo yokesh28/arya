@@ -27,11 +27,11 @@
 					<div class="product span6">
 
 
-						<div id="grid" class="main list ">
+						<div  class="main list ">
 
 
 							<h5>Gloss</h5>
-							<div class="view">
+							<div class="view imgvisitingcard">
 
 								<div class="view-back"></div>
 								<img class="imgsize"
@@ -79,9 +79,9 @@
 
 
 
-						<div id="grid1" class="main list ">
+						<div class="main list ">
 							<h5>Matt</h5>
-							<div class="view">
+							<div class="view imgvisitingcard">
 								<div class="view-back"></div>
 								<img class="imgsize"
 									src="<?php echo Yii::app()->baseUrl?>/upload/product/mat/1.jpeg">
@@ -119,9 +119,9 @@
 
 
 
-						<div id="grid2" class="main list ">
+						<div  class="main list ">
 							<h5>Synthetic</h5>
-							<div class="view">
+							<div class="view imgvisitingcard">
 								<div class="view-back"></div>
 								<img class="imgsize"
 									src="<?php echo Yii::app()->baseUrl?>/upload/product/sy/1.jpg">
@@ -161,9 +161,9 @@
 
 
 
-						<div id="grid3" class="main list ">
+						<div  class="main list ">
 							<h5>Uv</h5>
-							<div class="view">
+							<div class="view imgvisitingcard">
 								<div class="view-back"></div>
 								<img class="imgsize"
 									src="<?php echo Yii::app()->baseUrl?>/upload/product/uv/1.jpg">

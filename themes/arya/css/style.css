@@ -672,6 +672,7 @@ header {
 
 #content .rowsize {
 	margin-left: -59px;
+	margin-top: -20px
 }
 
 @media ( max-width : 767px) {
@@ -2039,4 +2040,11 @@ moz-box-shadow: 3px 17px 0px #888;
 #preloader {
 	width: 244px;
 	margin: 172px auto;
+}
+
+
+.imgvisitingcard img{
+	
+	width: 290px;
+	height: 150px;
 }

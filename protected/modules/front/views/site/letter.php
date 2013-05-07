@@ -30,9 +30,9 @@
 
 
 
-							<div id="grid4" class="main list ">
+							<div  class="main list ">
 								<h5>Letter Head</h5>
-								<div class="view">
+								<div class="view imgvisitingcard">
 									<div class="view-back"></div>
 									<img class="imgsize"
 										src="<?php echo Yii::app()->baseUrl?>/upload/product/letterhead/1.jpg">
@@ -79,9 +79,9 @@
 
 
 
-							<div id="grid5" class="main list ">
+							<div  class="main list ">
 								<h5>Pad Charges</h5>
-								<div class="view">
+								<div class="view imgvisitingcard">
 									<div class="view-back"></div>
 									<img class="imgsize"
 										src="<?php echo Yii::app()->baseUrl?>/upload/product/pad/1.jpg">

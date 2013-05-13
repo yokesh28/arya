@@ -1,0 +1,780 @@
+/** Pager **/
+.lof-spacer{
+	margin-bottom: 15px;
+}
+
+.pager
+{
+    width: auto;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+}
+.pager div.short
+{
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    width: 74px;
+}
+.pager div.short input
+{
+    width: 28px;
+    height: 18px;
+    border: none;
+    margin-left: 8px;
+    float: left;
+}
+.pager ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-right: 4px;
+}
+.pager ul li
+{
+    display: inline;
+    margin-bottom: 0;
+    margin-left: 2px;
+    margin-right: 0;
+    width: auto;
+}
+.pager ul li a
+{
+    text-decoration: none;
+    display: inline-table;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+.pager span
+{
+    margin-left: 4px;
+    color: White;
+    float: left;
+}
+.pager .btn
+{
+    display: block;
+    width: 40px;
+	height: 20px;
+    text-align: center;
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-left: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.pager .disabled
+{
+    color: #A0A0A0 !important;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+/*green*/.green
+{
+    background-color: #4f7305;
+}
+.green.normal
+{
+    background-color: #588500;
+    color: White;
+    border: solid 1px #5f9000;
+}
+.green.active
+{
+    background-color: #344C00;
+    color: #F8EB00;
+    border: solid 1px #5f9000;
+}
+.pager.green .btn
+{
+    background-color: #588500;
+    color: White;
+    border: solid 1px #5f9000;
+}
+/*black*/.black
+{
+    background-color: #202020;
+}
+.black.normal
+{
+    background-color: #1d1d1d;
+    color: #B0D551;
+    border: solid 1px #000;
+}
+.black.active
+{
+    background-color: #333333;
+    color: White;
+    border: solid 1px #000;
+}
+.pager.black .btn
+{
+    background-color: #1d1d1d;
+    color: White;
+    border: solid 1px #000;
+}
+/*red*/.red
+{
+    background-color: #D50B07;
+}
+.red.normal
+{
+    background-color: #E71C18;
+    color: White;
+    border: solid 1px #F82723;
+}
+.red.active
+{
+    background-color: #C00D09;
+    color: White;
+    border: solid 1px #A90B08;
+}
+.pager.red .btn
+{
+    background-color: #E71C18;
+    color: White;
+    border: solid 1px #F82723;
+}
+
+/* box Review */
+.lof-review-box {
+    margin-bottom: 11px;
+}
+.lof-review-box h3.title-box {
+    background: url("img/header.gif") repeat scroll 0 0 transparent;
+    border: 1px solid #9AC1C9;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0;
+    padding: 6px 6px 8px;
+    width: auto;
+    color: #1E7EC8;
+}
+.lof-review-box .content {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: -moz-use-text-color #9AC1C9 #9AC1C9;
+    border-right: 1px solid #9AC1C9;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+    padding: 15px;
+    width: auto;
+}
+
+.lof-review-box .content h5 {
+    border-bottom: 1px solid #c6d1d3;
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 15px;
+    padding: 0 0 1px;
+}
+
+/* box Submit */
+.lof-reviewsubmit-box form .field {
+    clear: both;
+    padding-bottom: 10px;
+}
+.lof-reviewsubmit-box form h4 {
+    color: #1E7EC8;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.lof-reviewsubmit-box input, select, textarea, button{
+    font-family: Verdana,Arial,Helvetica,Sans-Serif;
+    font-size: 12px;
+    margin-left: 0em;
+    outline: medium none;
+}
+.lof-reviewsubmit-box textarea.lof-error{
+    background: none repeat scroll 0 0 #F8DBDB;
+    border-color: #E77776;
+	width: auto;
+}
+.lof-reviewsubmit-box input.lof-error{
+    background: none repeat scroll 0 0 #F8DBDB;
+    border-color: #E77776;
+	width: auto;
+}
+.lof-reviewsubmit-box select.lof-error{
+    background: none repeat scroll 0 0 #F8DBDB;
+    border-color: #E77776;
+    width: auto;
+}
+
+.lof-error {
+    color: #DA0F00;
+    margin: 0px;
+    padding: 0px;
+    width: 85%;
+}
+.messages {
+    overflow: hidden;
+    width: 100%;
+}
+
+.messages, .messages ul {
+    list-style: none outside none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.messages li {
+    margin: 0 0 10px !important;
+}
+.success-msg {
+    background-color: #EFF5EA;
+    background-image: url("img/success.gif"); /*Error.ico, success.gif */
+    border-color: #446423;
+    color: #3D6611;
+}
+.error-msg{
+    background-color: #EFF5EA;
+    background-image: url("img/Error.ico"); /*Error.ico, success.gif */
+    border-color: red;
+    color: red;
+}
+/************************************************************************/
+
+.lof_product_reviews{
+    float:right;
+}
+
+.lof_product_reviews .stars-on{
+    position: absolute;
+    background-position: 0 -48px;
+}
+.lof_product_reviews .stars-off, .stars-on{
+    position: relative;
+    height: 16px;
+    background: url(img/jquery.ui.stars.gif) repeat-x 0 -32px;
+}
+/*review details*/
+.lof-review-details .product-img-box {
+    float: left;
+    width: 140px;
+}
+
+.lof-review-details .product-img-box .label{
+    font-size: 9px;
+}
+.lof-review-details .product-img-box .ratings{
+    font-size: 11px;
+    line-height: 1.25;
+    margin: 7px 0;
+}
+.rating-box{
+    padding-left: 0.7em;
+}
+.rating-box .stars-on{
+    position: absolute;
+    background-position: 0 -48px;
+}
+.rating-box  .stars-off, .stars-on{
+    position: relative;
+    height: 16px;
+	background: url(img/jquery.ui.stars.gif) repeat-x 0 -32px;
+}
+
+.lof-review-details .product-details {
+    margin-left: 150px;
+}
+.product-details .product-name{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding-left: 0px;
+}
+.product-details h3{
+    color: #2F2F2F;
+    font-size: 12px;
+    margin: 0 0 3px;
+}
+.product-details .ratings-table{
+    margin: 0 0 10px;
+    border: 0 none;
+    border-spacing: 0;
+    empty-cells: show;
+    font-size: 100%;
+}
+.product-details.ratings-table th {
+    font-weight: bold;
+    padding-right: 8px;
+}
+
+.product-details .ratings-table th, .ratings-table td {
+    font-size: 11px;
+    line-height: 1.15;
+    padding: 3px 0;
+}
+.product-details .ratings-table .rating-box{
+    font-size: 0;
+    height: 16px;
+    line-height: 0;
+    overflow: hidden;
+    text-indent: -999em;
+    padding-left: 5px;
+}
+.product-details .ratings-table.rating-box .stars-on{
+    position: absolute;
+    background-position: 0 -48px;
+}
+.product-details .ratings-table.rating-box  .stars-off, .stars-on{
+    position: relative;
+    height: 16px;
+	background: url(img/jquery.ui.stars.gif) repeat-x 0 -32px;
+}
+.product-details dt {
+    font-weight: bold;
+}
+.product-details dd {
+    font-size: 11px;
+    margin: 5px 0 0;
+}
+.product-details .helpful-link-yes{
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+.product-details .helpful-link-no{
+    cursor: pointer;
+    color: green;
+    font-weight: bold;
+}
+
+.product-details .report{
+    cursor: pointer;
+    color: orange;
+    font-weight: bold;
+}
+
+
+.lof-review-details .buttons-set {
+    border-top: 1px solid #E4E4E4;
+    clear: both;
+    margin: 4em 0 0;
+    padding: 8px 0 0;
+    text-align: right;
+}
+.lof-review-details  .buttons-set .back-link {
+    float: left;
+    margin: 0;
+}
+.lof-review-details  .buttons-set .back-link a{
+    color: #1E7EC8;
+    text-decoration: underline;
+}
+
+/*style for extraright column*/
+.lof-avg .stars-on{
+    position: absolute;
+    background-position: 0 -48px;
+}
+.lof-avg .stars-off, .stars-on{
+    position: relative;
+    height: 16px;
+	background: url(img/jquery.ui.stars.gif) repeat-x 0 -32px;
+}
+
+/*style for left, right column*/
+.lof-recent-review{
+    border: 1px solid #C4C1BC;
+    margin: 0 0 15px;
+    font-size: 11px;
+    line-height: 1.25;
+}
+.lof-recent-review .title{
+    background: url("img/title.gif") repeat-x scroll 0 0 transparent;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 2px 9px;
+    
+}
+.lof-recent-review .title span{
+    color: #E26703;
+    font: bold 12px/16px Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+}
+.lof-recent-review .content{
+    background: none repeat scroll 0 0 #F8F7F5;
+}
+.lof-recent-review .product-details{
+    /*
+	color: #1E7EC8;
+    text-decoration: underline;
+	*/
+    margin-left: 60px;    
+}
+
+.lof-recent-review .stars-on{
+    position: absolute;
+    background-position: 0 -48px;
+}
+.lof-recent-review .stars-off, .stars-on{
+    position: relative;
+    height: 16px;
+	background: url(img/jquery.ui.stars.gif) repeat-x 0 -32px;
+}
+
+.lof-recent-review .content ul, ol{
+    list-style: none outside none;
+}
+.lof-recent-review .content li.item{
+    padding: 7px 9px;
+}
+.lof-recent-review .product-image {
+    border: 1px solid #A9A9A9;
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+/*lof-send-review*/
+#lof-send-review fieldset{
+    background-color: #F8F7F5;	
+	border: 1px solid #D0D3D8;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#lof-send-review .form-list{
+    margin: 15px 0 0;
+    list-style: none outside none;
+}
+#lof-send-review .form-list li{
+   margin: 0 0 8px;
+}
+
+.lof_proscons{
+	width:100%;
+	margin-top: 10px;
+}
+
+#lof-send-review .lof_button{
+	background: url("img/button.png") no-repeat scroll left top transparent;
+	border: medium none;
+	width: 70px;
+    padding: 2px 8px;
+	cursor: pointer;
+}
+#lof-send-review .lof_button:hover{
+    color: #529214;
+}
+
+
+#lofreview_captcha{
+	float:left;
+}
+
+#lofreview_refresh {
+    background: url("img/refresh.png") no-repeat scroll center center transparent;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 22px;
+    width: 50px;
+}
+
+/* lof-error submit*/
+.lof-error{
+    color: #DA0F00;
+    width: 100%;
+}
+/* lof-success submit*/
+.lof-success{
+    color:green;
+    border:solid 1px green;
+    padding:10px 10px 10px 10px;
+    background-color:#e0e0e0;
+}
+
+/*list review*/
+.lof-list-review{
+    
+}
+.lof-list-review .lof-review-item{
+    padding-bottom: 15px;
+}
+
+.lof-list-review .title{
+    
+}
+.lof-list-review  .lof-title{
+    font-size: 14px;
+}
+.lof-list-review .title a{
+    color: #1E7EC8;
+    text-decoration: underline;
+    
+	font-weight: bold;
+}
+
+
+
+.lof-list-review .title a:hover{
+    text-decoration: none;
+}
+
+.lof-list-review .attribute .tbl-star{
+    
+}
+
+.lof-list-review .attribute .stars-on{
+    position: absolute;
+    background-position: 0 -48px;
+}
+.lof-list-review .attribute .stars-off, .stars-on{
+    position: relative;
+    height: 16px;
+	background: url(img/jquery.ui.stars.gif) repeat-x 0 -32px;
+}
+
+.lof-list-review  .attribute .tbl-star td{
+    font-weight: bold;
+}
+
+.lof-list-review .attribute .content{
+    
+}
+.lof-list-review  .attribute .date{
+    font-style: italic;
+    margin: 5px 0 5px;
+}
+.lof-list-review .attribute .share-this{
+    
+}
+.lof-review-item .helpful-link-yes{
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+.lof-review-item .helpful-link-no{
+    cursor: pointer;
+    color: green;
+    font-weight: bold;
+}
+
+.lof-review-item .report{
+    cursor: pointer;
+    color: orange;
+    font-weight: bold;
+}
+.lof-review-item .attribute{
+    padding-bottom: 15px;
+}
+
+
+/* order-by*/
+.lof-order-by{
+    background: url("img/header.gif") repeat scroll 0 0 transparent;
+    border: 1px solid #9AC1C9;
+    color: #1E7EC8;
+    cursor: pointer;
+    font-weight: bold;
+    height: 27px;
+    overflow: hidden;
+    padding: 0 0 3px;
+    width: auto;
+}
+.lof-order-by form{
+    float:right;
+    margin: 6px 0 0;
+    padding-right: 10px;
+}
+/* search review*/
+.lof-search-review {
+    
+}
+.lof-search-review .pros-cons{
+    width: 100%;
+}
+
+.lof-advance-reviews{
+    
+}
+
+/* advance review table */
+.lof-advance-reviews{
+    margin-bottom: 20px;
+}
+
+.lof-advance-reviews table{
+    width: 33%;
+    float: left;
+    padding-right: 20px;
+    
+}
+.lof-advance-reviews .star-bar{
+    background: none repeat scroll 0 0 #F0C808;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.lof-advance-reviews table td.star-name {
+    white-space: nowrap;
+    width: 10%;
+}
+
+.lof-advance-reviews table td.star-count{
+    white-space: nowrap;
+    width: 10%;
+}
+
+
+.lof-advance-reviews .star-bar-container{
+    background: none repeat scroll 0 0 #DEDCC3;
+}
+
+.lof-advance-reviews .total-reviews{
+    text-align: right;
+    margin: 10px 10px 10px 10px;
+}
+
+.lof-spacer{
+    /*clear: both;*/
+}
+
+/* rss */
+.lof-rss{
+    float:right;
+    padding-left: 10px;
+}
+
+.lof-rss .link-rss{
+    cursor: pointer;
+    color: orange;
+    font-weight: bold;
+    text-decoration: none;
+}
+.lof-rss .img-rss{
+    background: url("img/rss.png") no-repeat scroll center center transparent;
+    width: 16px;
+    height: 16px;
+    padding-left: 20px;
+    
+}
+/* clear */
+.clr  {
+    clear: both;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+
+
+/* loading */
+.lof-loading{
+	display: none;
+	font-size: 13px;
+	font-weight: bold;
+	height:160px;
+	position: absolute;
+	padding-top:140px;
+	text-align: center;
+	opacity:0.5;filter: alpha(opacity=50) ;
+	text-decoration: none;
+	width: 520px;
+	color:#FFFFFF;
+	text-shadow: #fff 0px 0px 20px;
+}
+
+
+/* paging */
+.lof-review-pager{
+    width: 100%;
+	height:27px;
+	background:#eaeae8;
+	border:1px solid #dad4d4;
+	/*border-top:none;*/
+	background:eaeae8;
+	margin:5px 0 7px;
+	padding:0 0 3px;
+	overflow:hidden;
+}
+.lof-review-pager .b-pager {
+	padding:5px 15px 0 0;
+	}
+.lof-review-pager .b-pager  {
+    float: right;
+}
+
+.lof-review-pager .b-pager dl {
+	float:left;
+	margin:2px 0 0;
+	}
+
+.lof-review-pager .b-pager dt {
+	float:left;
+	padding:2px 5px 0 0;
+	font-size:11px;
+	}
+	
+.lof-review-pager .b-pager dd {
+	margin:0 1px 0 0;
+	float:left;
+	}
+.lof-review-pager .b-pager dd a {
+	float:left;
+	width:16px;
+	height:15px;
+	padding:2px 0 0;
+	display:block;
+	color:#fff;
+	background:#bdb9bb;
+	text-decoration:none;
+	text-align:center;
+	}
+.lof-review-pager .b-pager dd a:hover {
+	background:red;
+	}
+.lof-review-pager .b-pager dd.current a {
+	background:red;
+	font-weight:700;
+	cursor:auto;
+	}
+.lof-review-pager .b-pager dd.last {
+	height:14px;
+	padding:2px 7px 0;
+	background:#dbdbdb;
+	color:#444242;
+	}
+.lof-review-pager .b-pager dl {
+	float:left;
+	margin:2px 0 0;
+	}
+.lof-rss-bottom{ margin-bottom:20px;}	
+#lof-send-review .field-required{ color: #FF0000;}
+.product-details{ margin-left:150px;}
+.product-details h2{ background:transparent!important;}
+.product-details dt {
+    font-weight: bold;
+}
+
+
+

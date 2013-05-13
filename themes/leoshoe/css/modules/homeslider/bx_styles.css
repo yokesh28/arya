@@ -1,0 +1,160 @@
+/* @override http://localhost/bxslider_v3_plugin/css/styles.css */
+
+/*
+ * To change the color scheme of slider change each 
+ * background property for each of the five styles below
+ */
+
+.bx-window {
+  margin-bottom:20px;
+  height: 340px;
+  width: 970px!important;
+}
+.bx-wrapper {
+	border: 3px solid #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px 0 #CACACA;
+    height: 340px;
+    margin-bottom: 20px;
+	width: 970px!important;
+}
+ 
+/*next button*/
+.bx-next {
+	display:none;
+	position:absolute;
+	top:40%;
+	right:-50px;
+	z-index:999;
+	width: 30px;
+	height: 30px;
+	text-indent: -999999px;
+	background: url(gray_next.png) no-repeat 0 -30px;
+}
+
+/*previous button*/
+
+.bx-prev {
+	display:none;
+	position:absolute;
+	top:40%;
+	left:-50px;
+	z-index:999;
+	width: 30px;
+	height: 30px;
+	text-indent: -999999px;
+	background: url(gray_prev.png) no-repeat 0 -30px;
+}
+
+/*pager links*/
+.bx-pager {
+   position: absolute;
+   bottom: 20px;
+	bottom:40px !ie;/* hack ie7 */
+	right: 15px;
+	padding-top: 7px;
+	font-size:11px;
+	color:#666;
+	text-align:center;
+}
+.bx-pager a {
+    background: url("images/bg_nav.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 17px;
+    text-indent: -9999em;
+    width: 17px;
+	margin-right: 3px;
+}
+.bx-pager a.pager-active {
+  background: #b22222;
+  border-radius: 100%;
+  position: relative;
+  top: 2px;
+}
+/*auto start button*/
+.bx-auto .start {
+	background: url(gray_auto.png) no-repeat 0 2px;
+	padding-left: 13px;
+}
+
+/*auto stop button*/
+.bx-auto .stop {
+	background: url(gray_auto.png) no-repeat 0 -14px;
+	padding-left: 13px;
+}
+
+/*
+ * End color scheme styles
+ */
+
+
+/*next/prev button hover state*/
+.bx-next:hover,
+.bx-prev:hover {
+	background-position: 0 0;
+}
+
+/*pager links hover and active states*/
+.bx-pager .pager-active,
+.bx-pager a:hover {
+	color:#fff;
+	text-decoration:none;
+	background-position: 0 0;
+}
+
+/*captions*/
+.bx-captions {
+	text-align:center;
+	font-size: 12px;
+	padding: 7px 0;
+	color: #666;
+}
+
+/*auto controls*/
+.bx-auto {
+	text-align: center;
+	padding-top: 15px;
+}
+
+.bx-auto a {
+	color: #666;
+	font-size: 12px;
+}
+li.pager {
+  position: relative;
+}
+.caption .leo_shop_now {
+    background: url("images/pict_cart.png") no-repeat scroll -4px -2px #FFFFFF;
+    border: medium none;
+    border-radius: 100px 100px 100px 100px;
+    color: #000000;
+    display: block;
+    font-weight: normal;
+    padding: 8px 0;
+    position: absolute;
+    text-align: center;
+    text-indent: 22px;
+    text-transform: uppercase;
+    top: 155px;
+    width: 111px;
+}
+.caption .leo_shop_now:hover {
+    background: url("images/pict_cart_hover.png") no-repeat scroll -4px -2px #FFFFFF;
+	text-decoration: none;
+} 
+li.pager div {
+  position: absolute;
+  top: 82px;
+  left: 80px;
+  width: 400px;
+}
+li.pager div p.legend {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #b22222;
+  font-family: 'Finger Paint';
+}
+li.pager div p.description {
+  font-size: 14px;
+  color: #fff;
+}

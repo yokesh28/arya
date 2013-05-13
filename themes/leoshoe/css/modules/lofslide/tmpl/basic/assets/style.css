@@ -1,0 +1,378 @@
+/*
+ * jQuery FlexSlider v1.6
+ * http://flex.madebymufffin.com
+ *
+ * Copyright 2011, Tyler Smith
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ .lof-module-slideshow.basic{
+    
+ }
+.basic .lofslideshow-container {width: 100%; float: right; position: relative;}
+.basic .lof-slideshow-bd{
+    width:100%;
+    margin:0 auto;
+}
+/* FlexSlider Necessary Styles
+*********************************/ 
+.basic .lofflexslider {margin: 0 auto; padding: 0;position: relative;overflow: hidden;}
+.basic .lofflexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.basic .lofflexslider .slides img {max-width: 100%; display: block;}
+
+/* Browser Resets */
+.basic .lofflexslider a {outline: none;}
+.basic .slides,
+.basic .lof-control-nav,
+.basic .lof-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load
+ */
+.basic .no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.basic .lofflexslider {background: #fff; box-shadow:0 0 10px #333333; border: 4px solid #FAFAFA; position: relative; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px;}
+.basic .lofflexslider .slides > li {position: relative;}
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.basic .flex-container {zoom: 1; position: relative;}
+
+/* Caption style */
+.basic p.lof-caption {
+    width: 96%;
+    margin:0px !important; 
+    padding: 1% 2% 1% 2%;
+    padding-left: 2% !important; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    background: #000; 
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5); 
+    font-size: 14px; 
+    line-height: 18px;
+    opacity: 0.7;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)" !important;
+	filter: alpha(opacity=50) !important;
+}
+.basic p.lof-caption a{
+    text-align: left;
+    text-decoration: none;
+    position: relative;
+    color:#FFFFFF;
+    font-size:15px;
+    font-weight:bold;
+}
+.basic p a.lof-title-caption{
+    position:relative;
+    margin-bottom: 10px;
+    font-family: 'Droid Serif',Georgia,"Times New Roman",Times,serif;
+    font-size:18px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1;
+}
+.basic p.lof-caption a:hover{
+    text-decoration: underline !important;
+}
+.basic p.lof-caption span.lof-slide-price{
+    color:#FF0000;
+    font-weight:bold;
+    position: absolute;
+}
+.basic p.lof-caption span.lof-slide-desc{
+    color:#FFFFFF;
+    font-weight:normal;
+    position: relative;
+    top:5px;
+    font-size:13px;
+}
+.basic p.lof-caption span{
+    position: relative;
+    color:#FFFFFF;
+    padding-top:5px;
+}
+.basic p span.lof-button-shop{
+    position: relative;
+}
+/* Direction Nav */
+.basic .lof-direction-nav li a {width: 52px; height: 52px; margin: -13px 0 0; display: block; background: #b222222; position: absolute; top: 45%; cursor: pointer; text-indent: -9999px;} /* set negative margin-top equal to half the height on the directional-nav for perfect vertical centering */
+.basic .lof-direction-nav li a.next {background-position: -193px 0; right: -4px;}
+.basic .lof-direction-nav li a.prev {background-position: -141px 0; left: -4px;}
+
+/* Control Nav */
+.basic .lof-control-nav {width: 100%; position: relative; bottom: 0px; text-align: center;}
+.basic .lof-control-nav li {margin: 0 0 0 5px; position: relative;float:left; /*display: inline-block; */zoom: 1; *display: inline;border-radius: 100%;}
+.basic .lof-control-nav li:first-child {margin: 0;}
+.basic .lof-control-nav li a {width: 13px; height: 13px; display: block;cursor: pointer; text-indent: -9999px;background:url("images/bg_nav.png") no-repeat scroll -2px -4px transparent;;border-radius: 100%;}
+.basic .lof-control-nav li a:hover {background-position: -254px -19px;}
+.basic .lof-control-nav li a.active {background: #b22222; cursor: default;width: 15px;height: 15px;position: relative; bottom: 1px;}
+.basic .lof-direction-nav li a.buttons-hover{
+    display: block !important;
+}
+.basic .lof-direction-nav li a.lof-buttons{
+    display:none;
+}
+.basic .lof-title-caption{
+    position: relative;
+    margin-bottom: 10px;
+}
+.lof-tooltip {
+	display: none;
+	width:auto;
+	height:auto;
+	padding:5px 0 0 0;
+	z-index:200;
+    margin:0 auto;    
+}
+.lof-tooltip-middle{
+   padding:0 4px;
+   
+   background-color: #1a1a1a; 
+}
+.lof-tooltip .fix-image{
+    width:100%;margin:0 auto;background-color:#FFFFFF;
+}
+.lof-tooltip-panel{
+    background: url(images/sprites.png) no-repeat center;
+ width: 9px;
+    height: 6px;
+    position: relative;
+    bottom: -3px;
+	background-position: -141px -83px ;
+	left:48%;
+}
+.lof-tooltip.bottom {
+	background:url(images/sprites.png) no-repeat 0 0 ;
+	padding:0 0 5px 0;
+ }
+ 
+.lof-tooltip-top-right{
+    background:url(images/tooltip-top-right.png) no-repeat right center;
+    width:100%;
+    height:5px;
+    position: absolute;
+    right:-1px;
+    top:0px;  
+}
+.lof-tooltip-top-left{
+    background:url(images/tooltip-top-left.png) no-repeat left center;
+    width:6px;
+    height:5px;
+    position: absolute;
+    left:-3px;
+    top:0px;  
+}
+.lof-tooltip-top-middle{
+    background:url(images/tooltip-top-middle.png) repeat-x center center;
+    height: 5px;
+    left: 6px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+}
+
+.lof-tooltip-bottom-right{
+    background:url(images/tooltip-bottom-right.png) no-repeat right center;
+    width:100%;
+    height:5px;
+    position: absolute;
+    right:-1px;
+    bottom:1px;  
+}
+.lof-tooltip-bottom-left{
+    background:url(images/tooltip-bottom-left.png) no-repeat left center;
+    width:6px;
+    height:5px;
+    position: absolute;
+    left:-3px;
+    bottom:0px;  
+}
+.lof-tooltip-bottom-middle{
+    background:url(images/tooltip-bottom-middle.png) repeat-x center center;
+    height:5px;
+    position: relative;
+    bottom:0px;
+    left:6px;
+    margin: 0 auto;
+}
+.basic .lof-icon-public{
+    height: 111px;
+    width: 111px;
+    position: absolute;
+    left: 8px;
+    top: -3px;
+    z-index: 10;
+	display: none;
+}
+.basic .lofflexslider ul li .lof-new{
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 80px;
+    top: 0;right: 0;
+    z-index: 5;
+}
+.basic .lofflexslider ul li .lof-feature {
+    display: block;
+    height: 104px;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 107px;
+    z-index: 5;
+}
+.basic .lofflexslider ul li .lof-feature-bottom {    
+    display: block;
+    height: 96px;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 99px;
+    z-index: 5;
+}	
+.basic .lofflexslider ul li .lof-sale {   
+    top: 0;
+    display: block;
+    height: 77px;
+    position: absolute;
+    right: 0;
+    width: 76px;
+    z-index: 5;
+}
+.basic .lof-panel-nav{
+    border: 0 solid #FF8000;
+    bottom: 15px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 10px;
+    position: absolute;
+    right: 15px;
+    width: 100px !important
+}
+.basic a.lof-slideshow-view{
+    background: none repeat scroll 0 0 #333333;
+    float: right !important;
+    font-size: 11px !important;
+    font-weight: normal !important;
+    margin-right: 10px !important;
+    margin-top: 10px;
+    padding: 0 10px;
+    position: relative !important;
+}
+.basic .lof-caption-addcart-top{
+    background: none repeat scroll 0 0 #379FF4;
+    bottom: 25px;
+    float: left !important;
+    font-weight: normal !important;
+    margin-left: 10px;
+    position: relative;
+}
+.basic span.lof-caption-addcart-top{
+    color:#FFFFFF !important;
+}
+.basic a.lof-caption-view-top{
+    background: none repeat scroll 0 0 #333333;
+    bottom: 25px;
+    float: left;
+    font-size: 11px !important;
+    font-weight: normal !important;
+    margin-left: 10px !important;
+    padding: 2px 10px;
+    position: relative !important;
+    color:#FFFFFF;
+    text-decoration:none;
+}
+.basic .lof-slideshow-addcart{
+    position: relative !important;
+    float:right !important;
+    font-weight:normal !important;
+    background: #379FF4;
+    width: auto !important;
+    padding:0 10px;
+    margin-top:10px;
+}
+.basic span.lof-slideshow-addcart{
+    color: #FFFFFF !important;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    padding-top:0px !important;
+}
+.basic .lof-top-caption a.lof-title-caption{
+    position:relative;
+    margin-bottom: 10px;
+    font-family: 'Droid Serif',Georgia,"Times New Roman",Times,serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1;
+    color:#FFFFFF;
+    text-decoration: none;
+	color: red;
+}
+.basic .lof-top-caption span.lof-slide-desc{
+    color: red;
+    font-weight:normal;
+    position: relative;
+    top:5px;
+    font-size:13px;
+    line-height:1.5;
+}
+.basic .lof-top-caption span.lof-slide-price{
+    color:#FF0000;
+    font-weight:bold;
+    position: absolute;
+    font-size:14px;
+}
+.basic .lof-top-caption{
+   left: 87px;
+   position: absolute;
+   top: 83px;
+}
+.basic .top-caption-left{
+    position: relative;
+    width:100%;
+    height:9px;
+}
+.basic .top-caption-right{}
+.basic .top-caption-middle-top{
+    position: relative;
+    height:9px;
+}
+.basic .bottom-caption-left{
+    position: absolute;
+    left:0px;
+    width:100%;
+    height:9px;
+}
+.basic .bottom-caption-right{
+    position: absolute;
+    width:100%;
+    height:9px;
+}
+.basic .bottom-caption-middle-bottom{
+    position: relative;
+    height:9px;
+    margin:0 auto;
+}
+.basic .lof-caption-top-center{
+    /*margin-top:9px;*/
+    padding-bottom:35px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.basic  .preload {
+	height:100%;
+	width:100%;
+	background:url(images/loading.gif) no-repeat scroll 49% 49% #E9E9E9;
+	position:absolute;
+	display:block;
+	top:0;
+	left:0;
+	z-index:0}

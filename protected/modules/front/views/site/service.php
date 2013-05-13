@@ -7,69 +7,52 @@
 		<?php include 'header.php'; ?>
 
 
+		
+		
+		
 		<div class="container">
 
 
-			<h2>Our Service</h2>
-			<p>Arya Offset Pvt. LTd., Coimbatore, with affluent experience of
-				excellence, offers a complete printing package that fits the
-				clients`s requirements. An organization that provides printing
-				solutions for Annual Reports, Brochures, Sales Kits, Catalogues,
-				Packaging & more, we guarantee complete customer satisfaction.
-				Understanding their needs and establishing a long-term committed
-				relationship with our customers is what motivates us to be the best
-				inthis field. Our team of creative professionals strives to think
-				out of the `box' while assisting clients. Starting out small and
-				family-held, ARYA has grown into a print production house that is at
-				ease with the corporate culture, a fact that our illustrious clients
-				clearly proves. We ensure that your experience exceeds your
-				expectations.</p>
-
-			<div>
-				<img alt=""
-					src=" <?php echo Yii::app()->theme->baseUrl;?>/images/service_03.gif">
-
-
-			</div>
-
+			
+         <h5>Our Services</h5>
 
 		<div class="row-fluid color">
 				<ul class="inline">
 
 		
 				<li>
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/a.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/1.png">
 					<h6>Annual Reports</h6>
 					<br>
 				</li>
 
 				<li>
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/b.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/10.png">
 					<h6>Art Books</h6>
 					<br>
 				</li>
 				
 				<li>
 				
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/c.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/11.png">
 					<h6>Brochures</h6>
 					<br>
 				</li>
 				
 				<li>
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/d.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/12.png">
 					<h6>Calendars</h6>
 					<br>
 				</li>
 				
 				<li>
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/e.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/13.png">
 					<h6>Carry Bags</h6>
 					<br>
 					</li>
 					
 				<li>
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/f.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/14.png">
 					<h6>Catalogues</h6>
 					<br>
 
@@ -77,73 +60,73 @@
 		
 				<li>
 
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/g.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/15.png">
 					<h6>Coffee Table Books</h6>
 					<br>
 				</li>
 				
 				<li>
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/h.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/16.png">
 					<h6>Corporate Stationary</h6>
 					<br>
 				</li>
 				<li>
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/i.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/17.png">
 					<h6>Hardcase Books</h6>
 					<br>
 				</li>
 				
 				<li>
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/j.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/1.png">
 					<h6>Journals</h6>
 					<br>
 				</li>
 				
 				<li>
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/k.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/1.png">
 					<h6>Labels</h6>
 					<br>
 				</li>
 				
 				<li>
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/l.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/1.png">
 					<h6>Leaflets</h6>
 					<br>
 				</li>
        
          <li>
 
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/m.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/1.png">
 					<h6>Magazines</h6>
 					<br>
 				</li>
 				
 				<li>
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/n.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/1.png">
 					<h6>Packaging Cartons</h6>
 					<br>
 				</li>
 				
 				<li>
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/o.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/1.png">
 					<h6>Posters</h6>
 					<br>
 				</li>
 				
 				<li>
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/p.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/1.png">
 					<h6>Presentation Folders</h6>
 					<br>
 				</li>
 				
 				<li>
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/q.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/1.png">
 					<h6>Visual Aids</h6>
 					<br>
 				</li>
 				
 				<li>
-					<img src="<?php echo Yii::app()->theme->baseUrl;?>/pictures/r.jpg">
+					<img src="<?php echo Yii::app()->theme->baseUrl;?>/services/1.png">
 					<h6>Invitation Cards</h6>
 					<br>
 				</li>
@@ -152,6 +135,8 @@
 		
 
 </div>
+
+
 
 		</div>
 

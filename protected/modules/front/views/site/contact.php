@@ -10,7 +10,7 @@
 		<div class="container">
 			<div class="row">
 				<article class="span12">
-					<h2>contact us</h2>
+					<h5>contact us</h5>
 					<figure class="map">
 						<iframe
 							src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=coimbatore,tamilnadu,india&amp;aq=0&amp;sll=11.010717,76.958359&amp;sspn=11.010717,76.958359&amp;ie=UTF8&amp;hq=&amp;hnear=coimbatore;ll=11.010717,76.958359&amp;spn=11.010717,76.958359&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
@@ -18,11 +18,11 @@
 
 				</article>
 				<article class="span4">
-					<h2 class="h2indent">address</h2>
+					<h5 class="h4indent">address</h5>
 					<div class="div-adress">
 						<address class="adress">
 
-							<strong class="title1"> <h4>Offset Private Limited</h4><br> No.228 A Sakthi Nagar,<br>
+							<strong class="title1"> <h6> Arya Offset Private Limited</h6><br> No.228 A Sakthi Nagar,<br>
 							
 							Sathy Road,	Ganapathy Post,<br>
 							Coimbatore-641006,<br>India.<br>
@@ -36,9 +36,8 @@
 
 				</article>
 				<article class="span8 offset">
-					<h2 class="h2indent">get in touch</h2>
-					<form name="contactform" id="contact-form"
-					>
+					<h5 class="h2indent">get in touch</h5>
+					<form name="contactform" id="contact-form">
 					
 						<div class="success">
 							Contact form submitted! <strong>We will be in touch soon.</strong>

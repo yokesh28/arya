@@ -42,19 +42,19 @@
 				<ul>
 					<li><a
 						href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/list/')?>"><img
-							src="<?php echo Yii::app()->theme->baseUrl;?>/images/bc.jpg"
+							src="<?php echo Yii::app()->theme->baseUrl;?>/bg/bss.jpg"
 							alt="Fallen tree: jQuery Image Slider HTML" id="wows0" /> </a></li>
 					<li><a
 						href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/letter/')?>"><img
-							src="<?php echo Yii::app()->theme->baseUrl;?>/images/letter.jpg"
+							src="<?php echo Yii::app()->theme->baseUrl;?>/bg/le.jpg"
 							alt="Forest glade : How To Add jQuery Slider To HTML" id="wows1" />
 					</a></li>
 					<li><a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/sticker/')?>"><img
-							src="<?php echo Yii::app()->theme->baseUrl;?>/images/sticker.png"
+							src="<?php echo Yii::app()->theme->baseUrl;?>/bg/st.jpg"
 							alt="In the woods : jQuery Div Slider" id="wows2" />rays of light
 							show through the trees</a></li>
 					<li><a href="<?php echo  Yii::app()->createAbsoluteUrl('/front/site/handout/')?>"><img
-							src="<?php echo Yii::app()->theme->baseUrl;?>/images/hand.jpg"
+							src="<?php echo Yii::app()->theme->baseUrl;?>/bg/ho.jpg"
 							alt="The road in the woods : jQuery Slider Div Horizontal"
 							id="wows3" /> </a></li>
 					

@@ -7,6 +7,9 @@
 <!--<![endif]-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+
 <link rel="stylesheet"
 	href="<?php echo Yii::app()->theme->baseUrl;?>/css/docs.css"
 	type="text/css" media="screen">

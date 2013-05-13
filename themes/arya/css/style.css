@@ -80,7 +80,7 @@ p {
 h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 	font-weight: bold;
-	font-family: 'Montserrat', sans-serif;
+	
 	text-transform: uppercase;
 }
 
@@ -140,7 +140,7 @@ h5 a:hover {
 
 h6 {
 	color: black;
-	text-align: center;
+	
 }
 
 .font12 {
@@ -558,7 +558,7 @@ header {
 	margin: 0;
 	padding: 34px 22px 32px 22px;
 	text-align: center;
-	font-size: 12px;
+	font-size: 10px;
 	line-height: 20px;
 }
 
@@ -1072,6 +1072,7 @@ dl dt {
 	display: block;
 	font-weight: normal;
 	margin-bottom: 23px;
+	
 }
 
 #contact-form {
@@ -1285,7 +1286,7 @@ footer .span12 {
 	color: white;
 	font-family: arial;
 	font-weight: bold;
-	font-size: 12px;
+	font-size: 11px;
 }
 
 .footer_menu a:hover,.copy_rights a:hover {
@@ -1365,7 +1366,7 @@ footer .span12 {
 	color: white;
 	font-family: arial;
 	font-weight: bold;
-	font-size: 12px;
+	font-size: 10px;
 }
 
 .copy_rights {

@@ -1,0 +1,111 @@
+/* Special style for block cart*/
+#left_column #cart_block, #right_column #cart_block {
+}
+#leo-header  #cart_block h4 {
+	display: none;
+}
+#leo-header #cart_block {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 5px #C6C6C6;
+    display: none;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 115px;
+    width: 209px;
+    z-index: 10;
+}
+#cart_block.cart_block_hover {display:block}
+#cart_block h4 span {
+	float: right;
+	padding-left: 10px;
+	text-transform: none;
+	background-position: left top;
+	background-repeat: no-repeat;
+	cursor: pointer
+}
+
+#cart_block  .block_content {
+  padding:8px 8px 16px 8px;
+}
+
+#cart_block #cart_block_summary {display:none}
+#cart_block .quantity-formated {
+	display:inline-block;
+	margin-right:5px;
+	min-width:18px;
+}
+#cart_block .cart_block_product_name {font-weight:bold}
+#cart_block .remove_link {
+	float:right;
+	display:inline-block;
+	margin:1px 0 0 5px;
+	height:12px;
+	width:12px
+}
+#cart_block .remove_link a {
+	display:inline-block;
+	height:12px;
+	width:12px;
+	background: url(img/icon/delete.gif) no-repeat 0 0
+}
+#cart_block .price {
+	float:right
+}
+
+#cart_block #cart_block_list dl {
+	padding-bottom:10px
+}
+#cart_block #cart_block_list dt {padding:4px 0}
+#cart_block #cart_block_list dt a {font-weight:bold;color: #999;}
+#cart_block #cart_block_list dd {
+	margin-left:20px
+}
+
+#cart_block #cart-prices {
+    border-bottom: 1px solid #999999;
+    border-top: 1px solid #999999;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 4px;
+    padding: 10px 4px;
+}
+#cart_block #cart_block_shipping_cost,
+#cart_block #cart_block_total {
+	float:right;
+	color: #b22222;
+}
+#cart_block #cart_block_shipping_cost {font-weight:bold}
+
+#cart_block #cart-buttons .button_small {display:none;}
+#cart_block #cart-buttons  #button_order_cart {
+	float:right;
+	padding: 7px 12px;
+	background: url('img/icon/bg_checkout.png') no-repeat scroll center center transparent ;
+	color: #fff;
+	border: none;
+}
+#cart_block #cart-buttons #button_order_cart:hover {
+  text-shadow: 0 0 5px #fff;
+}
+#cart_block #cart-buttons  #button_order_cart span {
+}
+#cart_block table#vouchers {
+	clear: both;
+	width:100%
+}
+#cart_block table#vouchers tr td{
+	padding: 2px;
+}
+#cart_block table#vouchers tr td.quantity{
+	margin-right:5px;
+	min-width:18px
+}
+#cart_block table#vouchers tr td.delete{
+	padding-left: 0;
+	padding-right: 0;
+	text-align: right;
+	width: 15px;
+}
+

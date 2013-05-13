@@ -6,3 +6,10 @@
 protected/runtime/
 .gitignore~
 .htaccess~
+/cache
+/docs
+/download
+/images
+/modules
+/pdf
+/pictures

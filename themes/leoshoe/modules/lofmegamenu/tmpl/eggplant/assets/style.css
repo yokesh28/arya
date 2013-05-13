@@ -1,0 +1,585 @@
+.lofmegamenueggplant-top {
+	margin-bottom:10px;
+}
+.lofmegamenueggplant-top {
+	font:12px Arial;
+	background:#201f1f;
+	width: 100%;
+	height:50px;
+}
+
+.lofmegamenueggplant-top  ul{
+	/*z-index:100;*/
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.lofmegamenueggplant-top  .lofcolumn{
+	/*z-index:100;*/
+	margin: 0;
+	padding: 0;
+	float:left;
+}
+
+/*Top level list items*/
+.lofmegamenueggplant-top  ul#lofmegamenu > li{
+	position: relative;
+	display: inline;
+	float: left;
+	margin:0px;
+	padding:13px 0;
+}
+/*Top level list items*/
+.lofmegamenueggplant-top  ul li{
+	position: relative;
+}
+
+/*Top level menu link items style*/
+.lofmegamenueggplant-top  ul#lofmegamenu >li.itemfirst >a{
+	background:none;
+}
+.lofmegamenueggplant-top  ul#lofmegamenu >li >a{
+	display: block;
+    font: 12px/2 Arial;
+    margin: 0;
+    padding:0 15px;
+    text-decoration: none;
+	color:#E3D8C8;
+}
+
+/*Top level menu link items style*/
+.lofmegamenueggplant-top  ul#lofmegamenu >li.lofnonsub> a span.lof-menu-title{
+	line-height:2; 
+	background:none !important;
+	padding-right:0 !important;
+}
+.lofmegamenueggplant-top  ul#lofmegamenu >li.lofnonsub> a{
+	margin-left:5px;
+	line-height:2;
+}
+.lofmegamenueggplant-top  ul#lofmegamenu >li.lofnonsub:hover > a span.lof-menu-title{
+	background:#000 !important;
+    color: #9C422E;
+}
+.lofmegamenueggplant-top  .level0  .lofsub > a:hover{
+	background:#000;
+}
+.lofmegamenueggplant-top  .level0  .lofsub > a:hover span.lof-menu-title {	
+	background:url(images/arrow2.png) no-repeat scroll right 8px transparent;	
+}
+.lofmegamenueggplant-top  ul#lofmegamenu >li.menunongroup:hover>a {
+	background:#000 !important;
+	border-bottom:1px solid #333;
+	border-radius:3px;
+    color: #9C422E;
+}
+.lofmegamenueggplant-top  ul#lofmegamenu >li.menunongroup:hover>a span.lof-menu-title {
+	background:url(images/arrow2.png) no-repeat scroll right 8px transparent;
+}
+.lofmegamenueggplant-top  ul#lofmegamenu >li.menunongroup>a:hover {
+	background:#000 !important;
+	border-bottom:1px solid #333;
+	border-radius:3px;
+    color: #9C422E;
+}
+.lofmegamenueggplant-top  >ul >li >a:hover {
+	color:#9C422E !important;
+}
+* html .lofmegamenueggplant-top  ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+	display: inline-block;
+}
+.lofmegamenueggplant-top  >ul> li>div>div> ul >li.lofsub>div.menugroup>ul>li.menunongroup>a:hover{	background:none!important;}
+.lofmegamenueggplant-top  ul li a:link, .lofmegamenueggplant-top  ul li a:visited{
+	color: #E3D8C8;
+}
+	
+/*1st sub level menu*/
+.lofmegamenueggplant-top  div.menunongroup{
+	background-color: #202020;
+	border: 1px solid #333;
+	color:#E3D8C8;
+	margin-top:2px;
+	border-radius:5px;
+	padding:15px 10px;
+}
+.lofmegamenueggplant-top .ddsmoothmenu > ul > li > div >ul {
+	background-color: #202020;
+	border: 1px solid #333;
+}
+/*1st sub level menu*/
+.lofmegamenueggplant-top  ul li ul.menunongroup, .lofmegamenueggplant-top  .lofitem0 > ul{
+	position: absolute;
+	left: 0;
+	display: none; /*collapse all sub menus to begin with*/
+	visibility: hidden;
+	
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.lofmegamenueggplant-top  ul li ul li{
+	padding: 7px 0;
+	display: list-item;
+	float: none;
+	margin-right:10px;
+}
+
+.lofmegamenueggplant-top  >ul> li>div>div> ul >li{
+	background:url(images/bg-line-02.gif) repeat-x scroll bottom left transparent;
+}
+.lofmegamenueggplant-top  >ul> li>div.menunongroup>div> ul >li>a{
+	padding-left:10px;
+}
+.lofmegamenueggplant-top  >ul> li>div.menunongroup>div> ul >li.lofsub >a{
+	padding:0;
+}
+.lofmegamenueggplant-top  >ul> li>div>div> ul >li.itemlast{
+	background:none!important;
+}
+.lofmegamenueggplant-top  >ul> li>div>div> ul >li.lofsub>div.menugroup>ul>li{
+	padding:7px 0 5px!important;
+	background:url(images/bg-line-02.gif) repeat-x scroll top left transparent;	
+}
+.lofmegamenueggplant-top  >ul> li>div>div> ul >li.lofsub>div.menugroup>ul>li>a{
+	background:url(images/icon-circle.png) no-repeat scroll 0 20px transparent !important;
+	line-height: 2;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-top: 7px;
+}
+.lofmegamenueggplant-top  >ul> li>div>div> ul >li.lofsub>div.menugroup>ul>li.menunongroup>a{
+	background:none !important;	padding:0;
+}
+.lofmegamenueggplant-top  >ul> li>div>div> ul >li.lofsub>div.menugroup>ul>li>a:hover{
+	color:#AB4E39 ;
+	background:url(images/icon-circle-hover.png) no-repeat scroll 0 20px transparent !important;
+}
+.lofmegamenueggplant-top  >ul> li>div>div> ul >li.lofsub>div.menugroup>ul>li.lofnonsub{
+	background:url(images/bg-line-02.gif) repeat-x scroll top left transparent;
+	padding:0;
+}
+.lofmegamenueggplant-top  >ul> li>div>div> ul >li.lofsub>div.menugroup>ul>li.itemfirst{
+	background:none !important;
+}
+.lofmegamenueggplant-top  >ul> li>div>div> ul >li.lofsub>div.menugroup>ul>li>div>div>ul>li.itemfirst{
+	background:none;
+}
+.lofmegamenueggplant-top  >ul> li>div>div> ul >li.lofsub>div.menugroup>ul>li.lofnonsub>a:hover{
+	background:none !important;
+}
+.lofmegamenueggplant-top  >ul> li>div>div> ul >li.lofsub{
+	padding:0 5px 0 10px;
+	background:none;
+}
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.lofmegamenueggplant-top  ul li ul li ul{
+	top: 0;
+}
+
+/* Sub level menu links style */
+.lofmegamenueggplant-top  >ul >li >div>div>ul >li.lofsub a{
+	background:none;
+}
+.lofmegamenueggplant-top  >ul >li >div>div>ul >li.lofsub>a:hover{
+	background:none !important;
+}
+.lofmegamenueggplant-top  >ul >li >div>div>ul >li.lofsub>a:hover span.span.lof-menu-title{
+	background:none!important;
+}
+.lofmegamenueggplant-top  ul li ul li a{
+	font: normal 12px Arial;
+	margin: 0;
+	border-top-width: 0;
+	text-decoration:none;
+	background:url(images/icon-circle.png) no-repeat scroll 0 5px transparent;
+}
+
+/* Holly Hack for IE \*/
+* html .lofmegamenueggplant-top {height: 1%;} /*Holly Hack for IE7 and below*/
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.lofmegamenueggplant-top .downarrowclass{
+	position: absolute;
+	top: 12px;
+	right: 7px;
+}
+
+.lofmegamenueggplant-top .rightarrowclass{
+	position: absolute;
+	top: 6px;
+	right: 5px;
+}
+
+/* ######### CSS for shadow added to sub menus  ######### */
+
+.lofmegamenueggplant-top .ddshadow{ /*shadow for NON CSS3 capable browsers*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	background: silver;
+}
+
+.lofmegamenueggplant-top .toplevelshadow{ /*shadow opacity for NON CSS3 capable browsers. Doesn't work in IE*/
+	opacity: 0.8;
+}
+.lofmegamenueggplant-top li.megagroup ul{
+	width:500px;
+}
+.lofmegamenueggplant-top  li.megagroup ul li{
+	float:left;
+	width:166px;
+}
+.lofmegamenueggplant-top  ul li div.menunongroup,
+.lofmegamenueggplant-top  .lofitem0 > div.menugroup {
+	position: absolute;
+	left: 0;
+	display: none; /*collapse all sub menus to begin with*/
+	visibility: hidden;
+	box-shadow: 0 0 3px #232323;
+}
+/* lof edit CSS */
+.lofmegamenueggplant-top  #lofmegamenu >li.menugroup:hover>a{
+	background:#000 !important;
+	border-bottom:1px solid #333;
+	border-radius:3px;
+    color: #9C422E;
+}
+.lofmegamenueggplant-top  #lofmegamenu >li.menugroup:hover a{
+	background:none;	
+}
+.lofmegamenueggplant-top  #lofmegamenu >li.menugroup a:hover{
+	border-bottom:1px solid #333;
+	line-height:13px;
+	border-radius:3px;
+	background:#000;
+}
+.lofmegamenueggplant-top  #lofmegamenu li.menugroup  ul.menugroup > li {
+	float:none;
+}
+.lofmegamenueggplant-top  #lofmegamenu div.lofcolunm{
+	float:left;
+}
+.lofmegamenueggplant-top  #lofmegamenu li.menunongroup ul.menunongroup > li {
+	float:left;
+}
+
+.lofmegamenueggplant-top  #lofmegamenu  span.lof-menu-title{
+	display: block;
+}
+.lofmegamenueggplant-top  #lofmegamenu li.lofnonsub span.lof-menu-title:hover{
+	border:none;
+	background:url(images/icon-circle-hover.png) no-repeat scroll 0 10px transparent;
+}
+.lofmegamenueggplant-top  #lofmegamenu .lofitem0 > a span.lof-menu-title{
+	text-transform:uppercase;
+}
+
+.lofmegamenueggplant-top  #lofmegamenu li ul .menugroup > a span.lof-menu-title{
+    text-transform:capitalize;
+	color:#AB4E39;
+}
+.lofmegamenueggplant-top  #lofmegamenu li>div>div>ul>li.menugroup>a {	background:none;
+}
+.lofmegamenueggplant-top  #lofmegamenu li>div>div>ul>li.menugroup:hover a{
+	background:none;
+}
+.lofmegamenueggplant-top  #lofmegamenu li ul .menugroup > a:hover{
+	color:#AB4E39;
+}
+.lofmegamenueggplant-top  #lofmegamenu li> div > div > ul >li >div>div>ul>li{
+	background:url(images/bg-line-02.gif) repeat-x scroll bottom left transparent;	
+}
+.lofmegamenueggplant-top  #lofmegamenu li> div > div > ul >li >div>div>ul>li>div>div>ul>li>a{
+	background:none;
+	padding:0;
+	color:#E3D8C8;
+	margin:0;
+}
+.lofmegamenueggplant-top  #lofmegamenu li> div > div > ul >li >div>div>ul>li>div>div>ul>li>a:hover{
+	background:none;
+}
+.lofmegamenueggplant-top  #lofmegamenu li> div > div > ul >li >div>div>ul>li h4{
+	color:#E3D8C8;
+}
+.lofmegamenueggplant-top  #lofmegamenu li> div > div > ul >li >div>div>ul>li.itemfirst{
+	background:none !important;
+}
+.lofmegamenueggplant-top  #lofmegamenu li> div > div > ul >li >div>div>ul>li #categories_block_left .tree li.last{
+	padding-bottom:7px;
+}
+.lofmegamenueggplant-top  #lofmegamenu li> div > div > ul >li.menunongroup>div.menunongroup>div>ul>li>a{
+	padding-left:10px;
+	background:url(images/icon-circle.png) no-repeat scroll 0 5px transparent;
+}
+.lofmegamenueggplant-top  #lofmegamenu li> div > div > ul >li.menunongroup>div.menunongroup>div>ul>li.lofsub>a{
+	background:none;
+}
+.lofmegamenueggplant-top  #lofmegamenu li> div > div > ul >li.menunongroup >div.menunongroup>div>ul>li.lofnonsub >a{
+	padding-left:0 !important;
+}
+.lofmegamenueggplant-top  #lofmegamenu li> div > div > ul >li >div>ul>li>a{
+}
+.lofmegamenueggplant-top  #lofmegamenu li> div > div > ul >li >div>div>ul>li>a span.lof-menu-title{
+	color:#E3D8C8 !important;
+	background:url(images/icon-circle.png) no-repeat scroll 0 5px transparent !important;
+	padding:0 0 0 10px;
+}
+
+.lofmegamenueggplant-top  #lofmegamenu li> div > div > ul >li >div>div>ul>li>a span.lof-menu-title:hover{
+	color:#AB4E39 !important;
+}
+.lofmegamenueggplant-top  #lofmegamenu>li> div.menunongroup > div > ul >li.menugroup  >a span.lof-menu-title{
+	text-transform: capitalize;
+	font:13px Arial;
+	padding: 5px 15px;
+	background:#000;
+	border-bottom:1px solid #343434;
+	margin-right:10px;
+	border-radius:5px;
+}	
+.lofmegamenueggplant-top  #lofmegamenu>li> div.menunongroup > div > ul >li.menunongroup{
+	background:url(images/bg-line-02.gif) repeat-x scroll left bottom transparent;
+	padding: 0 0 7px;
+}
+.lofmegamenueggplant-top  #lofmegamenu>li> div.menunongroup > div > ul >li.menunongroup>a span.lof-menu-title{
+	background:url(images/icon-circle.png) no-repeat scroll 0 9px transparent;
+	text-transform: capitalize;
+	padding-left:15px;
+	padding-top:5px;
+}
+.lofmegamenueggplant-top  #lofmegamenu>li> div.menunongroup > div > ul >li.menunongroup>a span.lof-menu-title:hover{
+	background:url(images/icon-circle-hover.png) no-repeat scroll 0 9px transparent;
+	color:#AB4E39 ;
+}
+.lofmegamenueggplant-top  #lofmegamenu>li> div.menunongroup > div > ul >li.lofnonsub >a span.lof-menu-title{
+	background:url(images/icon-circle.png) no-repeat scroll 0 15px transparent;
+	text-transform: capitalize;
+	padding-left:15px;
+}
+.lofmegamenueggplant-top  #lofmegamenu>li> div.menunongroup > div > ul >li.lofnonsub >a span.lof-menu-title:hover{
+	background:url(images/icon-circle-hover.png) no-repeat scroll 0 15px transparent;
+}
+
+.lofmegamenueggplant-top  #lofmegamenu>li> div.menunongroup > div > ul >li.menunongroup>a  span.has-image span.lof-menu-title{
+	background:none;
+}
+.lofmegamenueggplant-top  #lofmegamenu>li> div.menunongroup > div > ul >li.menugroup  >a span.lof-menu-title:hover{
+	background:none;
+	color:#AB4E39 ;
+	border-bottom:1px solid #343434;
+}
+.lofmegamenueggplant-top  #lofmegamenu>li> div > div > ul >li.lofnonsub{
+	background:url(images/bg-line-02.gif) repeat-x scroll left bottom transparent;
+	padding-bottom:10px;
+}
+.lofmegamenueggplant-top  #lofmegamenu>li> div > div > ul >li.lofnonsub >a span.lof-menu-title{
+	background:url(images/icon-circle.png) no-repeat scroll 0 15px transparent;
+	color:#E3D8C8;
+}
+.lofmegamenueggplant-top  #lofmegamenu>li> div > div > ul >li.lofnonsub >a span.lof-menu-title:hover{
+	background:url(images/icon-circle-hover.png) no-repeat scroll 0 15px transparent;
+	color:#AB4E39 ;
+}
+.lofmegamenueggplant-top  #lofmegamenu li>div>div> ul >li >a:hover{
+	color:#AB4E39 ;
+	background:url(images/icon-circle-hover.png) no-repeat scroll 0 5px transparent;
+}
+.lofmegamenueggplant-top  #lofmegamenu li ul .menugroup ul li.menugroup > a span.lof-menu-title{
+	text-transform: capitalize;
+	font:12px Arial;
+}
+.lofmegamenueggplant-top  #lofmegamenu  span.lof-menu-desc{
+	display: none;
+    font-weight: normal;
+	line-height:17px;
+	font-size:10px;
+}
+.lofmegamenueggplant-top  #lofmegamenu  > span.lof-menu-desc{
+	padding-left: 15px;
+}
+.lofmegamenueggplant-top  #lofmegamenu>li>a span.has-image{
+	padding:0 0 0 25px;
+}
+.lofmegamenueggplant-top  #lofmegamenu  span.has-image{
+	display:inline-block;
+	padding: 5px 5px 5px 25px;
+}
+.lofmegamenueggplant-top  #lofmegamenu>li>a span.has-image span.lof-menu-title{
+	padding-left:0;
+	padding-right:18px;
+	background:url(images/arrow3.png) no-repeat scroll right 8px transparent;
+	line-height:2;
+}
+.lofmegamenueggplant-top  #lofmegamenu  span.has-image span.lof-menu-title{
+	background:none;
+	padding:0;
+}
+.lofmegamenueggplant-top  #lofmegamenu  span.has-image span.lof-menu-title:hover{
+	background:none;
+	border:none;	color:#AB4E39 ;
+}
+.lofmegamenueggplant-top  .level0  .lofsub > a span.lof-menu-title {
+	padding-left:0;
+	padding-right:18px;
+	background:url(images/arrow3.png) no-repeat scroll right 8px transparent;
+	line-height:2;
+}
+.lofmegamenueggplant-top  .level0  .lofsub ul li a span.lof-menu-title {
+    padding-left: 0px;
+	color:#E3D8C8;
+}
+
+.lofmegamenueggplant-top  .level0  ul.menunongroup {
+	border: 1px solid #666666;
+}
+
+.lofmegamenueggplant-top  .level0  .lofsub ul li.lofsub a span.lof-menu-title{
+	background:url(images/icon-circle.png) no-repeat scroll 0 10px transparent;
+    padding:5px 15px;
+	font:12px Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+}.lofmegamenueggplant-top  .level0  .lofsub ul li.lofsub a span.lof-menu-title:hover
+{
+	color:#AB4E39;
+	background:url(images/icon-circle-hover.png) no-repeat scroll 0 10px transparent;
+}
+.lofmegamenueggplant-top  .level0  .lofsub ul li.itemlast{
+}
+.lofmegamenueggplant-top  ul li.active>a{ 
+	background: #AB4E39 !important;
+	border-radius:3px !important;
+}
+.lofmegamenueggplant-top  .level0 li.active>a span.lof-menu-title{ 
+	padding-left:0;
+	padding-right:18px;
+	background:url(images/arrow2.png) no-repeat scroll right 8px transparent;
+	line-height:2;
+}
+.lofmegamenueggplant-top  .level0 .lofnonsub a span.lof-menu-title {
+	background: none;
+	text-transform:capitalize;
+	font: 12px Arial;
+}
+.lofmegamenueggplant-top  .level0  .lofsub ul li.lofnonsub a span.lof-menu-title:hover{
+	color:#AB4E39 ;
+	background:url(images/icon-circle-hover.png) no-repeat scroll 0 5px transparent;
+	padding-left:15px;
+	padding-bottom:5px;
+}
+.lofmegamenueggplant-top  .level0  .lofsub ul li.lofnonsub a{
+	background:none !important;
+	padding:0;
+	
+}
+.lofmegamenueggplant-top  .level0  .lofsub ul li.lofnonsub a span.lof-menu-title{
+	background:url(images/icon-circle.png) no-repeat scroll 0 10px transparent;
+	padding-left:15px;
+	padding-bottom:5px;
+	padding-top:5px;
+}
+.lofmegamenueggplant-top  .level0  .lofsub ul li.lofnonsub{
+	padding-left:0;
+	background:url(images/bg-line-02.gif) repeat-x scroll top left transparent;	
+}
+.lofmegamenueggplant-top  >ul.level0>li.lofsub>div>div>ul >li.lofnonsub{
+	padding:0;
+}
+.lofmegamenueggplant-top  >ul.level0>li.lofsub>div>div>ul >li.lofnonsub a span.lof-menu-title{
+	padding-top:10px!important;
+}
+.lofmegamenueggplant-top  .level0  .lofsub ul li.menugroup > a span.lof-menu-title{
+	background: none;
+}
+/*-----------------------------*/
+.lofmegamenueggplant-top  #lofmegamenu div#search_block_top{
+	padding-top:6px;
+	min-width: 250px;
+}
+.lofmegamenueggplant-top  #lofmegamenu div#search_block_top input#search_query_top{
+	float:left;
+	height:16px;
+}
+.lofmegamenueggplant-top  #lofmegamenu div#search_block_top input.button{
+	background:#AB4E39;
+	text-transform:uppercase;
+	font:12px Arial, Helvetica, sans-serif;
+	color:#fff !important;
+	width:90px;
+	line-height:18px;
+}
+.lofmegamenueggplant-top  > ul > li > div >ul#first-languages {
+	border:none;
+}
+.lofmegamenueggplant-top  > ul > li > div#languages_block_top {
+	width: 60px;
+    position: static;
+    top: 0;
+}
+.lofmegamenueggplant-top  > ul > li > div#currencies_block_top{
+	float: none;
+    height: 30px;
+    line-height: 28px;
+    margin: 0 !important;
+    position: static;
+    right: 0;
+    top: 0;
+	width:auto;
+}
+.lofmegamenueggplant-top  > ul > li > div#currencies_block_top p{
+	text-indent:-9999px;
+}
+.lofmegamenueggplant-top  > ul > li > div >ul#first-languages li.selected_language,.lofmegamenueggplant-top  > ul > li > div >ul#first-languages li{
+	margin:0 !important;
+	background:none !important;
+	line-height:2;
+}
+.lofmegamenueggplant-top  > ul > li > div >ul#first-languages li.selected_language a,.lofmegamenueggplant-top  > ul > li > div >ul#first-languages li a{
+	background:none;
+	padding-left:5px !important;
+}
+.lofmegamenueggplant-top  ul li  div#currencies_block_top ul li{
+	padding: 6px 0 0 0;
+	border-bottom:none;
+}
+.lofmegamenueggplant-top  ul li  div#currencies_block_top ul li a{
+	background:none;
+	line-height:16px;
+	color:#E3D8C8;
+}
+.lofmegamenueggplant-top  ul li  div#currencies_block_top ul li a:hover{
+	color:#9C422E;
+	background:#000 !important;
+}
+.lofmegamenueggplant-top  > ul > li > div#header_user{
+	margin:0 !important;
+	height:30px;
+	line-height:28px;
+}
+.lofmegamenueggplant-top  > ul > li > div#header_user #shopping_cart a,.lofmegamenueggplant-top  > ul > li > div#header_user #your_account a{
+	color:#000;
+}
+.lofmegamenueggplant-top  > ul > li > div#header_user p{
+	display:none;
+} 
+.lofmegamenueggplant-top  > ul > li > div#header_user span{
+	color:#AB4E39 ;
+}
+.lofmegamenueggplant-top  ul li  div#header_user ul li{
+	padding:0;
+}
+.lofmegamenueggplant-top  > ul > li > div >ul#header_nav {
+	border:none;
+}
+.lofmegamenueggplant-top  ul#lofmegamenu > li.has-module{
+	border-right:none;
+	padding:7px;
+	float:right;
+}
+.lofmegamenueggplant-top  ul li ul#first-languages li.selected_language,.lofmegamenueggplant-top  ul li ul#first-languages li{
+	border:none;
+}
+.lofmegamenueggplant-top  ul li ul li div.block .block_content{
+	padding:6px 6px 10px !important;
+}

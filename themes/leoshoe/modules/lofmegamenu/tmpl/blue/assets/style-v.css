@@ -1,0 +1,368 @@
+#left_column {
+	overflow:visible !important;
+}
+.lofmegamenublue-leftColumn .ddsmoothmenu-v{
+	font: bold 13px ;
+}
+
+.lofmegamenublue-leftColumn  ul{
+	z-index:100;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.lofmegamenublue-leftColumn  .lofcolumn{
+	z-index:100;
+	margin: 0;
+	padding: 0;
+	float:left;
+}
+
+.lofmegamenublue-leftColumn  ul.leval0{
+	border-right: medium none #7A5B41;
+}
+
+
+/*Top level list items*/
+.lofmegamenublue-leftColumn  ul#lofmegamenu > li{
+	position: relative;
+	display: inline;
+	float: left;
+	margin:0 !important;
+	height:40px;
+	width: 100%;
+	margin-top: 2px !important;
+	background: url("images/bg_menu.png") no-repeat scroll 0 0 transparent;
+/*	background: url('images/naviright.png') no-repeat scroll right top transparent;
+	padding-right:1px;*/
+}
+/*Top level list items*/
+.lofmegamenublue-leftColumn  ul li{
+	position: relative;
+}
+
+/*Top level menu link items style*/
+.lofmegamenublue-leftColumn  ul#lofmegamenu >li.itemfirst >a{	
+	line-height:1.2;
+	background:none;
+}
+.lofmegamenublue-leftColumn  ul#lofmegamenu >li >a{
+	display: block;
+    font: 12px bold Arial;
+    margin: 0;
+    padding: 14px 11px 15px 15px;
+    text-decoration: none;
+	color:#fff;
+	height:12px;
+}
+.lofmegamenublue-leftColumn  ul#lofmegamenu >li >a.selected{
+	background:none;
+}
+/*Top level menu link items style*/
+
+/*Top level menu link items style*/
+.lofmegamenublue-leftColumn  #lofmegamenu>li>a span.has-image 
+{
+	padding:0 0 0 25px;
+	display:inline-block;
+}
+.lofmegamenublue-leftColumn  ul#lofmegamenu >li:hover {
+	background:url(images/bg_hover.png) repeat-x scroll 0 0 transparent;
+	
+}
+.lofmegamenublue-leftColumn .ddsmoothmenu-v >ul >li >a:hover {
+    background:url(images/bg_hover.png) repeat-x scroll 0 0 transparent;
+}
+* html .lofmegamenublue-leftColumn  ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+	display: inline-block;
+}
+
+.lofmegamenublue-leftColumn  ul li a:link, .lofmegamenublue-leftColumn  ul li a:visited{
+	color: #ABBDE3;
+}
+	
+/*1st sub level menu*/
+
+/*1st sub level menu*/
+.lofmegamenublue-leftColumn  ul li ul.menunongroup, .lofmegamenublue-leftColumn  .lofitem0 > ul{
+	position: absolute;
+	left: 0;
+	display: none; /*collapse all sub menus to begin with*/
+	visibility: hidden;
+	
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.lofmegamenublue-leftColumn  ul li ul li{
+	padding: 5px 0 0px;
+	margin-right:10px;
+	display: list-item;
+	float: none;
+}
+
+.lofmegamenublue-leftColumn .ddsmoothmenu-v .level1 >div> ul>li{
+	margin-right:10px;
+}
+.lofmegamenublue-leftColumn .ddsmoothmenu-v >ul> li>div>div> ul>li.itemlast{
+	border-bottom:none;
+}
+.lofmegamenublue-leftColumn .ddsmoothmenu-v >ul> li>div>div> ul>li>div>div>ul>li{
+	margin-right:10px;
+	padding-top:10px;
+}
+.lofmegamenublue-leftColumn  >ul> li>div>div> ul>li>div>div>ul>li.itemlast{
+	border-bottom:none;
+}
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.lofmegamenublue-leftColumn  ul li ul li ul{
+	top: 0;
+}
+
+/* Sub level menu links style */
+.lofmegamenublue-leftColumn  ul li ul li a{
+	font: normal 12px Arial;
+	margin: 0;
+	border-top-width: 0;
+	text-decoration:none;
+}
+
+/* Holly Hack for IE \*/
+* html .lofmegamenublue-leftColumn {height: 1%;} /*Holly Hack for IE7 and below*/
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.lofmegamenublue-leftColumn .downarrowclass{
+	position: absolute;
+	top: 12px;
+	right: 7px;
+}
+
+.lofmegamenublue-leftColumn .rightarrowclass{
+	position: absolute;
+	top: 6px;
+	right: 5px;
+}
+
+/* ######### CSS for shadow added to sub menus  ######### */
+
+.lofmegamenublue-leftColumn .ddshadow{ /*shadow for NON CSS3 capable browsers*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	background: silver;
+}
+
+.lofmegamenublue-leftColumn .toplevelshadow{ /*shadow opacity for NON CSS3 capable browsers. Doesn't work in IE*/
+	opacity: 0.8;
+}
+.lofmegamenublue-leftColumn li.megagroup ul{
+	width:500px;
+}
+.lofmegamenublue-leftColumn  li.megagroup ul li{
+	float:left;
+	width:166px;
+}
+.lofmegamenublue-leftColumn  ul li div.menunongroup,
+.lofmegamenublue-leftColumn  .lofitem0 > div.menugroup {
+	position: absolute;
+	left: 0;
+	display: none; /*collapse all sub menus to begin with*/
+	visibility: hidden;
+	background-color: #3d527d;
+	padding-left:15px;
+	padding-bottom:17px;
+	border-top:1px solid #FEFEFE;
+	border-radius:2px;
+	padding-top:10px;
+}
+/* lof edit CSS */
+
+.lofmegamenublue-leftColumn  #lofmegamenu li.menugroup {
+	border-bottom: none;	margin-right:10px;
+}
+.lofmegamenublue-leftColumn  #lofmegamenu li.menugroup  ul.menugroup > li {
+	float:none;
+}
+.lofmegamenublue-leftColumn  #lofmegamenu div.lofcolunm{
+	float:left;
+}
+.lofmegamenublue-leftColumn  #lofmegamenu li.menunongroup ul.menunongroup > li {
+	float:left;
+}
+
+.lofmegamenublue-leftColumn  #lofmegamenu  span.lof-menu-title{
+	display: block;
+    font-family: arial;
+    text-transform: capitalize;
+	padding-right:5px;
+}
+.lofmegamenublue-leftColumn  #lofmegamenu .lofitem0 > a span.lof-menu-title{
+	font-weight:bold;
+}
+.lofmegamenublue-leftColumn  #lofmegamenu li ul .menugroup > a span.lof-menu-title{
+    text-transform:capitalize;
+	margin-right:10px;
+	padding:5px 10px;
+}
+.lofmegamenublue-leftColumn  #lofmegamenu li> div > div > ul >li >a span.lof-menu-title{
+	text-transform: capitalize;
+	font:12px Arial;
+}
+.lofmegamenublue-leftColumn  #lofmegamenu li ul li >a:hover{
+	color: #67D7FB;
+}
+.lofmegamenublue-leftColumn  #lofmegamenu li ul .menugroup ul li.menugroup > a span.lof-menu-title{
+	text-transform: capitalize;
+	font:12px Arial;
+	border:1px solid #ddd;
+	border-radius:3px;
+}
+.lofmegamenublue-leftColumn  #lofmegamenu  span.lof-menu-desc{
+	display: none;
+    font-weight: normal;
+	font-size:10px;
+}
+.lofmegamenublue-leftColumn  #lofmegamenu  > span.lof-menu-desc{
+	padding-left: 15px;
+}
+.lofmegamenublue-leftColumn  #lofmegamenu  span.has-image{
+	display:block;
+	padding: 5px 5px 5px 25px;
+}
+
+.lofmegamenublue-leftColumn  .level0  .lofsub > a span.lof-menu-title {
+}
+
+.lofmegamenublue-leftColumn  .level0  .lofsub > a span.lof-menu-desc {
+    padding:0 15px;
+}
+.lofmegamenublue-leftColumn  .level0  .lofsub ul li a span.lof-menu-title {
+    padding-left: 0px;
+}
+
+.lofmegamenublue-leftColumn  .level0  ul.menunongroup {
+	border: 1px solid #666666;
+}
+
+.lofmegamenublue-leftColumn  .level0  .lofsub ul li.lofsub a span.lof-menu-title{
+	background: url("images/right.png") no-repeat scroll right center transparent;
+    padding-right: 15px;
+	font:12px Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+}
+.lofmegamenublue-leftColumn  .level0 .lofsub>div>div>ul>li>div>ul>li.lofsub{
+	padding-left:0 ;
+}
+
+.lofmegamenublue-leftColumn  ul li.active{ 
+	background:url(images/bg_hover.png) repeat-x scroll 0 0 transparent !important;
+}
+
+.lofmegamenublue-leftColumn  .level0 .lofnonsub a span.lof-menu-title {
+	background: none;
+	text-transform:capitalize;
+	font: 12px Arial;
+}
+.lofmegamenublue-leftColumn  .level0  .lofsub ul li.lofnonsub a span.lof-menu-title{
+	background: none;
+}
+.lofmegamenublue-leftColumn  .level0  .lofsub ul li.lofnonsub{
+	padding-left:0;
+}
+.lofmegamenublue-leftColumn  .level0  .lofsub ul li.itemlast{
+	border-bottom:none!important;
+}
+.lofmegamenublue-leftColumn  .level0  .lofsub > ul >li.lofnonsub{
+	padding-left:15px;
+}
+.lofmegamenublue-leftColumn  .level0  .lofsub ul li.menugroup > a span.lof-menu-title{
+	background: none;
+}
+/*-----------------------------*/
+.lofmegamenublue-leftColumn  #lofmegamenu div#search_block_top{
+	padding: 3px 0 3px 15px;
+}
+.lofmegamenublue-leftColumn  #lofmegamenu div#search_block_top input#search_query_top{
+	float:left;
+	height:16px;
+	margin-left: 0px;
+	width: 55%;
+}
+.lofmegamenublue-leftColumn  #lofmegamenu div#search_block_top input.button{
+	background:#6a947d;
+	text-transform:uppercase;
+	color:#fff !important;
+	width:65px;
+	line-height:18px;
+}
+.lofmegamenublue-leftColumn ul#first-languages {
+	border:none;
+}
+.lofmegamenublue-leftColumn div#languages_block_top {
+    position: static;
+	line-height:1;
+    top: 0;
+	width:90%;
+	padding-left:15px;
+}
+.lofmegamenublue-leftColumn div#languages_block_top ul li{
+    padding: 13px 0 0;
+}
+.lofmegamenublue-leftColumn div#currencies_block_top{
+	float: none;
+    height: 30px;
+    line-height: 28px;
+    margin: 0 !important;
+    position: static;
+    right: 0;
+    top: 0;
+	width:auto;
+	padding-left:15px;
+}
+.lofmegamenublue-leftColumn div#currencies_block_top p{
+	text-indent:-9999px;
+}
+.lofmegamenublue-leftColumn  ul#first-languages li.selected_language,.lofmegamenublue-leftColumn  > ul > li > div >ul#first-languages li{
+	  margin: 0 5px 0 0 !important;
+}
+.lofmegamenublue-leftColumn  ul li  div#currencies_block_top ul li{
+	padding: 11px 0 0;
+	border-bottom:none;
+}
+.lofmegamenublue-leftColumn  div#header_user{
+	margin:0 !important;
+	height:30px;
+	line-height:28px;
+	padding-left: 15px;
+}
+.lofmegamenublue-leftColumn #header_user #shopping_cart a,.lofmegamenublue-leftColumn  > ul > li > div#header_user #your_account a{
+	color:#000;
+}
+.lofmegamenublue-leftColumn #header_user p{
+	display:none;
+} 
+.lofmegamenublue-leftColumn #header_user span{
+	color:#6A947D;
+}
+.lofmegamenublue-leftColumn  ul li  div#header_user ul li{
+	float: left;
+    margin-left: 0;
+    padding: 0;
+}
+.lofmegamenublue-leftColumn #header_nav {
+	border:none;
+}
+.lofmegamenublue-leftColumn  ul#lofmegamenu > li.has-module{
+	border-right:none;
+	float:right;
+	padding:3px 0;
+	line-height:1;
+}
+.lofmegamenublue-leftColumn  ul li ul#first-languages li.selected_language,.lofmegamenublue-leftColumn  ul li ul#first-languages li{
+	border-bottom:none;
+}
+.lofmegamenublue-leftColumn  ul li ul li div.block .block_content{
+	padding:6px 6px 10px !important;
+}

@@ -1,0 +1,22 @@
+div.zoomdiv {
+z-index                 : 100;
+position                : absolute;
+top:50px;
+left: -210px!important;
+width                   : 400px;
+height                  : 400px;
+background: #ffffff;
+border:1px solid #CCCCCC;
+border-radius: 5px;
+display:none;
+text-align: center; 
+overflow: hidden;
+
+}
+
+
+img.jqzoom{
+cursor:crosshair;
+position:relative;
+
+}

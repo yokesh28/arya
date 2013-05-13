@@ -1,0 +1,137 @@
+
+.lof-block-wrap > h2 {
+  display: none;
+}
+#lofadvafooterfooter{}
+#lofadvafooterfooter #lofadva-pos-1 li {
+	list-style:none;
+}
+#lofadvafooterfooter #lofadva-pos-1 .lof-text {
+}
+#lofadvafooterfooter #lofadva-pos-1 .lof-text ul{
+	float: right;
+    margin: 0;
+    padding: 0;
+}
+#lofadvafooterfooter #lofadva-pos-1 .lof-text ul li{
+	float: left;
+	list-style: none outside none;
+}
+#lofadvafooterfooter #lofadva-pos-1 .lof-text ul li a{
+	color: #747474;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    margin: 10px 20px 0 0;
+    padding-left: 30px;
+	font: italic 16px 'helveticaneue';
+	text-decoration:none;
+}
+#lofadvafooterfooter #lofadva-pos-1 .lof-text ul li.twitter a{
+	background: url("images/social_twitter.png") no-repeat scroll 0 0 transparent;
+}
+#lofadvafooterfooter #lofadva-pos-1 .lof-text ul li.rss a{
+	background: url("images/social_rss.png") no-repeat scroll 0 0 transparent;
+}
+#lofadvafooterfooter #lofadva-pos-1 .lof-text ul li.facebook a{
+	background: url("images/social_fb.png") no-repeat scroll 0 0 transparent;
+}
+#lofadvafooterfooter #lofadva-pos-1 .lof-text ul li.skype a{
+	background: url("images/social_skype.png") no-repeat scroll 0 0 transparent;
+}
+#lofadvafooterfooter #lofadva-pos-1 .lof-text ul li.linkedin a{
+	background: url("images/social_in.png") no-repeat scroll 0 0 transparent;
+}
+#lofadvafooterfooter #lofadva-pos-1 .lof-text ul li a:hover {
+    background-position: 0 -27px;
+	text-decoration:underline;
+}
+#lofadvafooterfooter #lofadva-pos-1  h2{
+	 background: none repeat scroll 0 0 transparent;
+    float: left;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 0;
+    padding: 4px 16px 6px 1px;
+    text-transform: none;
+	text-transform: uppercase;
+}
+#lofadvafooterfooter #lofadva-pos-2 .lofadva-block-1  h2{}
+
+#lofadvafooterfooter #lofadva-pos-2{	
+    border-top: 1px dotted #3c3c3c;
+	border-bottom: 1px dotted #3c3c3c;
+    border-radius: 0 0 4px 4px;
+    clear: both;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 20px 0 10px;
+	margin-bottom: 1px;
+}
+#lofadvafooterfooter #lofadva-pos-2 li {}
+
+div.lof-block-wrap > h2 {
+  display: none !important;
+}
+#lofadvafooterfooter #lofadva-pos-2 h2{
+	color: #b22222;
+    background: url("images/bg_h4.png") repeat scroll 0 0 transparent;
+    border: 1px solid #B22222;
+    padding: 0 6px;
+	display: inline-block;
+	font-size: 14px;
+}
+#lofadvafooterfooter #lofadva-pos-2 h2:after {
+    background: none repeat scroll 0 0 #252525;
+    bottom: -1px;
+    content: "";
+    display: block;
+    height: 1px;
+    position: relative;
+}
+#lofadvafooterfooter #lofadva-pos-2 h2:before {
+    background: none repeat scroll 0 0 #252525;
+    content: "";
+    display: block;
+    height: 1px;
+    position: relative;
+    top: -1px;
+}
+#lofadvafooterfooter #lofadva-pos-2 li.link a{
+	background: url("images/bullet-li.png") no-repeat scroll 0 7px transparent;
+    color: #656565;
+    padding-left: 12px;
+	font: 14px 'vni-helve-condense' !important;
+	text-decoration:none;
+}
+#lofadvafooterfooter #lofadva-pos-2 li.link a:hover{
+	background-position: 0 -25px;
+    color: #4DA49D;
+    text-decoration: none;
+}
+#lofadvafooterfooter #lofadva-pos-2 li .custom-content{
+	padding:0 5px 0 15px;
+}
+#lofadvafooterfooter #lofadva-pos-2 li.link{
+	padding-left:10px;
+}
+  #about_us ul li, #custom_s ul li, #terms ul li, #my_account ul li     {
+	list-style: disc inside url("images/bullet-li.png");
+}
+.lofadva-block-1 .lof-items .lof-text > h2 {
+  display: none;
+  font-weight: bold;
+}
+.lofadva-block-1 .lof-items .lof-text .login-footer , .follow {
+   color: #fff !important;
+   font-size: 18px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+.lofadva-block-1 .lof-items .lof-text {
+  float: left;
+}
+.lofadva-block-1 .lof-block-wrap .lof-module {
+    float: right;
+    width: 418px;
+}

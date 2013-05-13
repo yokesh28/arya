@@ -1,0 +1,70 @@
+/* orange #d74833 */
+#header_logo{background-image: url(../img/logo.png); display: none;}
+#header_user #shopping_cart{background-image: url(../img/icon-cart.png);}
+
+.sf-menu li:hover {
+  border: 1px solid #08a183;
+  background: #10b292;
+}
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active ,
+input.button_mini, input.button_small, input.button, input.button_large,
+input.button_mini_disabled, input.button_small_disabled, input.button_disabled, input.button_large_disabled,
+input.exclusive_mini, input.exclusive_small, input.exclusive, input.exclusive_large,
+input.exclusive_mini_disabled, input.exclusive_small_disabled, input.exclusive_disabled, input.exclusive_large_disabled,
+a.button_mini, a.button_small, a.button, a.button_large,
+a.exclusive_mini, a.exclusive_small, a.exclusive, a.exclusive_large,
+span.button_mini, span.button_small, span.button, span.button_large,
+span.exclusive_mini, span.exclusive_small, span.exclusive, span.exclusive_large, span.exclusive_large_disabled ,
+#categories_block_left li a:hover, #categories_block_left ul li ul li a:hover, #categories_block_left  li a.selected, ul.pagination .current span {
+  background-color: #10b292;
+}
+ li.sfHover:hover > a , .sf-menu a:hover{
+   border-bottom: 1px solid #15d3c1;
+}
+#categories_block_left li a:hover, #categories_block_left  li a.selected {
+    background-color: #10b292;
+    box-shadow: 0 0 0 1px #1ba586 inset;
+}
+.bx-pager a {
+    background: url("../img/bg_nav.png") no-repeat scroll 0 0 transparent;  
+}
+.bx-pager a.pager-active {
+    background: none repeat scroll 0 0 #10b292;
+}
+li.pager div p.legend, .block h4 span , .lof-newproduct .newproduct-title span, #featured-products_block_center .price, .entry-price, 
+#lofadvafooterfooter #lofadva-pos-2 h2, #pb-left-column h1, .our_price_display, .content_prices #add_to_cart .exclusive, .content_prices #add_to_cart .exclusive_disabled,
+.idTabs .selected, #product_list li .price, #center_column h1, 
+#special_block_right h5 a, #special_block_right p.price,#cart_block #cart_block_shipping_cost, #cart_block #cart_block_total,#product_comparison .price,
+#products-comparison #center_column h1,#header_user #shopping_cart .ajax_cart_quantity,#pagenotfound .pagenotfound h1,#center_column > h1,#center_column > h2, #center_column > h3,
+.breadcrumb .navigation_page, #header_user_info a  span, .cart_total_price .total_price_container span, #summary_products_quantity, .rte > h2{
+    color: #10b292; 
+}
+.block h4 , .lof-newproduct .newproduct-title, #lofadvafooterfooter #lofadva-pos-2 h2{
+    border: 1px solid #10b292;
+}
+#featured-products_block_center li , .container-newproduct, #product_list li{
+  border-color: #E5E5E5 #E5E5E5 #10b292;
+}
+#special_block_right .block_content {
+    border-color: #ccc #ccc #10b292;
+}
+#featured-products_block_center li .ajax_add_to_cart_button , .detail_add a.lof-add-cart span, #product_list li .ajax_add_to_cart_button,  
+.caption .leo_shop_now {
+  background: url("../img/pict_cart.png") no-repeat scroll 1px 3px #FFFFFF;
+}
+#newsletter_block_left input.button_mini {
+  background: url("../img/bg_bt_newsletter_ok.png") no-repeat scroll center center transparent;
+}
+#cart_block #cart-buttons #button_order_cart, .sortPagiBar #bt_compare {
+    background: url("../img/bg_checkout.png") no-repeat scroll center center transparent;
+}
+#mycarouselHolder .jcarousel-skin-tango .jcarousel-next-horizontal:hover{
+    background: url("../img/next-pre-hover.png") no-repeat scroll right center transparent;
+}
+#mycarouselHolder .jcarousel-skin-tango .jcarousel-prev-horizontal:hover {
+  background: url("../img/next-pre-hover.png") no-repeat scroll 0 center transparent
+}
+#header_user_info a.login {
+  background: url("../img/login_aqua.gif") no-repeat scroll 10px 0 transparent;
+}
+

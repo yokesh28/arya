@@ -75,6 +75,15 @@ class SiteController extends FrontController {
 
 		$this->render('about');
 	}
+	
+	public function actionAbout1(){
+	
+		$this->breadcrumbs = array('Home',array('About1'=>$this->createUrl('/front/site/about1')));
+	
+		$this->render('about1');
+	}
+	
+	
 	public function actionCareer(){
 
 		$this->render('career');

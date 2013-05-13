@@ -92,7 +92,9 @@ echo $content;?>
 	src="<?php echo Yii::app()->theme->baseUrl;?>/js/bootstrap.js"></script>
 
 
-
+ <script src="/js/jquery-1.9.0.js"></script>
+        <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+        <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-affix.js"></script>
 
 
 </body>
